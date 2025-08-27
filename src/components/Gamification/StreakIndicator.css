@@ -1,0 +1,249 @@
+.streak-indicator {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.streak-indicator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.5s;
+}
+
+.streak-indicator:hover::before {
+  left: 100%;
+}
+
+.streak-indicator:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.streak-indicator.frozen {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border: 2px solid #2196f3;
+}
+
+.streak-indicator.small {
+  padding: 12px;
+}
+
+.streak-indicator.large {
+  padding: 30px;
+}
+
+.streak-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.streak-flame {
+  font-size: 2.5rem;
+  animation: flicker 2s ease-in-out infinite alternate;
+}
+
+.streak-indicator.small .streak-flame {
+  font-size: 2rem;
+}
+
+.streak-indicator.large .streak-flame {
+  font-size: 3.5rem;
+}
+
+@keyframes flicker {
+  0% { transform: scale(1) rotate(-2deg); }
+  50% { transform: scale(1.05) rotate(1deg); }
+  100% { transform: scale(0.98) rotate(-1deg); }
+}
+
+.streak-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.streak-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.streak-indicator.small .streak-number {
+  font-size: 2rem;
+}
+
+.streak-indicator.large .streak-number {
+  font-size: 3.5rem;
+}
+
+.streak-label {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.freeze-indicator {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 1.5rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.streak-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.streak-indicator.small .streak-title {
+  font-size: 0.9rem;
+}
+
+.streak-indicator.large .streak-title {
+  font-size: 1.3rem;
+}
+
+.best-streak {
+  font-size: 0.9rem;
+  color: #f39c12;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.freeze-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ecf0f1;
+}
+
+.freeze-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.freeze-icon {
+  font-size: 1.1rem;
+}
+
+.freeze-button {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 auto;
+}
+
+.freeze-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+}
+
+.frozen-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(33, 150, 243, 0.1);
+  border-radius: 20px;
+  color: #2196f3;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Streak level animations */
+.streak-indicator[data-streak="3"] .streak-flame {
+  animation: gentle-flicker 1.5s ease-in-out infinite alternate;
+}
+
+.streak-indicator[data-streak="7"] .streak-flame {
+  animation: medium-flicker 1.2s ease-in-out infinite alternate;
+}
+
+.streak-indicator[data-streak="14"] .streak-flame {
+  animation: strong-flicker 1s ease-in-out infinite alternate;
+}
+
+.streak-indicator[data-streak="30"] .streak-flame {
+  animation: intense-flicker 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes gentle-flicker {
+  0% { transform: scale(1) rotate(-1deg); }
+  100% { transform: scale(1.02) rotate(0.5deg); }
+}
+
+@keyframes medium-flicker {
+  0% { transform: scale(1) rotate(-1.5deg); }
+  100% { transform: scale(1.04) rotate(1deg); }
+}
+
+@keyframes strong-flicker {
+  0% { transform: scale(1) rotate(-2deg); }
+  100% { transform: scale(1.06) rotate(1.5deg); }
+}
+
+@keyframes intense-flicker {
+  0% { transform: scale(1) rotate(-3deg); }
+  100% { transform: scale(1.08) rotate(2deg); }
+}
+
+@media (max-width: 768px) {
+  .streak-indicator {
+    padding: 15px;
+  }
+  
+  .streak-content {
+    gap: 12px;
+  }
+  
+  .streak-flame {
+    font-size: 2rem;
+  }
+  
+  .streak-number {
+    font-size: 2rem;
+  }
+  
+  .streak-title {
+    font-size: 1rem;
+  }
+}

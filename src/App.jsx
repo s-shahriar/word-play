@@ -5,6 +5,7 @@ import { FlashcardSession } from './components/FlashcardSession/FlashcardSession
 import { MatchTest } from './components/Tests/MatchTest';
 import { SentenceTest } from './components/Tests/SentenceTest';
 import { SynonymAntonymTest } from './components/Tests/SynonymAntonymTest';
+import { ProgressDashboard } from './components/Progress/ProgressDashboard';
 import './App.css'
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <Route path="/tests/sentence" element={<SentenceTest />} />
           <Route path="/tests/synonym-antonym" element={<SynonymAntonymTest />} />
           <Route path="/tests" element={<TestsMenu />} />
-          <Route path="/progress" element={<div>Progress page coming soon...</div>} />
+          <Route path="/progress" element={<ProgressDashboard />} />
           <Route path="/settings" element={<div>Settings page coming soon...</div>} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
@@ -36,6 +37,8 @@ function FlashcardSessionWrapper() {
         return { sessionType: 'due', maxCards: 20 };
       case 'new':
         return { sessionType: 'new', maxCards: 10 };
+      case 'quick':
+        return { sessionType: 'random', maxCards: 10 };
       case 'weak':
         return { sessionType: 'weak', maxCards: 15 };
       case 'random':

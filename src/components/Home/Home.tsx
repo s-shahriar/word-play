@@ -62,6 +62,14 @@ export const Home: React.FC = () => {
       disabled: stats.newCards === 0
     },
     {
+      id: 'quick',
+      title: '⚡ 10 Quick Cards',
+      description: 'Quick 10-card practice session',
+      count: null,
+      color: '#27ae60',
+      disabled: false
+    },
+    {
       id: 'weak',
       title: '💪 Practice Weak Words',
       description: 'Focus on words with low accuracy',
@@ -82,6 +90,7 @@ export const Home: React.FC = () => {
   const handleSessionStart = (sessionType: string) => {
     navigate(`/flashcards/${sessionType}`);
   };
+
 
   if (loading) {
     return (
