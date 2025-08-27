@@ -1,0 +1,217 @@
+I am making a web app in this project, depending on the word in the file i am planning this features: 
+1 — Core features
+Flashcards for memorization
+
+
+Card shows: English word, Bangla meaning, pronunciation (audio), example sentence, synonyms, antonyms.
+
+
+Controls: Show/hide meaning, Next, Previous, Flip (front/back), Mark Known / Unknown.
+
+
+Spaced Repetition (SM-2 or simplified SRS) to schedule review intervals automatically.
+
+
+Word-matching test (to improve English skills)
+
+
+Present an English word and multiple Bangla meanings (or vice versa) — user picks match.
+
+
+Timed rounds, increasing difficulty, randomized distractors from synonyms/antonyms.
+
+
+Sentence (usage) test
+
+
+Fill-in-the-blank in example sentence(s) or select correct word to complete sentence.
+
+
+Evaluate for correct usage & give feedback showing why the answer was right/wrong.
+
+
+Synonym / Antonym tests with Bangla meanings
+
+
+Show word + Bangla meaning, ask the user to choose synonym(s) and antonym(s) from choices.
+
+
+Could be multi-select or pair matching.
+
+
+Progress & Analytics
+
+
+Track accuracy, streaks, time spent, SRS review schedule, mastery % per word.
+
+
+Dashboard summarizing weak words, recent performance, suggested practice.
+
+
+Import / Admin tools
+
+
+Accept your compiled JSON (500 words) and validate/deduplicate.
+
+
+Editor to correct translations, add more examples, tweak synonyms/antonyms.
+
+
+Accessibility & i18n
+
+
+Bangla UI strings, proper fonts, screen reader compatibility, keyboard navigation.
+
+
+Offline support (optional but recommended)
+
+
+Cache DB and TTS audio; allow review when offline. Sync on reconnect.
+
+
+
+2 — Data model (single word record)
+Create a model by yourself tailored to the plan. The words list and type is at words.txt file in the root directiory
+
+3 — Execution flows & pseudocode
+3.1 Flashcard study session flow
+Fetch due words from SRS (server or local). If empty, pick new words (by priority).
+
+
+Present flashcard front (word + play button).
+
+
+User actions: Show Meaning, Flip, Mark: {Easy, Good, Hard, Again} (SM-2 uses quality responses usually 0–5).
+
+
+On answer, compute next review via SM-2 and save SRS record.
+
+3.2 Word matching test generation
+Pick N target words.
+
+
+For each, create choices: correct Bangla meaning + 3 distractors pulled from other words' meanings or synonyms.
+
+
+Shuffle choices and show.
+
+
+3.3 Sentence fill-in test
+Replace target word in example_en with blank (or replace with underscores).
+
+
+Provide multiple choices (correct + similar words).
+
+
+For partial-credit/typo tolerance, normalize input: lowercase + strip punctuation; consider fuzzy matching.
+
+
+
+4 — Algorithms & scoring details
+Spaced Repetition (SM-2)
+Use SM-2 (Anki algorithm) with quality score 0–5. Store ef, repetitions, interval per user+word.
+
+
+If quality < 3 → reset repetitions to 0 and schedule for immediate early review.
+
+
+Use nextReview date to fetch due cards (today or earlier).
+
+
+Test scoring
+Match test: +1 per correct, timed bonus or penalties optional.
+
+
+Sentence test: +1 exact match, 0.5 fuzzy match (Levenshtein ≤ 2), 0 wrong.
+
+
+Synonym/antonym test: If multi-select, calculate precision/recall or use simple scoring: correctSelected / totalCorrect.
+
+
+Difficulty & Progression
+Adaptive: show more frequent practice for words with low accuracy.
+
+
+Weight words by forgetRate = 1 - (correct/seen) and push high forgetRate to review pool.
+
+
+
+5 — Implementation tips & best practices
+Start Minimum Viable Product (MVP)
+
+
+Stage 1: Import JSON, flashcards with play (Web Speech), and manual Next/Prev. LocalStorage for user progress.
+
+
+Stage 2: Add SRS scheduling, Match test, Sentence test.
+
+
+Stage 3: Server sync, auth, analytics, offline sync, pre-generated TTS.
+
+
+Pronunciation (TTS)
+
+
+For quick dev: use browser SpeechSynthesis. For production quality and consistency across devices: pre-generate audio (Google Cloud TTS / AWS Polly / ElevenLabs) and store URLs.
+
+
+Audio caching
+
+
+Save audio in CDN / object storage. For offline, store in IndexedDB.
+
+
+Randomization & fairness
+
+
+Shuffle choices per question; ensure distractors are plausible (use synonyms/antonyms from dataset) so tests feel meaningful.
+
+
+I18n
+
+
+Use libraries like react-intl or i18next to provide Bangla UI, date formats, and RTL if ever needed.
+
+
+Accessibility
+
+
+Provide keyboard shortcuts, visible focus states, and ARIA labels. Ensure audio controls are accessible.
+
+
+Testing
+
+
+Unit test SRS logic and test generation (avoid regressions that could schedule wrong nextReview dates).
+
+
+Data quality
+
+
+Validate synonyms/antonyms are present in your dictionary or mark as suggestions. Provide admin editing for corrections.
+
+
+
+6 — Example: generate a matching question (JS)
+This is just a dummy function for reference
+
+function makeMatchQuestion(targetWord, allWords, choicesCount=4) {
+  const correct = targetWord.meaning_bn;
+  // Gather candidate meanings excluding the correct one
+  const pool = allWords
+    .map(w => w.meaning_bn)
+    .filter(m => m && m !== correct);
+
+  // choose distinct distractors
+  const distractors = shuffle(pool).slice(0, choicesCount - 1);
+  const choices = shuffle([correct, ...distractors]);
+  return { word: targetWord.word, choices, answer: correct };
+}
+
+
+7 — Gamification suggestions
+
+
+Quick practice modes: “10 quick cards” / “weak words only” / “random review”
+Come up with different more gamification strategies which will help me mastering the words
+
