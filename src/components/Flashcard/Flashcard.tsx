@@ -68,7 +68,9 @@ export const Flashcard: React.FC<FlashcardProps> = ({
       <div className={`flashcard ${isFlipped ? 'flipped' : ''}`}>
         <div className="flashcard-front">
           <div className="word-display">
-            <h1 className="word">{word.word}</h1>
+            <div className="word-box">
+              <h1 className="word">{word.word}</h1>
+            </div>
           </div>
           
           {showMeaning && (

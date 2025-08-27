@@ -62,12 +62,27 @@
   margin-bottom: 20px;
 }
 
+.word-box {
+  background: #ff6b35 !important;
+  background-color: #ff6b35 !important;
+  background-image: none !important;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  border: none;
+}
+
 .word {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #2c3e50;
-  margin: 0 0 20px 0;
+  margin: 0;
   text-align: center;
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: inherit;
 }
 
 
@@ -116,6 +131,7 @@
   display: flex;
   gap: 15px;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .back-controls {
@@ -135,6 +151,7 @@
 .control-button.primary {
   background: #3498db;
   color: white;
+  min-width: 140px;
 }
 
 .control-button.primary:hover {
@@ -145,6 +162,7 @@
 .control-button.secondary {
   background: #95a5a6;
   color: white;
+  min-width: 140px;
 }
 
 .control-button.secondary:hover {
@@ -190,13 +208,12 @@
 
 .navigation-controls {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .nav-button {
-  padding: 12px 24px;
+  padding: 14px 24px;
   background: #34495e;
   color: white;
   border: none;
@@ -205,13 +222,11 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  flex: 1;
-  max-width: 150px;
+  width: 100%;
 }
 
 .dashboard-button {
-  background: #3498db;
-  max-width: 140px;
+  background: #34495e;
 }
 
 .dashboard-button:hover {
@@ -257,12 +272,10 @@
   }
   
   .nav-button {
-    max-width: none;
     width: 100%;
   }
   
-  .dashboard-button {
-    max-width: none;
-    width: 100%;
+  .word-box {
+    padding: 15px 30px;
   }
 }
