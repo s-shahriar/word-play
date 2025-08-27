@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { WordRecord, Quality } from '../../types';
 import { useNavigate } from 'react-router-dom';
 import './Flashcard.css';
@@ -27,6 +27,12 @@ export const Flashcard: React.FC<FlashcardProps> = ({
   const [isFlipped, setIsFlipped] = useState(false);
   const [showMeaning, setShowMeaning] = useState(false);
   const navigate = useNavigate();
+
+  // Reset flip state when word changes
+  useEffect(() => {
+    setIsFlipped(false);
+    setShowMeaning(false);
+  }, [word]);
 
 
   const handleFlip = () => {
