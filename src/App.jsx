@@ -6,6 +6,7 @@ import { MatchTest } from './components/Tests/MatchTest';
 import { SentenceTest } from './components/Tests/SentenceTest';
 import { SynonymAntonymTest } from './components/Tests/SynonymAntonymTest';
 import { ProgressDashboard } from './components/Progress/ProgressDashboard';
+import { Settings } from './components/Settings/Settings';
 import './App.css'
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Route path="/tests/synonym-antonym" element={<SynonymAntonymTest />} />
           <Route path="/tests" element={<TestsMenu />} />
           <Route path="/progress" element={<ProgressDashboard />} />
-          <Route path="/settings" element={<div>Settings page coming soon...</div>} />
+          <Route path="/settings" element={<Settings />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

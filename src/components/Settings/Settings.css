@@ -1,0 +1,514 @@
+.settings {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.settings-header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  border-color: #3498db;
+  transform: translateY(-2px);
+}
+
+.settings-header h1 {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.settings-header p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.settings-content {
+  display: flex;
+  gap: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.settings-tabs {
+  background: #f8f9fa;
+  min-width: 200px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 20px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0 12px 12px 0;
+  margin-right: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7f8c8d;
+}
+
+.tab-button:hover {
+  background: rgba(52, 152, 219, 0.1);
+  color: #3498db;
+}
+
+.tab-button.active {
+  background: #3498db;
+  color: white;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.tab-icon {
+  font-size: 1.2rem;
+}
+
+.tab-name {
+  font-weight: 600;
+}
+
+.settings-panel {
+  flex: 1;
+  padding: 30px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.setting-section h2 {
+  color: #2c3e50;
+  margin: 0 0 25px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.setting-group {
+  margin-bottom: 25px;
+}
+
+.setting-group label {
+  display: block;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.range-input {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.range-input input[type="range"] {
+  flex: 1;
+  height: 8px;
+  background: #ecf0f1;
+  border-radius: 4px;
+  outline: none;
+  appearance: none;
+}
+
+.range-input input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #3498db;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.3);
+}
+
+.range-input input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #3498db;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.3);
+}
+
+.range-value {
+  background: #3498db;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  min-width: 50px;
+  text-align: center;
+}
+
+.setting-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.setting-group select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggle-switch input[type="checkbox"] {
+  width: 50px;
+  height: 24px;
+  appearance: none;
+  background: #bdc3c7;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-switch input[type="checkbox"]:checked {
+  background: #3498db;
+}
+
+.toggle-switch input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch input[type="checkbox"]:checked::before {
+  transform: translateX(26px);
+}
+
+.toggle-description {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.radio-option:hover {
+  border-color: #3498db;
+}
+
+.radio-option input[type="radio"] {
+  margin: 0;
+}
+
+.radio-option input[type="radio"]:checked + .radio-label {
+  color: #3498db;
+  font-weight: 600;
+}
+
+.radio-label {
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+.time-input {
+  padding: 10px 12px;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2c3e50;
+  transition: border-color 0.3s ease;
+}
+
+.time-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.setting-description {
+  margin: 8px 0 0 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.data-section {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.data-section:last-child {
+  border-bottom: none;
+}
+
+.data-section h3 {
+  color: #2c3e50;
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.data-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.data-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.data-button.export {
+  background: #27ae60;
+  color: white;
+}
+
+.data-button.export:hover {
+  background: #219a52;
+  transform: translateY(-2px);
+}
+
+.data-button.import {
+  background: #3498db;
+  color: white;
+}
+
+.data-button.import:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+.data-button.secondary {
+  background: #95a5a6;
+  color: white;
+}
+
+.data-button.secondary:hover {
+  background: #7f8c8d;
+  transform: translateY(-2px);
+}
+
+.data-button.danger {
+  background: #e74c3c;
+  color: white;
+}
+
+.data-button.danger:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+}
+
+.data-description {
+  margin: 10px 0 0 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.confirm-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.confirm-dialog {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.confirm-dialog h3 {
+  color: #e74c3c;
+  margin: 0 0 15px 0;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.confirm-dialog p {
+  color: #2c3e50;
+  line-height: 1.6;
+  margin: 0 0 25px 0;
+  text-align: center;
+}
+
+.confirm-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.confirm-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.confirm-button.cancel {
+  background: #95a5a6;
+  color: white;
+}
+
+.confirm-button.cancel:hover {
+  background: #7f8c8d;
+}
+
+.confirm-button.danger {
+  background: #e74c3c;
+  color: white;
+}
+
+.confirm-button.danger:hover {
+  background: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .settings {
+    padding: 15px;
+  }
+  
+  .settings-header {
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    position: static;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .settings-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .settings-content {
+    flex-direction: column;
+  }
+  
+  .settings-tabs {
+    min-width: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 15px;
+  }
+  
+  .tab-button {
+    flex-shrink: 0;
+    margin-right: 0;
+    border-radius: 8px;
+    padding: 10px 15px;
+  }
+  
+  .settings-panel {
+    padding: 20px;
+    max-height: none;
+    overflow-y: visible;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+  }
+  
+  .data-buttons {
+    flex-direction: column;
+  }
+  
+  .data-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .confirm-dialog {
+    padding: 25px;
+    margin: 20px;
+  }
+  
+  .confirm-buttons {
+    flex-direction: column;
+  }
+  
+  .confirm-button {
+    width: 100%;
+  }
+}
