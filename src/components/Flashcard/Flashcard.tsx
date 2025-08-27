@@ -51,10 +51,9 @@ export const Flashcard: React.FC<FlashcardProps> = ({
   const qualityButtons = [
     { quality: 0 as Quality, label: 'Again', color: '#ff4757', description: 'Complete blackout' },
     { quality: 1 as Quality, label: 'Hard', color: '#ff6b7d', description: 'Incorrect, but remembered' },
-    { quality: 2 as Quality, label: 'Good', color: '#ffa502', description: 'Correct with difficulty' },
-    { quality: 3 as Quality, label: 'Good+', color: '#2ed573', description: 'Correct with hesitation' },
+    { quality: 3 as Quality, label: 'Good', color: '#ffa502', description: 'Correct with hesitation' },
     { quality: 4 as Quality, label: 'Easy', color: '#1e90ff', description: 'Correct with ease' },
-    { quality: 5 as Quality, label: 'Perfect', color: '#5352ed', description: 'Perfect response' }
+    { quality: 5 as Quality, label: 'Perfect', color: '#2ed573', description: 'Perfect response' }
   ];
 
   return (
