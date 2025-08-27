@@ -1,22 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { WordRecord, Quality, UserProgress, FlashcardSession as FlashcardSessionType } from '../../types';
-import { DataManager } from '../../data/DataManager';
-import { SM2Algorithm } from '../../services/SRS';
-import { ProgressTracker } from '../../services/ProgressTracker';
-import { Flashcard } from '../Flashcard/Flashcard';
-import './FlashcardSession.css';
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { DataManager } from "../../data/DataManager";
+import { ProgressTracker } from "../../services/ProgressTracker";
+import { SM2Algorithm } from "../../services/SRS";
+import {
+  FlashcardSession as FlashcardSessionType,
+  Quality,
+  WordRecord,
+} from "../../types";
+import { Flashcard } from "../Flashcard/Flashcard";
+import "./FlashcardSession.css";
 
 interface FlashcardSessionProps {
-  sessionType?: 'due' | 'new' | 'weak' | 'random';
+  sessionType?: "due" | "new" | "weak" | "random";
   maxCards?: number;
   onSessionEnd?: (stats: any) => void;
 }
 
 export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
-  sessionType = 'due',
+  sessionType = "due",
   maxCards = 20,
-  onSessionEnd
+  onSessionEnd,
 }) => {
   const navigate = useNavigate();
   const [words, setWords] = useState<WordRecord[]>([]);
@@ -27,7 +31,7 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
     cardsStudied: 0,
     correctAnswers: 0,
     totalTime: 0,
-    startTime: new Date()
+    startTime: new Date(),
   });
 
   useEffect(() => {
@@ -36,37 +40,51 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
 
   const initializeSession = async () => {
     setLoading(true);
-    
+
     try {
       const allWords = await DataManager.loadWords();
       const allProgress = ProgressTracker.getUserProgress();
       let sessionWords: WordRecord[] = [];
 
       switch (sessionType) {
-        case 'due':
+        case "due":
           const dueProgress = SM2Algorithm.getDueWords(allProgress);
           sessionWords = dueProgress
-            .map(progress => allWords.find(w => (w as any).id === progress.wordId))
+            .map((progress) =>
+              allWords.find((w) => (w as any).id === progress.wordId)
+            )
             .filter((w): w is WordRecord => w !== undefined)
             .slice(0, maxCards);
           break;
 
-        case 'new':
-          const allWordIds = allWords.map(w => (w as any).id || w.word.toLowerCase());
-          const newWordIds = SM2Algorithm.getNewWords(allProgress, allWordIds, maxCards);
+        case "new":
+          const allWordIds = allWords.map(
+            (w) => (w as any).id || w.word.toLowerCase()
+          );
+          const newWordIds = SM2Algorithm.getNewWords(
+            allProgress,
+            allWordIds,
+            maxCards
+          );
           sessionWords = newWordIds
-            .map(id => allWords.find(w => (w as any).id === id || w.word.toLowerCase() === id))
+            .map((id) =>
+              allWords.find(
+                (w) => (w as any).id === id || w.word.toLowerCase() === id
+              )
+            )
             .filter((w): w is WordRecord => w !== undefined);
           break;
 
-        case 'weak':
+        case "weak":
           const weakProgress = ProgressTracker.getWeakWords(maxCards);
           sessionWords = weakProgress
-            .map(progress => allWords.find(w => (w as any).id === progress.wordId))
+            .map((progress) =>
+              allWords.find((w) => (w as any).id === progress.wordId)
+            )
             .filter((w): w is WordRecord => w !== undefined);
           break;
 
-        case 'random':
+        case "random":
         default:
           sessionWords = DataManager.getRandomWords(maxCards);
           break;
@@ -77,25 +95,24 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
       }
 
       setWords(sessionWords);
-      
+
       const newSession: FlashcardSessionType = {
         id: `session-${Date.now()}`,
         startTime: new Date(),
         cardsStudied: 0,
         correctAnswers: 0,
-        averageTime: 0
+        averageTime: 0,
       };
-      
+
       setSession(newSession);
       setSessionStats({
         cardsStudied: 0,
         correctAnswers: 0,
         totalTime: 0,
-        startTime: new Date()
+        startTime: new Date(),
       });
-      
     } catch (error) {
-      console.error('Error initializing session:', error);
+      console.error("Error initializing session:", error);
     } finally {
       setLoading(false);
     }
@@ -108,25 +125,28 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
     const wordId = (currentWord as any).id || currentWord.word.toLowerCase();
     const cardStartTime = sessionStats.startTime;
     const timeSpent = Date.now() - cardStartTime.getTime();
-    
+
     let userProgress = ProgressTracker.getProgressForWord(wordId);
-    
+
     if (!userProgress) {
       userProgress = SM2Algorithm.initializeUserProgress(wordId);
     }
 
-    const updatedProgress = SM2Algorithm.updateUserProgress(userProgress, quality);
+    const updatedProgress = SM2Algorithm.updateUserProgress(
+      userProgress,
+      quality
+    );
     ProgressTracker.updateWordProgress(updatedProgress);
 
     const testResult = {
-      testType: 'flashcard' as const,
+      testType: "flashcard" as const,
       wordId,
       correct: quality >= 3,
       timeSpent,
       timestamp: new Date(),
-      quality
+      quality,
     };
-    
+
     ProgressTracker.saveTestResult(testResult);
 
     const newStats = {
@@ -134,27 +154,27 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
       cardsStudied: sessionStats.cardsStudied + 1,
       correctAnswers: sessionStats.correctAnswers + (quality >= 3 ? 1 : 0),
       totalTime: sessionStats.totalTime + timeSpent,
-      startTime: new Date()
+      startTime: new Date(),
     };
-    
+
     setSessionStats(newStats);
 
     const updatedSession: FlashcardSessionType = {
       ...session,
       cardsStudied: newStats.cardsStudied,
       correctAnswers: newStats.correctAnswers,
-      averageTime: newStats.totalTime / newStats.cardsStudied
+      averageTime: newStats.totalTime / newStats.cardsStudied,
     };
 
     if (currentIndex === words.length - 1) {
       updatedSession.endTime = new Date();
       ProgressTracker.saveFlashcardSession(updatedSession);
-      
+
       if (onSessionEnd) {
         onSessionEnd({
           ...newStats,
           accuracy: newStats.correctAnswers / newStats.cardsStudied,
-          totalCards: words.length
+          totalCards: words.length,
         });
       }
     } else {
@@ -168,7 +188,7 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
       setCurrentIndex(currentIndex + 1);
       setSessionStats({
         ...sessionStats,
-        startTime: new Date()
+        startTime: new Date(),
       });
     }
   };
@@ -178,7 +198,7 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
       setCurrentIndex(currentIndex - 1);
       setSessionStats({
         ...sessionStats,
-        startTime: new Date()
+        startTime: new Date(),
       });
     }
   };
@@ -197,15 +217,12 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
       <div className="flashcard-session-empty">
         <h2>No cards available</h2>
         <p>
-          {sessionType === 'due' && 'No cards are due for review right now.'}
-          {sessionType === 'new' && 'No new cards available.'}
-          {sessionType === 'weak' && 'No weak words found. Keep studying!'}
-          {sessionType === 'random' && 'No words available.'}
+          {sessionType === "due" && "No cards are due for review right now."}
+          {sessionType === "new" && "No new cards available."}
+          {sessionType === "weak" && "No weak words found. Keep studying!"}
+          {sessionType === "random" && "No words available."}
         </p>
-        <button 
-          className="retry-button"
-          onClick={() => initializeSession()}
-        >
+        <button className="retry-button" onClick={() => initializeSession()}>
           Try Different Session
         </button>
       </div>
@@ -214,7 +231,8 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
 
   if (currentIndex >= words.length) {
     const accuracy = sessionStats.correctAnswers / sessionStats.cardsStudied;
-    const avgTimePerCard = sessionStats.totalTime / sessionStats.cardsStudied / 1000;
+    const avgTimePerCard =
+      sessionStats.totalTime / sessionStats.cardsStudied / 1000;
 
     return (
       <div className="flashcard-session-complete">
@@ -234,13 +252,10 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
           </div>
         </div>
         <div className="completion-buttons">
-          <button 
-            className="dashboard-button"
-            onClick={() => navigate('/')}
-          >
+          <button className="dashboard-button" onClick={() => navigate("/")}>
             🏠 Back to Dashboard
           </button>
-          <button 
+          <button
             className="new-session-button"
             onClick={() => initializeSession()}
           >
@@ -255,14 +270,19 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
     <div className="flashcard-session">
       <div className="session-header">
         <h2>
-          {sessionType === 'due' && '📅 Due Cards'}
-          {sessionType === 'new' && '✨ New Cards'}
-          {sessionType === 'weak' && '💪 Practice Weak Words'}
-          {sessionType === 'random' && '🎲 Random Review'}
+          {sessionType === "due" && <span className="emoji">📅</span>}
+          {sessionType === "new" && <span className="emoji">✨</span>}
+          {sessionType === "weak" && <span className="emoji">💪</span>}
+          {sessionType === "random" && <span className="emoji">🎲</span>}
+
+          {sessionType === "due" && "Due Cards"}
+          {sessionType === "new" && "New Cards"}
+          {sessionType === "weak" && "Practice Weak Words"}
+          {sessionType === "random" && "Random Review"}
         </h2>
         <div className="session-progress">
           <div className="progress-bar">
-            <div 
+            <div
               className="progress-fill"
               style={{ width: `${((currentIndex + 1) / words.length) * 100}%` }}
             />
