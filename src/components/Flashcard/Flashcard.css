@@ -70,11 +70,10 @@
 }
 
 .word-box {
-  background-color: #f97316; /* bg-orange-500 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 2rem 1.5rem; /* Reduced horizontal padding */
   border-radius: 0.75rem; /* rounded-xl */
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
   transition: transform 0.3s;
 }
 
@@ -140,7 +139,7 @@
   color: white;
   border-radius: 9999px; /* rounded-full */
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   border: none;
   cursor: pointer;
   display: flex;
@@ -150,10 +149,14 @@
   width: 4rem;
   height: 4rem;
   font-size: 1.5rem;
+  outline: none;
 }
 
 .nav-button:hover:not(:disabled) {
   background-color: #2563eb; /* hover:bg-blue-600 */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px -2px rgb(0 0 0 / 0.15),
+    0 4px 8px -4px rgb(0 0 0 / 0.15);
 }
 
 .home-button {
@@ -162,10 +165,14 @@
   width: 5rem;
   height: 5rem;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
+  outline: none;
 }
 
 .home-button:hover {
   background-color: #f8fafc; /* hover:bg-slate-50 */
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px -4px rgb(0 0 0 / 0.15),
+    0 6px 12px -6px rgb(0 0 0 / 0.15);
 }
 
 .nav-button:disabled {

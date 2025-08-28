@@ -98,16 +98,23 @@ export const ProgressDashboard: React.FC = () => {
     }
   };
 
+  const getLocalDateString = (date: Date): string => {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  };
+
   const calculateDailyActivity = (testResults: any[]): DailyActivity[] => {
     const last7Days = Array.from({ length: 7 }, (_, i) => {
       const date = new Date();
       date.setDate(date.getDate() - i);
-      return date.toISOString().split('T')[0];
+      return getLocalDateString(date);
     }).reverse();
 
     return last7Days.map(date => {
       const dayResults = testResults.filter(result => 
-        result.timestamp.toISOString().split('T')[0] === date
+        getLocalDateString(result.timestamp) === date
       );
 
       const testsCompleted = dayResults.length;
