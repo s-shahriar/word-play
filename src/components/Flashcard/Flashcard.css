@@ -146,10 +146,12 @@
   align-items: center;
   justify-content: center;
   background-color: #3b82f6; /* bg-blue-500 */
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   font-size: 2rem;
   outline: none;
+  line-height: 1;
+  text-align: center;
 }
 
 .nav-button:hover:not(:disabled):not(.home-button) {
@@ -167,6 +169,8 @@
   font-size: 1.75rem;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
   outline: none;
+  line-height: 1;
+  text-align: center;
 }
 
 .nav-button.home-button:hover {
