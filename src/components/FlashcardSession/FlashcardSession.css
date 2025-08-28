@@ -1,43 +1,69 @@
 .flashcard-session {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
+  background-color: #e0e7ff; /* bg-indigo-100 */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .session-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem; /* mb-6 */
+  width: 100%;
+  max-width: 24rem; /* max-w-sm */
 }
 
 .session-header h2 {
-  color: #2c3e50;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  color: #1e293b; /* text-slate-800 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* space-x-2 */
+}
+
+.session-header .emoji {
+  font-size: 1.5rem; /* text-2xl */
+  color: #f59e0b; /* text-amber-400 */
 }
 
 .session-progress {
-  max-width: 400px;
+  width: 100%;
   margin: 0 auto;
+  position: relative;
+  padding-top: 0.25rem; /* pt-1 */
 }
 
 .progress-bar {
-  width: 100%;
-  height: 8px;
-  background: #ecf0f1;
-  border-radius: 4px;
   overflow: hidden;
-  margin-bottom: 10px;
+  height: 0.5rem; /* h-2 */
+  margin-bottom: 0.5rem; /* mb-2 */
+  display: flex;
+  border-radius: 9999px; /* rounded-full */
+  background-color: #e2e8f0; /* bg-slate-200 */
 }
 
 .progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #3498db, #2980b9);
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  justify-content: center;
+  background-color: #f97316; /* bg-orange-500 */
+  border-radius: 9999px; /* rounded-full */
   transition: width 0.3s ease;
 }
 
 .progress-text {
-  font-weight: 600;
-  color: #7f8c8d;
+  text-align: center;
+  font-size: 0.875rem; /* text-sm */
+  color: #64748b; /* text-slate-500 */
 }
 
 .flashcard-session-loading {
@@ -60,8 +86,12 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .flashcard-session-empty {
@@ -168,26 +198,26 @@
   .flashcard-session {
     padding: 15px;
   }
-  
+
   .session-header h2 {
     font-size: 1.5rem;
   }
-  
+
   .session-summary {
     grid-template-columns: 1fr;
     gap: 15px;
     padding: 20px;
   }
-  
+
   .stat-value {
     font-size: 2rem;
   }
-  
+
   .completion-buttons {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .completion-buttons button {
     width: 100%;
     max-width: 300px;
