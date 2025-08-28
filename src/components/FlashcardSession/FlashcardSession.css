@@ -7,6 +7,14 @@
   justify-content: center;
   padding: 1rem;
   box-sizing: border-box;
+  width: 100%;
+  min-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .flashcard-session {
+    min-width: 50%;
+  }
 }
 
 .session-header {

@@ -70,11 +70,10 @@
 }
 
 .word-box {
-  background-color: #f97316; /* bg-orange-500 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 2rem 1.5rem; /* Reduced horizontal padding */
   border-radius: 0.75rem; /* rounded-xl */
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
   transition: transform 0.3s;
 }
 
@@ -140,36 +139,56 @@
   color: white;
   border-radius: 9999px; /* rounded-full */
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #3b82f6; /* bg-blue-500 */
-  width: 4rem;
-  height: 4rem;
-  font-size: 1.5rem;
-}
-
-.nav-button:hover:not(:disabled) {
-  background-color: #2563eb; /* hover:bg-blue-600 */
-}
-
-.home-button {
-  background-color: white;
-  color: #334155; /* text-slate-700 */
   width: 5rem;
   height: 5rem;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
+  font-size: 2rem;
+  outline: none;
+  line-height: 1;
+  text-align: center;
 }
 
-.home-button:hover {
-  background-color: #f8fafc; /* hover:bg-slate-50 */
+.nav-button:hover:not(:disabled):not(.home-button) {
+  background-color: #2563eb; /* hover:bg-blue-600 */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px -2px rgb(0 0 0 / 0.15),
+    0 4px 8px -4px rgb(0 0 0 / 0.15);
+}
+
+.nav-button.home-button {
+  background-color: white !important;
+  color: #334155 !important; /* text-slate-700 */
+  width: 5rem;
+  height: 5rem;
+  font-size: 1.75rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
+  outline: none;
+  line-height: 1;
+  text-align: center;
+}
+
+.nav-button.home-button:hover {
+  background-color: #f8fafc !important; /* hover:bg-slate-50 */
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px -4px rgb(0 0 0 / 0.15),
+    0 6px 12px -6px rgb(0 0 0 / 0.15);
 }
 
 .nav-button:disabled {
   background-color: #94a3b8; /* A generic disabled color */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.nav-button.home-button:disabled {
+  background-color: #e2e8f0 !important;
+  color: #94a3b8 !important;
   cursor: not-allowed;
   opacity: 0.7;
 }

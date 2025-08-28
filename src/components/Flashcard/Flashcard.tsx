@@ -172,16 +172,16 @@ export const Flashcard: React.FC<FlashcardProps> = ({
           onClick={onPrevious}
           disabled={!canGoPrevious}
         >
-          <span>←</span>
+          ◀
         </button>
         <button
           className="nav-button home-button"
           onClick={() => navigate("/")}
         >
-          <span>🏠</span>
+          🏠
         </button>
         <button className="nav-button" onClick={onNext} disabled={!canGoNext}>
-          <span>→</span>
+          ▶
         </button>
       </div>
     </div>
