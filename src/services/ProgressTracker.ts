@@ -125,23 +125,25 @@ export class ProgressTracker {
     
     let currentStreak = 0;
     let bestStreak = 0;
-    let streak = 0;
-    
-    const sortedResults = testResults.sort((a, b) => b.timestamp.getTime() - a.timestamp.getTime());
-    
-    for (const result of sortedResults) {
+    let tempStreak = 0;
+
+    const sortedByDate = testResults.sort((a, b) => a.timestamp.getTime() - b.timestamp.getTime());
+
+    for (const result of sortedByDate) {
       if (result.correct) {
-        streak++;
-        if (streak === currentStreak + 1) {
-          currentStreak = streak;
-        }
+        tempStreak++;
       } else {
-        if (streak === currentStreak) {
-          currentStreak = 0;
-        }
-        streak = 0;
+        tempStreak = 0;
       }
-      bestStreak = Math.max(bestStreak, streak);
+      bestStreak = Math.max(bestStreak, tempStreak);
+    }
+
+    for (let i = sortedByDate.length - 1; i >= 0; i--) {
+      if (sortedByDate[i].correct) {
+        currentStreak++;
+      } else {
+        break;
+      }
     }
     
     const masteredWords = progress.filter(p => p.masteryLevel >= 80).length;
