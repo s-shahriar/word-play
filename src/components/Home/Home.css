@@ -14,13 +14,17 @@
 }
 
 .home::before {
-  content: '';
+  content: "";
   position: fixed;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px
+  );
   background-size: 20px 20px;
   animation: float 20s ease-in-out infinite;
   pointer-events: none;
@@ -28,8 +32,13 @@
 }
 
 @keyframes float {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  50% { transform: translate(-20px, -20px) rotate(180deg); }
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-20px, -20px) rotate(180deg);
+  }
 }
 
 .home-header {
@@ -55,7 +64,7 @@
 }
 
 .home-header h1::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -0.5rem;
   left: 50%;
@@ -104,7 +113,7 @@
 
 .stats-overview {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-bottom: 3rem;
   width: 100%;
@@ -127,7 +136,7 @@
 }
 
 .stat-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -181,7 +190,7 @@
 }
 
 .session-options h2::before {
-  content: '🎯';
+  content: "🎯";
   margin-right: 0.75rem;
   font-size: 1.5rem;
 }
@@ -207,13 +216,17 @@
 }
 
 .session-option::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
   border-radius: 1.5rem;
   transition: opacity 0.3s ease;
   opacity: 0;
@@ -294,7 +307,7 @@
 }
 
 .quick-actions h2::before {
-  content: '⚡';
+  content: "⚡";
   margin-right: 0.75rem;
   font-size: 1.5rem;
 }
@@ -324,7 +337,7 @@
 }
 
 .action-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -369,7 +382,7 @@
 }
 
 .welcome-message::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;

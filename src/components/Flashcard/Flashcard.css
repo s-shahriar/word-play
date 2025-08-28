@@ -148,7 +148,7 @@
   background-color: #3b82f6; /* bg-blue-500 */
   width: 4rem;
   height: 4rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   outline: none;
 }
 
@@ -164,6 +164,7 @@
   color: #334155 !important; /* text-slate-700 */
   width: 5rem;
   height: 5rem;
+  font-size: 1.75rem;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
   outline: none;
 }
