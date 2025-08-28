@@ -109,23 +109,6 @@ export const Home: React.FC = () => {
         <p>Master English vocabulary with spaced repetition</p>
       </div>
 
-      <div className="stats-overview">
-        <div className="stat-card">
-          <div className="stat-value">{stats.totalWordsStudied}</div>
-          <div className="stat-label">Words Studied</div>
-        </div>
-        <div className="stat-card">
-          <div className="stat-value">
-            {Math.round(stats.averageAccuracy * 100)}%
-          </div>
-          <div className="stat-label">Average Accuracy</div>
-        </div>
-        <div className="stat-card">
-          <div className="stat-value">{stats.masteredWords}</div>
-          <div className="stat-label">Mastered Words</div>
-        </div>
-      </div>
-
       <div className="session-options">
         <h2>Choose Your Study Session</h2>
         <div className="options-grid">
