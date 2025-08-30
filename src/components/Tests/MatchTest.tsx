@@ -27,6 +27,8 @@ export const MatchTest: React.FC<MatchTestProps> = ({
   const [loading, setLoading] = useState(true);
   const [testCompleted, setTestCompleted] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState<string>('');
+  const [showFeedback, setShowFeedback] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
 
   // Initialize test
   useEffect(() => {
@@ -71,41 +73,42 @@ export const MatchTest: React.FC<MatchTestProps> = ({
   };
 
   const handleAnswerSelect = (answer: string) => {
-    setSelectedAnswer(answer);
-  };
+    if (showFeedback) return;
 
-  const handleSubmitAnswer = () => {
-    if (!selectedAnswer || !questionStartTime) return;
-    
     const currentQuestion = questions[currentQuestionIndex];
-    const timeSpent = Date.now() - questionStartTime.getTime();
-    const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
-    
+    const correct = answer === currentQuestion.correctAnswer;
+    const timeSpent = questionStartTime ? Date.now() - questionStartTime.getTime() : 0;
+
+    setSelectedAnswer(answer);
+    setIsCorrect(correct);
+    setShowFeedback(true);
+
     const result: TestResult = {
       questionId: currentQuestion.id,
-      selectedAnswer,
+      selectedAnswer: answer,
       correctAnswer: currentQuestion.correctAnswer,
-      isCorrect,
+      isCorrect: correct,
       timeSpent
     };
-    
     setResults(prev => [...prev, result]);
-    
-    // Save individual test result for progress tracking
+
     ProgressTracker.saveTestResult({
       testType: 'match',
       wordId: (currentQuestion.wordRecord as any).id || currentQuestion.word.toLowerCase(),
-      correct: isCorrect,
+      correct: correct,
       timeSpent,
       timestamp: new Date(),
-      quality: isCorrect ? (timeSpent < 3000 ? 5 : timeSpent < 6000 ? 4 : 3) : 1
+      quality: correct ? (timeSpent < 3000 ? 5 : timeSpent < 6000 ? 4 : 3) : 1
     });
-    
-    // Move to next question or complete test
+  };
+
+  const handleNextQuestion = () => {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(prev => prev + 1);
       setQuestionStartTime(new Date());
       setSelectedAnswer('');
+      setShowFeedback(false);
+      setIsCorrect(false);
     } else {
       handleTestComplete();
     }
@@ -248,26 +251,43 @@ export const MatchTest: React.FC<MatchTestProps> = ({
         </div>
         
         <div className="choices-container">
-          {currentQuestion.choices.map((choice, index) => (
-            <button
-              key={index}
-              className={`choice-button ${selectedAnswer === choice ? 'selected' : ''}`}
-              onClick={() => handleAnswerSelect(choice)}
-            >
-              <span className="choice-letter">{String.fromCharCode(65 + index)}</span>
-              <span className="choice-text">{choice}</span>
-            </button>
-          ))}
+          {currentQuestion.choices.map((choice, index) => {
+            const isSelected = selectedAnswer === choice;
+            const isCorrectAnswer = choice === currentQuestion.correctAnswer;
+            let buttonClass = 'choice-button';
+            if (showFeedback) {
+              if (isCorrectAnswer) {
+                buttonClass += ' correct';
+              } else if (isSelected && !isCorrect) {
+                buttonClass += ' incorrect';
+              }
+            } else if (isSelected) {
+              buttonClass += ' selected';
+            }
+
+            return (
+              <button
+                key={index}
+                className={buttonClass}
+                onClick={() => handleAnswerSelect(choice)}
+                disabled={showFeedback}
+              >
+                <span className="choice-letter">{String.fromCharCode(65 + index)}</span>
+                <span className="choice-text">{choice}</span>
+              </button>
+            );
+          })}
         </div>
         
         <div className="test-controls">
-          <button
-            className="submit-button"
-            onClick={handleSubmitAnswer}
-            disabled={!selectedAnswer}
-          >
-            {currentQuestionIndex === questions.length - 1 ? 'Finish Test' : 'Next Question'} →
-          </button>
+          {showFeedback && (
+            <button
+              className="next-button"
+              onClick={handleNextQuestion}
+            >
+              {currentQuestionIndex === questions.length - 1 ? 'Finish Test' : 'Next Question'} →
+            </button>
+          )}
         </div>
       </div>
       
