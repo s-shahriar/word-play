@@ -49,43 +49,48 @@ export const Home: React.FC = () => {
   const sessionOptions = [
     {
       id: "due",
-      title: "📅 Study Due Cards",
+      title: "Study Due Cards",
       description: "Review cards scheduled for today",
       count: stats.dueCards,
       color: "#e74c3c",
       disabled: stats.dueCards === 0,
+      icon: "◉",
     },
     {
       id: "new",
-      title: "✨ Learn New Words",
+      title: "Learn New Words",
       description: "Study words you haven't seen before",
       count: stats.newCards,
       color: "#3498db",
       disabled: stats.newCards === 0,
+      icon: "★",
     },
     {
       id: "quick",
-      title: "⚡ 10 Quick Cards",
+      title: "10 Quick Cards",
       description: "Quick 10-card practice session",
       count: null,
       color: "#27ae60",
       disabled: false,
+      icon: "▶",
     },
     {
       id: "weak",
-      title: "💪 Practice Weak Words",
+      title: "Practice Weak Words",
       description: "Focus on words with low accuracy",
       count: null,
       color: "#f39c12",
       disabled: stats.totalWordsStudied === 0,
+      icon: "♦",
     },
     {
       id: "random",
-      title: "🎲 Random Review",
+      title: "Random Review",
       description: "Study a random selection of words",
       count: null,
       color: "#9b59b6",
       disabled: false,
+      icon: "◐",
     },
   ];
 
@@ -105,7 +110,7 @@ export const Home: React.FC = () => {
   return (
     <div className="home">
       <div className="home-header">
-        <h1>📚 Word Play</h1>
+        <h1>◈ Word Play</h1>
         <p>Master English vocabulary with spaced repetition</p>
       </div>
 
@@ -121,7 +126,10 @@ export const Home: React.FC = () => {
               disabled={option.disabled}
             >
               <div className="option-header">
-                <h3>{option.title}</h3>
+                <div className="option-title">
+                  <span className="option-icon" style={{ color: option.color }}>{option.icon}</span>
+                  <h3>{option.title}</h3>
+                </div>
                 {option.count !== null && (
                   <span
                     className="option-count"
@@ -151,18 +159,18 @@ export const Home: React.FC = () => {
             className="action-button"
             onClick={() => navigate("/progress")}
           >
-            <span className="action-icon">📊</span>
+            <span className="action-icon">▲</span>
             <span className="action-text">View Progress</span>
           </button>
           <button className="action-button" onClick={() => navigate("/tests")}>
-            <span className="action-icon">🧪</span>
+            <span className="action-icon">✓</span>
             <span className="action-text">Take Tests</span>
           </button>
           <button
             className="action-button"
             onClick={() => navigate("/settings")}
           >
-            <span className="action-icon">⚙️</span>
+            <span className="action-icon">⚙</span>
             <span className="action-text">Settings</span>
           </button>
         </div>

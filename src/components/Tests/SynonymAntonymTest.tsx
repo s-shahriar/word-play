@@ -199,7 +199,7 @@ export const SynonymAntonymTest: React.FC<SynonymAntonymTestProps> = ({
     
     return (
       <div className="synonym-antonym-test-complete">
-        <h2>🔄 Synonym/Antonym Test Complete!</h2>
+        <h2>Synonym/Antonym Test Complete!</h2>
         
         <div className="test-summary">
           <div className="stat">
@@ -219,11 +219,11 @@ export const SynonymAntonymTest: React.FC<SynonymAntonymTestProps> = ({
         <div className="detailed-results">
           <div className="performance-breakdown">
             <div className="performance-item synonym">
-              <h3>📖 Synonyms</h3>
+              <h3>▶ SYNONYMS</h3>
               <span className="performance-score">{Math.round(scoreData.averageSynonymScore * 100)}%</span>
             </div>
             <div className="performance-item antonym">
-              <h3>🔄 Antonyms</h3>
+              <h3>◀ ANTONYMS</h3>
               <span className="performance-score">{Math.round(scoreData.averageAntonymScore * 100)}%</span>
             </div>
           </div>
@@ -231,15 +231,15 @@ export const SynonymAntonymTest: React.FC<SynonymAntonymTestProps> = ({
           <div className="result-breakdown">
             <div className="result-item perfect">
               <span className="result-count">{scoreData.perfectScores}</span>
-              <span className="result-label">🎯 Excellent</span>
+              <span className="result-label">★ EXCELLENT</span>
             </div>
             <div className="result-item good">
               <span className="result-count">{scoreData.goodScores}</span>
-              <span className="result-label">👍 Good</span>
+              <span className="result-label">▲ GOOD</span>
             </div>
             <div className="result-item needs-work">
               <span className="result-count">{scoreData.needsWork}</span>
-              <span className="result-label">📚 Needs Work</span>
+              <span className="result-label">▽ NEEDS WORK</span>
             </div>
           </div>
         </div>
@@ -249,7 +249,7 @@ export const SynonymAntonymTest: React.FC<SynonymAntonymTestProps> = ({
             className="dashboard-button"
             onClick={() => navigate('/')}
           >
-            🏠 Dashboard
+            ↩ Dashboard
           </button>
           <button 
             className="new-test-button"
@@ -263,7 +263,7 @@ export const SynonymAntonymTest: React.FC<SynonymAntonymTestProps> = ({
               initializeTest();
             }}
           >
-            🔄 New Test
+            ↻ New Test
           </button>
         </div>
       </div>
@@ -290,7 +290,7 @@ export const SynonymAntonymTest: React.FC<SynonymAntonymTestProps> = ({
         </div>
         
         <div className="test-timer" style={{ color: getTimeColor() }}>
-          ⏱️ {formatTime(timeLeft)}
+          ◔ {formatTime(timeLeft)}
         </div>
       </div>
 
@@ -306,12 +306,12 @@ export const SynonymAntonymTest: React.FC<SynonymAntonymTestProps> = ({
           <div className="feedback-container">
             <div className="feedback-scores">
               <div className="feedback-score synonym">
-                <h3>📖 Synonyms</h3>
+                <h3>▶ SYNONYMS</h3>
                 <div className="score-value">{Math.round(currentFeedback.synonymScore * 100)}%</div>
                 <div className="score-feedback">{currentFeedback.synonymFeedback}</div>
               </div>
               <div className="feedback-score antonym">
-                <h3>🔄 Antonyms</h3>
+                <h3>◀ ANTONYMS</h3>
                 <div className="score-value">{Math.round(currentFeedback.antonymScore * 100)}%</div>
                 <div className="score-feedback">{currentFeedback.antonymFeedback}</div>
               </div>
@@ -326,7 +326,7 @@ export const SynonymAntonymTest: React.FC<SynonymAntonymTestProps> = ({
                       key={index} 
                       className={`selection-item ${currentQuestion.correctSynonyms.includes(syn) ? 'correct' : 'incorrect'}`}
                     >
-                      {syn} {currentQuestion.correctSynonyms.includes(syn) ? '✅' : '❌'}
+                      {syn} {currentQuestion.correctSynonyms.includes(syn) ? '[CORRECT]' : '[WRONG]'}
                     </span>
                   ))}
                 </div>
@@ -343,7 +343,7 @@ export const SynonymAntonymTest: React.FC<SynonymAntonymTestProps> = ({
                       key={index} 
                       className={`selection-item ${currentQuestion.correctAntonyms.includes(ant) ? 'correct' : 'incorrect'}`}
                     >
-                      {ant} {currentQuestion.correctAntonyms.includes(ant) ? '✅' : '❌'}
+                      {ant} {currentQuestion.correctAntonyms.includes(ant) ? '[CORRECT]' : '[WRONG]'}
                     </span>
                   ))}
                 </div>
@@ -368,7 +368,7 @@ export const SynonymAntonymTest: React.FC<SynonymAntonymTestProps> = ({
           <div className="selection-section">
             <div className="selection-container">
               <div className="selection-group synonyms">
-                <h3>📖 Select Synonyms (words with similar meaning):</h3>
+                <h3>▶ Select Synonyms (words with similar meaning):</h3>
                 <div className="choices-grid">
                   {currentQuestion.synonymChoices.map((synonym, index) => (
                     <button
@@ -383,7 +383,7 @@ export const SynonymAntonymTest: React.FC<SynonymAntonymTestProps> = ({
               </div>
 
               <div className="selection-group antonyms">
-                <h3>🔄 Select Antonyms (words with opposite meaning):</h3>
+                <h3>◀ Select Antonyms (words with opposite meaning):</h3>
                 <div className="choices-grid">
                   {currentQuestion.antonymChoices.map((antonym, index) => (
                     <button

@@ -194,7 +194,7 @@ export const ProgressDashboard: React.FC = () => {
     return (
       <div className="progress-dashboard">
         <div className="no-data">
-          <h2>📊 Progress Dashboard</h2>
+          <h2>◭ Progress Dashboard</h2>
           <p>
             No progress data available yet. Start learning to see your
             statistics!
@@ -203,7 +203,7 @@ export const ProgressDashboard: React.FC = () => {
             className="start-learning-button"
             onClick={() => navigate("/")}
           >
-            🏠 Back to Dashboard
+            ← Back to Dashboard
           </button>
         </div>
       </div>
@@ -223,7 +223,7 @@ export const ProgressDashboard: React.FC = () => {
             onClick={() => navigate("/settings")}
             title="Settings"
           >
-            ⚙️
+            ⚙
           </button>
         </div>
       </div>
@@ -231,7 +231,7 @@ export const ProgressDashboard: React.FC = () => {
       {/* Overall Statistics */}
       <div className="stats-overview">
         <div className="stat-card">
-          <div className="stat-icon">📚</div>
+          <div className="stat-icon">▮</div>
           <div className="stat-content">
             <div className="stat-value">
               {stats.totalWordsStudied.toLocaleString()}
@@ -241,7 +241,7 @@ export const ProgressDashboard: React.FC = () => {
         </div>
 
         <div className="stat-card">
-          <div className="stat-icon">✅</div>
+          <div className="stat-icon">✓</div>
           <div className="stat-content">
             <div className="stat-value">
               {Math.round(stats.averageAccuracy * 100)}%
@@ -251,7 +251,7 @@ export const ProgressDashboard: React.FC = () => {
         </div>
 
         <div className="stat-card">
-          <div className="stat-icon">⏱️</div>
+          <div className="stat-icon">◔</div>
           <div className="stat-content">
             <div className="stat-value">{formatTime(stats.totalTimeSpent)}</div>
             <div className="stat-label">Time Invested</div>
@@ -259,17 +259,17 @@ export const ProgressDashboard: React.FC = () => {
         </div>
 
         <div className="stat-card">
-          <div className="stat-icon">🔥</div>
+          <div className="stat-icon">◈</div>
           <div className="stat-content">
             <div className="stat-value streak-fire">
-              {stats.currentStreak} <span style={{ fontSize: "1rem" }}>🔥</span>
+              {stats.currentStreak} <span style={{ fontSize: "1rem" }}>◈</span>
             </div>
             <div className="stat-label">Current Streak</div>
           </div>
         </div>
 
         <div className="stat-card">
-          <div className="stat-icon">🏆</div>
+          <div className="stat-icon">▲</div>
           <div className="stat-content">
             <div className="stat-value">{stats.bestStreak}</div>
             <div className="stat-label">Best Streak</div>
@@ -277,7 +277,7 @@ export const ProgressDashboard: React.FC = () => {
         </div>
 
         <div className="stat-card">
-          <div className="stat-icon">⭐</div>
+          <div className="stat-icon">★</div>
           <div className="stat-content">
             <div className="stat-value">{stats.masteredWords}</div>
             <div className="stat-label">Mastered Words</div>

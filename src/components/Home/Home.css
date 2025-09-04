@@ -190,7 +190,7 @@
 }
 
 .session-options h2::before {
-  content: "🎯";
+  content: "◉";
   margin-right: 0.75rem;
   font-size: 1.5rem;
 }
@@ -253,6 +253,17 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.option-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.option-icon {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .option-header h3 {

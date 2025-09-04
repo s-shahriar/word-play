@@ -80,17 +80,25 @@ export const SentenceTest: React.FC<SentenceTestProps> = ({
     }
   };
 
-  const handleSubmitAnswer = () => {
+  const handleChoiceSelect = (choice: string) => {
+    if (showFeedback) return;
+
+    setUserAnswer(choice);
+    handleSubmitAnswer(choice);
+  };
+
+  const handleSubmitAnswer = (selectedChoice?: string) => {
     if (!questionStartTime) return;
     
     const currentQuestion = questions[currentQuestionIndex];
     const timeSpent = Date.now() - questionStartTime.getTime();
+    const answerToEvaluate = selectedChoice || userAnswer;
     
-    const evaluation = TestGenerator.evaluateSentenceAnswer(userAnswer, currentQuestion.correctAnswer);
+    const evaluation = TestGenerator.evaluateSentenceAnswer(answerToEvaluate, currentQuestion.correctAnswer);
     
     const result: SentenceTestResult = {
       questionId: currentQuestion.id,
-      userAnswer,
+      userAnswer: answerToEvaluate,
       correctAnswer: currentQuestion.correctAnswer,
       score: evaluation.score,
       matchType: evaluation.matchType,
@@ -182,7 +190,7 @@ export const SentenceTest: React.FC<SentenceTestProps> = ({
     
     return (
       <div className="sentence-test-complete">
-        <h2>📝 Sentence Test Complete!</h2>
+        <h2>Sentence Test Complete!</h2>
         
         <div className="test-summary">
           <div className="stat">
@@ -203,7 +211,7 @@ export const SentenceTest: React.FC<SentenceTestProps> = ({
           <div className="result-breakdown">
             <div className="result-item exact">
               <span className="result-count">{scoreData.exactMatches}</span>
-              <span className="result-label">✅ Exact</span>
+              <span className="result-label">✓ EXACT</span>
             </div>
             <div className="result-item fuzzy">
               <span className="result-count">{scoreData.fuzzyMatches}</span>
@@ -215,7 +223,7 @@ export const SentenceTest: React.FC<SentenceTestProps> = ({
             </div>
             <div className="result-item wrong">
               <span className="result-count">{scoreData.wrongAnswers}</span>
-              <span className="result-label">❌ Wrong</span>
+              <span className="result-label">✗ WRONG</span>
             </div>
           </div>
         </div>
@@ -225,7 +233,7 @@ export const SentenceTest: React.FC<SentenceTestProps> = ({
             className="dashboard-button"
             onClick={() => navigate('/')}
           >
-            🏠 Dashboard
+            ↩ Dashboard
           </button>
           <button 
             className="new-test-button"
@@ -238,7 +246,7 @@ export const SentenceTest: React.FC<SentenceTestProps> = ({
               initializeTest();
             }}
           >
-            🔄 New Test
+            ↻ New Test
           </button>
         </div>
       </div>
@@ -264,7 +272,7 @@ export const SentenceTest: React.FC<SentenceTestProps> = ({
         </div>
         
         <div className="test-timer" style={{ color: getTimeColor() }}>
-          ⏱️ {formatTime(timeLeft)}
+          ◔ {formatTime(timeLeft)}
         </div>
       </div>
 
@@ -282,47 +290,40 @@ export const SentenceTest: React.FC<SentenceTestProps> = ({
           </div>
         </div>
         
-        {showFeedback ? (
-          <div className="feedback-container">
-            <div 
-              className="feedback-message"
-              style={{ 
-                backgroundColor: getFeedbackColor(lastScore),
-                color: 'white'
-              }}
-            >
-              {currentFeedback}
-            </div>
-            
-            <div className="question-info">
-              <p><strong>Your answer:</strong> {userAnswer}</p>
-              <p><strong>Correct answer:</strong> {currentQuestion.correctAnswer}</p>
-              <p><strong>Original sentence:</strong> {currentQuestion.originalSentence}</p>
-            </div>
-            
-            <button
-              className="next-button"
-              onClick={handleNextQuestion}
-            >
-              {currentQuestionIndex === questions.length - 1 ? 'Finish Test' : 'Next Question'} →
-            </button>
-          </div>
-        ) : (
-          <div className="answer-section">
-            {testMode === 'multiple-choice' && currentQuestion.choices ? (
-              <div className="choices-container">
-                {currentQuestion.choices.map((choice, index) => (
+        <div className="answer-section">
+          {testMode === 'multiple-choice' && currentQuestion.choices ? (
+            <div className="choices-container">
+              {currentQuestion.choices.map((choice, index) => {
+                const isSelected = userAnswer === choice;
+                const isCorrectAnswer = choice === currentQuestion.correctAnswer;
+                let buttonClass = 'choice-button';
+                if (showFeedback) {
+                  if (isCorrectAnswer) {
+                    buttonClass += ' correct';
+                  } else if (isSelected && lastScore < 0.5) {
+                    buttonClass += ' incorrect';
+                  }
+                } else if (isSelected) {
+                  buttonClass += ' selected';
+                }
+
+                return (
                   <button
                     key={index}
-                    className={`choice-button ${userAnswer === choice ? 'selected' : ''}`}
-                    onClick={() => setUserAnswer(choice)}
+                    className={buttonClass}
+                    onClick={() => handleChoiceSelect(choice)}
+                    disabled={showFeedback}
                   >
                     <span className="choice-letter">{String.fromCharCode(65 + index)}</span>
                     <span className="choice-text">{choice}</span>
+                    {showFeedback && isCorrectAnswer && lastScore < 0.5 && (
+                      <span className="correct-indicator">✓</span>
+                    )}
                   </button>
-                ))}
-              </div>
-            ) : (
+                );
+              })}
+            </div>
+          ) : (!showFeedback && (
               <div className="fill-in-container">
                 <input
                   type="text"
@@ -340,19 +341,39 @@ export const SentenceTest: React.FC<SentenceTestProps> = ({
                   💡 Don't worry about perfect spelling - close answers count too!
                 </p>
               </div>
-            )}
+            ))}
             
-            <div className="test-controls">
-              <button
-                className="submit-button"
-                onClick={handleSubmitAnswer}
-                disabled={!userAnswer.trim()}
-              >
-                Submit Answer
-              </button>
-            </div>
+          
+          <div className="test-controls">
+            {testMode === 'multiple-choice' ? (
+              showFeedback && (
+                <button
+                  className="next-button"
+                  onClick={handleNextQuestion}
+                >
+                  {currentQuestionIndex === questions.length - 1 ? 'Finish Test' : 'Next Question'} →
+                </button>
+              )
+            ) : (
+              !showFeedback ? (
+                <button
+                  className="submit-button"
+                  onClick={() => handleSubmitAnswer()}
+                  disabled={!userAnswer.trim()}
+                >
+                  Submit Answer
+                </button>
+              ) : (
+                <button
+                  className="next-button"
+                  onClick={handleNextQuestion}
+                >
+                  {currentQuestionIndex === questions.length - 1 ? 'Finish Test' : 'Next Question'} →
+                </button>
+              )
+            )}
           </div>
-        )}
+        </div>
       </div>
       
       <div className="test-navigation">

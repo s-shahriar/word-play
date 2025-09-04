@@ -172,7 +172,7 @@ export const MatchTest: React.FC<MatchTestProps> = ({
     
     return (
       <div className="match-test-complete">
-        <h2>🎉 Test Complete!</h2>
+        <h2>Test Complete!</h2>
         
         <div className="test-summary">
           <div className="stat">
@@ -200,7 +200,7 @@ export const MatchTest: React.FC<MatchTestProps> = ({
             className="dashboard-button"
             onClick={() => navigate('/')}
           >
-            🏠 Dashboard
+            ↩ Dashboard
           </button>
           <button 
             className="new-test-button"
@@ -212,7 +212,7 @@ export const MatchTest: React.FC<MatchTestProps> = ({
               initializeTest();
             }}
           >
-            🔄 New Test
+            ↻ New Test
           </button>
         </div>
       </div>
@@ -238,7 +238,7 @@ export const MatchTest: React.FC<MatchTestProps> = ({
         </div>
         
         <div className="test-timer" style={{ color: getTimeColor() }}>
-          ⏱️ {formatTime(timeLeft)}
+          ◔ {formatTime(timeLeft)}
         </div>
       </div>
 
@@ -274,6 +274,9 @@ export const MatchTest: React.FC<MatchTestProps> = ({
               >
                 <span className="choice-letter">{String.fromCharCode(65 + index)}</span>
                 <span className="choice-text">{choice}</span>
+                {showFeedback && isCorrectAnswer && !isCorrect && (
+                  <span className="correct-indicator">✓</span>
+                )}
               </button>
             );
           })}

@@ -70,7 +70,27 @@ function TestsMenu() {
       padding: '40px 20px', 
       textAlign: 'center' 
     }}>
-      <h1 style={{ color: '#2c3e50', marginBottom: '30px' }}>📝 Vocabulary Tests</h1>
+      <h1 style={{ color: '#2c3e50', marginBottom: '30px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+        <span style={{
+          display: 'inline-block',
+          width: '24px',
+          height: '24px',
+          background: '#2c3e50',
+          borderRadius: '4px',
+          position: 'relative'
+        }}>
+          <span style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            color: 'white',
+            fontSize: '12px',
+            fontWeight: 'bold'
+          }}>T</span>
+        </span>
+        Vocabulary Tests
+      </h1>
       <p style={{ color: '#7f8c8d', marginBottom: '40px', fontSize: '1.1rem' }}>
         Test your vocabulary knowledge with different types of challenges
       </p>
@@ -97,8 +117,29 @@ function TestsMenu() {
           onMouseOver={(e) => e.target.style.transform = 'translateY(-2px)'}
           onMouseOut={(e) => e.target.style.transform = 'translateY(0)'}
         >
-          🎯 Word Matching Test
-          <div style={{ fontSize: '0.9rem', opacity: '0.9', marginTop: '8px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px', justifyContent: 'center' }}>
+            <span style={{
+              display: 'inline-block',
+              width: '28px',
+              height: '28px',
+              background: 'rgba(255, 255, 255, 0.9)',
+              borderRadius: '50%',
+              position: 'relative',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.2)'
+            }}>
+              <span style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                color: '#2980b9',
+                fontSize: '14px',
+                fontWeight: 'bold'
+              }}>≈</span>
+            </span>
+            <span>Word Matching Test</span>
+          </div>
+          <div style={{ fontSize: '0.9rem', opacity: '0.9', textAlign: 'center' }}>
             Match English words with their Bangla meanings
           </div>
         </button>
@@ -119,8 +160,30 @@ function TestsMenu() {
           onMouseOver={(e) => e.target.style.transform = 'translateY(-2px)'}
           onMouseOut={(e) => e.target.style.transform = 'translateY(0)'}
         >
-          📝 Sentence Fill-in Test
-          <div style={{ fontSize: '0.9rem', opacity: '0.9', marginTop: '8px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px', justifyContent: 'center' }}>
+            <span style={{
+              display: 'inline-block',
+              width: '28px',
+              height: '28px',
+              background: 'rgba(255, 255, 255, 0.9)',
+              borderRadius: '6px',
+              position: 'relative',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.2)'
+            }}>
+              <span style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                color: '#8e44ad',
+                fontSize: '12px',
+                fontWeight: 'bold',
+                letterSpacing: '1px'
+              }}>___</span>
+            </span>
+            <span>Sentence Fill-in Test</span>
+          </div>
+          <div style={{ fontSize: '0.9rem', opacity: '0.9', textAlign: 'center' }}>
             Complete sentences with the correct words
           </div>
         </button>
@@ -141,8 +204,30 @@ function TestsMenu() {
           onMouseOver={(e) => e.target.style.transform = 'translateY(-2px)'}
           onMouseOut={(e) => e.target.style.transform = 'translateY(0)'}
         >
-          🔄 Synonym/Antonym Test
-          <div style={{ fontSize: '0.9rem', opacity: '0.9', marginTop: '8px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px', justifyContent: 'center' }}>
+            <span style={{
+              display: 'inline-block',
+              width: '28px',
+              height: '28px',
+              background: 'rgba(255, 255, 255, 0.9)',
+              borderRadius: '50% 10% 50% 10%',
+              position: 'relative',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+              transform: 'rotate(45deg)'
+            }}>
+              <span style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%) rotate(-45deg)',
+                color: '#d35400',
+                fontSize: '14px',
+                fontWeight: 'bold'
+              }}>⇄</span>
+            </span>
+            <span>Synonym/Antonym Test</span>
+          </div>
+          <div style={{ fontSize: '0.9rem', opacity: '0.9', textAlign: 'center' }}>
             Identify synonyms and antonyms
           </div>
         </button>
@@ -171,7 +256,28 @@ function TestsMenu() {
           e.target.style.transform = 'translateY(0)';
         }}
       >
-        🏠 Back to Dashboard
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <span style={{
+            display: 'inline-block',
+            width: '20px',
+            height: '20px',
+            background: 'rgba(255, 255, 255, 0.9)',
+            borderRadius: '50%',
+            position: 'relative',
+            boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
+          }}>
+            <span style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              color: '#34495e',
+              fontSize: '12px',
+              fontWeight: 'bold'
+            }}>←</span>
+          </span>
+          <span>Back to Dashboard</span>
+        </div>
       </button>
     </div>
   );
