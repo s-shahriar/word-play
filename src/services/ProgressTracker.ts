@@ -1,6 +1,20 @@
 import { UserProgress, TestResult, FlashcardSession, TestSession } from '../types';
 
 export class ProgressTracker {
+  private static syncCallback: (() => void) | null = null;
+
+  static setSyncCallback(callback: (() => void) | null): void {
+    this.syncCallback = callback;
+  }
+
+  private static triggerSync(): void {
+    if (this.syncCallback) {
+      // Debounce sync calls to avoid too many API calls
+      setTimeout(() => {
+        this.syncCallback?.();
+      }, 1000);
+    }
+  }
   private static readonly STORAGE_KEYS = {
     USER_PROGRESS: 'wordplay-user-progress',
     TEST_RESULTS: 'wordplay-test-results',
@@ -19,6 +33,7 @@ export class ProgressTracker {
 
   static saveUserProgress(progress: UserProgress[]): void {
     localStorage.setItem(this.STORAGE_KEYS.USER_PROGRESS, JSON.stringify(progress));
+    this.triggerSync();
   }
 
   static getProgressForWord(wordId: string): UserProgress | undefined {
@@ -51,6 +66,7 @@ export class ProgressTracker {
     const results = this.getTestResults();
     results.push(result);
     localStorage.setItem(this.STORAGE_KEYS.TEST_RESULTS, JSON.stringify(results));
+    this.triggerSync();
   }
 
   static getFlashcardSessions(): FlashcardSession[] {
@@ -65,14 +81,15 @@ export class ProgressTracker {
   static saveFlashcardSession(session: FlashcardSession): void {
     const sessions = this.getFlashcardSessions();
     const existingIndex = sessions.findIndex(s => s.id === session.id);
-    
+
     if (existingIndex >= 0) {
       sessions[existingIndex] = session;
     } else {
       sessions.push(session);
     }
-    
+
     localStorage.setItem(this.STORAGE_KEYS.FLASHCARD_SESSIONS, JSON.stringify(sessions));
+    this.triggerSync();
   }
 
   static getTestSessions(): TestSession[] {
@@ -87,14 +104,15 @@ export class ProgressTracker {
   static saveTestSession(session: TestSession): void {
     const sessions = this.getTestSessions();
     const existingIndex = sessions.findIndex(s => s.id === session.id);
-    
+
     if (existingIndex >= 0) {
       sessions[existingIndex] = session;
     } else {
       sessions.push(session);
     }
-    
+
     localStorage.setItem(this.STORAGE_KEYS.TEST_SESSIONS, JSON.stringify(sessions));
+    this.triggerSync();
   }
 
   static getWeakWords(limit: number = 10): UserProgress[] {

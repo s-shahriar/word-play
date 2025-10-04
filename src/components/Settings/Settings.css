@@ -377,11 +377,85 @@
   transform: translateY(-2px);
 }
 
+.data-button.primary {
+  background: #3498db;
+  color: white;
+}
+
+.data-button.primary:hover:not(:disabled) {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+.data-button.google-login {
+  background: #4285f4;
+  color: white;
+  width: 100%;
+  justify-content: center;
+}
+
+.data-button.google-login:hover {
+  background: #357ae8;
+  transform: translateY(-2px);
+}
+
+.data-button.small {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+}
+
+.data-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .data-description {
   margin: 10px 0 0 0;
   color: #7f8c8d;
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+.google-user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.google-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #3498db;
+}
+
+.google-name {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.google-email {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.sync-status {
+  color: #27ae60;
+  font-size: 0.9rem;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.sync-error {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin: 10px 0;
+  font-weight: 500;
 }
 
 .confirm-dialog-overlay {
@@ -455,6 +529,108 @@
   background: #c0392b;
 }
 
+/* Notification Popup */
+.notification-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+  animation: slideInRight 0.3s ease-out;
+  max-width: 420px;
+  width: calc(100% - 40px);
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.notification-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 18px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid;
+}
+
+.notification-popup.success .notification-content {
+  border-left-color: #27ae60;
+}
+
+.notification-popup.error .notification-content {
+  border-left-color: #e74c3c;
+}
+
+.notification-popup.info .notification-content {
+  border-left-color: #3498db;
+}
+
+.notification-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-popup.success .notification-icon {
+  color: #27ae60;
+}
+
+.notification-popup.error .notification-icon {
+  color: #e74c3c;
+}
+
+.notification-popup.info .notification-icon {
+  color: #3498db;
+}
+
+.notification-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.notification-text h4 {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.notification-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  line-height: 1.4;
+}
+
+.notification-close {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: #95a5a6;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-close:hover {
+  color: #7f8c8d;
+}
+
 @media (max-width: 1024px) and (min-width: 769px) {
   .settings-content {
     min-width: 42rem;
@@ -463,6 +639,27 @@
 }
 
 @media (max-width: 768px) {
+  .notification-popup {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    max-width: none;
+  }
+
+  .notification-content {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .notification-text h4 {
+    font-size: 0.95rem;
+  }
+
+  .notification-text p {
+    font-size: 0.85rem;
+  }
+
   .settings {
     padding: 1rem;
     justify-content: flex-start;
