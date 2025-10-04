@@ -16,78 +16,37 @@
     ]
   },
   {
-    "word": "Abdicate",
-    "meaning": "আনুষ্ঠানিকভাবে ত্যাগ করা",
-    "example": "The king decided to abdicate his throne in favor of his son.",
+    "word": "Aberrant",
+    "meaning": "বিপথগামী বা অস্বাভাবিক",
+    "example": "His aberrant behavior concerned his parents.",
     "synonyms": [
-      "renounce",
-      "resign",
-      "relinquish"
+      "abnormal",
+      "deviant",
+      "atypical",
+      "irregular"
     ],
     "antonyms": [
-      "claim",
-      "assume",
-      "accept"
+      "normal",
+      "typical",
+      "usual",
+      "standard"
     ]
   },
   {
-    "word": "Aberration",
-    "meaning": "বিচ্যুতি বা অস্বাভাবিকতা",
-    "example": "The single low grade on his report card was an aberration.",
+    "word": "Abeyance",
+    "meaning": "মুলতবি অবস্থা বা স্থগিত অবস্থা",
+    "example": "The project is being held in abeyance until funding is secured.",
     "synonyms": [
-      "anomaly",
-      "deviation",
-      "irregularity"
+      "suspension",
+      "dormancy",
+      "pending",
+      "deferment"
     ],
     "antonyms": [
-      "normality",
-      "regularity",
-      "conformity"
-    ]
-  },
-  {
-    "word": "Abjure",
-    "meaning": "শপথপূর্বক ত্যাগ করা",
-    "example": "He abjured his former beliefs under pressure.",
-    "synonyms": [
-      "renounce",
-      "forswear",
-      "retract"
-    ],
-    "antonyms": [
-      "affirm",
-      "uphold",
-      "embrace"
-    ]
-  },
-  {
-    "word": "Abnegation",
-    "meaning": "আত্মত্যাগ বা অস্বীকার",
-    "example": "Her abnegation of worldly pleasures was inspiring.",
-    "synonyms": [
-      "renunciation",
-      "self-denial",
-      "surrender"
-    ],
-    "antonyms": [
-      "indulgence",
-      "self-gratification"
-    ]
-  },
-  {
-    "word": "Abrogate",
-    "meaning": "বাতিল করা",
-    "example": "The government decided to abrogate the old law.",
-    "synonyms": [
-      "repeal",
-      "revoke",
-      "annul",
-      "nullify"
-    ],
-    "antonyms": [
-      "establish",
-      "enact",
-      "institute"
+      "continuation",
+      "activity",
+      "operation",
+      "action"
     ]
   },
   {
@@ -107,98 +66,20 @@
     ]
   },
   {
-    "word": "Abstruse",
-    "meaning": "দুর্বোধ্য",
-    "example": "The professor's lecture on quantum physics was too abstruse for most students.",
+    "word": "Abstemious",
+    "meaning": "মিতাহারী বা সংযমী",
+    "example": "She is known as an abstemious eater and drinker.",
     "synonyms": [
-      "obscure",
-      "recondite",
-      "esoteric",
-      "arcane"
+      "temperate",
+      "moderate",
+      "abstinent",
+      "self-restrained"
     ],
     "antonyms": [
-      "clear",
-      "lucid",
-      "simple",
-      "obvious"
-    ]
-  },
-  {
-    "word": "Accede",
-    "meaning": "সম্মত হওয়া",
-    "example": "The management was reluctant to accede to the workers' demands.",
-    "synonyms": [
-      "agree",
-      "consent",
-      "assent",
-      "comply"
-    ],
-    "antonyms": [
-      "refuse",
-      "dissent",
-      "reject"
-    ]
-  },
-  {
-    "word": "Accost",
-    "meaning": "আগ্রাসীভাবে সম্বোধন করা",
-    "example": "A stranger accosted me on the street, asking for money.",
-    "synonyms": [
-      "confront",
-      "approach",
-      "solicit"
-    ],
-    "antonyms": [
-      "avoid",
-      "ignore",
-      "shun"
-    ]
-  },
-  {
-    "word": "Accretion",
-    "meaning": "ধীরে ধীরে বৃদ্ধি",
-    "example": "The accretion of wealth did not bring him happiness.",
-    "synonyms": [
-      "accumulation",
-      "buildup",
-      "growth"
-    ],
-    "antonyms": [
-      "reduction",
-      "depletion",
-      "erosion"
-    ]
-  },
-  {
-    "word": "Acumen",
-    "meaning": "সূক্ষ্ম বিচারশক্তি",
-    "example": "She has a sharp business acumen that has made her successful.",
-    "synonyms": [
-      "insight",
-      "shrewdness",
-      "acuity",
-      "perspicacity"
-    ],
-    "antonyms": [
-      "naivety",
-      "ignorance",
-      "obtuseness"
-    ]
-  },
-  {
-    "word": "Adamant",
-    "meaning": "অটল বা একগুঁয়ে",
-    "example": "He was adamant that he would not change his mind.",
-    "synonyms": [
-      "inflexible",
-      "unyielding",
-      "resolute",
-      "stubborn"
-    ],
-    "antonyms": [
-      "flexible",
-      "lenient",
-      "compliant"
+      "intemperate",
+      "greedy",
+      "indulgent",
+      "excessive"
     ]
   },
   {
@@ -218,82 +99,54 @@
     ]
   },
   {
-    "word": "Adumbrate",
-    "meaning": "অস্পষ্টভাবে বর্ণনা করা",
-    "example": "The speech only adumbrated the new policy, leaving the details for later.",
+    "word": "Adulterate",
+    "meaning": "ভেজাল মেশানো বা অশুদ্ধ করা",
+    "example": "It's illegal to adulterate food for profit.",
     "synonyms": [
-      "outline",
-      "sketch",
-      "foreshadow",
-      "intimate"
+      "contaminate",
+      "corrupt",
+      "debase",
+      "dilute"
     ],
     "antonyms": [
-      "illuminate",
+      "purify",
+      "refine",
       "clarify",
-      "detail"
+      "cleanse"
     ]
   },
   {
-    "word": "Adverse",
-    "meaning": "প্রতিকূল",
-    "example": "They had to cancel the trip due to adverse weather conditions.",
+    "word": "Aesthetic",
+    "meaning": "নান্দনিক বা সৌন্দর্যবোধ সম্পর্কিত",
+    "example": "The work has great aesthetic value.",
     "synonyms": [
-      "unfavorable",
-      "hostile",
-      "detrimental"
+      "artistic",
+      "beautiful",
+      "tasteful",
+      "elegant"
     ],
     "antonyms": [
-      "favorable",
-      "beneficial",
-      "positive"
+      "ugly",
+      "unattractive",
+      "tasteless",
+      "unaesthetic"
     ]
   },
   {
-    "word": "Advocate",
-    "meaning": "সমর্থন করা",
-    "example": "She is a strong advocate for environmental protection.",
+    "word": "Aggregate",
+    "meaning": "সমষ্টি বা সংগ্রহ করা",
+    "example": "The aggregate amount of money raised was impressive.",
     "synonyms": [
-      "support",
-      "champion",
-      "endorse",
-      "proponent"
+      "total",
+      "combined",
+      "collective",
+      "cumulative"
     ],
     "antonyms": [
-      "oppose",
-      "criticize",
-      "opponent"
-    ]
-  },
-  {
-    "word": "Affluent",
-    "meaning": "সচ্ছল বা ধনী",
-    "example": "He was born into an affluent family.",
-    "synonyms": [
-      "wealthy",
-      "rich",
-      "prosperous",
-      "opulent"
-    ],
-    "antonyms": [
-      "poor",
-      "impoverished",
-      "destitute"
-    ]
-  },
-  {
-    "word": "Aggrandize",
-    "meaning": "ক্ষমতা বা খ্যাতি বৃদ্ধি করা",
-    "example": "The dictator sought to aggrandize his power and influence.",
-    "synonyms": [
-      "exaggerate",
-      "magnify",
-      "enhance",
-      "inflate"
-    ],
-    "antonyms": [
-      "belittle",
-      "diminish",
-      "reduce"
+      "individual",
+      "separate",
+      "particular",
+      "single"
     ]
   },
   {
@@ -312,184 +165,224 @@
     ]
   },
   {
-    "word": "Alias",
-    "meaning": "ছদ্মনাম",
-    "example": "The spy operated under several aliases.",
+    "word": "Alleviate",
+    "meaning": "উপশম করা বা লাঘব করা",
+    "example": "The medicine will alleviate your pain.",
     "synonyms": [
-      "pseudonym",
-      "incognito",
-      "pen name",
-      "assumed name"
+      "relieve",
+      "ease",
+      "reduce",
+      "mitigate"
     ],
     "antonyms": [
-      "real name",
-      "legal name"
+      "aggravate",
+      "worsen",
+      "intensify",
+      "exacerbate"
     ]
   },
   {
-    "word": "Ambivalent",
-    "meaning": "দ্বিধান্বিত বা পরস্পরবিরোধী অনুভূতি",
-    "example": "He felt ambivalent about leaving his hometown.",
+    "word": "Amalgamate",
+    "meaning": "একত্রিত করা বা মিশ্রিত করা",
+    "example": "The two companies decided to amalgamate their resources.",
     "synonyms": [
-      "uncertain",
-      "conflicted",
-      "equivocal",
-      "indecisive"
+      "merge",
+      "combine",
+      "unite",
+      "consolidate"
     ],
     "antonyms": [
-      "certain",
-      "decisive",
-      "resolute"
-    ]
-  },
-  {
-    "word": "Amenable",
-    "meaning": "সহজে রাজি বা নমনীয়",
-    "example": "She was amenable to the suggestion of a compromise.",
-    "synonyms": [
-      "compliant",
-      "cooperative",
-      "tractable"
-    ],
-    "antonyms": [
-      "uncooperative",
-      "recalcitrant",
-      "stubborn"
-    ]
-  },
-  {
-    "word": "Amorphous",
-    "meaning": "অগঠিত বা আকারবিহীন",
-    "example": "The organization has an amorphous leadership structure.",
-    "synonyms": [
-      "shapeless",
-      "unstructured",
-      "formless"
-    ],
-    "antonyms": [
-      "structured",
-      "shaped",
-      "defined"
-    ]
-  },
-  {
-    "word": "Anachronistic",
-    "meaning": "কালবিরুদ্ধ বা বেমানান",
-    "example": "His use of a typewriter in the modern office seemed anachronistic.",
-    "synonyms": [
-      "outdated",
-      "obsolete",
-      "antiquated"
-    ],
-    "antonyms": [
-      "modern",
-      "contemporary",
-      "current"
-    ]
-  },
-  {
-    "word": "Anathema",
-    "meaning": "অভিশাপ বা তীব্র ঘৃণার পাত্র",
-    "example": "Racial prejudice is anathema to our society.",
-    "synonyms": [
-      "abomination",
-      "curse",
-      "bane"
-    ],
-    "antonyms": [
-      "blessing",
-      "beloved",
-      "benediction"
-    ]
-  },
-  {
-    "word": "Annex",
-    "meaning": "সংযুক্ত করা",
-    "example": "The country decided to annex the neighboring territory.",
-    "synonyms": [
-      "append",
-      "attach",
-      "incorporate"
-    ],
-    "antonyms": [
-      "detach",
       "separate",
-      "disconnect"
+      "divide",
+      "split",
+      "dissolve"
     ]
   },
   {
-    "word": "Antediluvian",
-    "meaning": "অতি প্রাচীন",
-    "example": "He has some antediluvian ideas about the role of women.",
+    "word": "Ambiguous",
+    "meaning": "অস্পষ্ট বা দ্ব্যর্থক",
+    "example": "The politician's ambiguous statement confused voters.",
     "synonyms": [
-      "ancient",
-      "archaic",
-      "primitive"
+      "unclear",
+      "vague",
+      "equivocal",
+      "cryptic"
     ],
     "antonyms": [
-      "modern",
-      "new",
+      "clear",
+      "explicit",
+      "unambiguous",
+      "definite"
+    ]
+  },
+  {
+    "word": "Ambivalence",
+    "meaning": "দ্বিধা বা দ্বৈত মনোভাব",
+    "example": "She felt ambivalence about accepting the job offer.",
+    "synonyms": [
+      "uncertainty",
+      "indecision",
+      "conflict",
+      "hesitation"
+    ],
+    "antonyms": [
+      "certainty",
+      "decisiveness",
+      "resolution",
+      "conviction"
+    ]
+  },
+  {
+    "word": "Ameliorate",
+    "meaning": "উন্নত করা বা ভালো করা",
+    "example": "The new policy will ameliorate working conditions.",
+    "synonyms": [
+      "improve",
+      "enhance",
+      "better",
+      "upgrade"
+    ],
+    "antonyms": [
+      "worsen",
+      "deteriorate",
+      "impair",
+      "damage"
+    ]
+  },
+  {
+    "word": "Anachronism",
+    "meaning": "কালবিভ্রাট বা যুগবহির্ভূত বস্তু",
+    "example": "A typewriter in a modern office would be an anachronism.",
+    "synonyms": [
+      "archaism",
+      "relic",
+      "throwback",
+      "antiquity"
+    ],
+    "antonyms": [
+      "modernity",
+      "innovation",
+      "novelty",
       "contemporary"
     ]
   },
   {
-    "word": "Antiseptic",
-    "meaning": "জীবাণুনাশক",
-    "example": "The nurse cleaned the wound with an antiseptic solution.",
+    "word": "Analogous",
+    "meaning": "সাদৃশ্যপূর্ণ বা তুলনীয়",
+    "example": "The heart is analogous to a pump.",
     "synonyms": [
-      "sterile",
-      "sanitary",
-      "clean"
+      "similar",
+      "comparable",
+      "parallel",
+      "equivalent"
     ],
     "antonyms": [
-      "contaminated",
-      "septic",
-      "unhygienic"
+      "different",
+      "dissimilar",
+      "unlike",
+      "contrasting"
     ]
   },
   {
-    "word": "Apathetic",
-    "meaning": "উদাসীন",
-    "example": "The apathetic students showed no interest in the lesson.",
+    "word": "Anarchy",
+    "meaning": "নৈরাজ্য বা বিশৃঙ্খলা",
+    "example": "The country descended into anarchy after the coup.",
     "synonyms": [
-      "indifferent",
-      "uninterested",
-      "unresponsive"
+      "chaos",
+      "disorder",
+      "lawlessness",
+      "mayhem"
     ],
     "antonyms": [
-      "enthusiastic",
-      "interested",
-      "concerned"
+      "order",
+      "government",
+      "control",
+      "organization"
     ]
   },
   {
-    "word": "Antithesis",
-    "meaning": "সরাসরি বিপরীত",
-    "example": "Her cheerful personality is the antithesis of his gloomy one.",
+    "word": "Anomalous",
+    "meaning": "অস্বাভাবিক বা নিয়মবহির্ভূত",
+    "example": "The test results showed an anomalous reading.",
     "synonyms": [
-      "opposite",
-      "converse",
-      "contrast"
+      "abnormal",
+      "irregular",
+      "atypical",
+      "unusual"
     ],
     "antonyms": [
-      "synonym",
-      "equivalent",
-      "same"
+      "normal",
+      "typical",
+      "regular",
+      "standard"
     ]
   },
   {
-    "word": "Apocryphal",
-    "meaning": "সন্দেহজনক বা বানোয়াট",
-    "example": "Most of the stories about the famous actor are apocryphal.",
+    "word": "Antipathy",
+    "meaning": "বিদ্বেষ বা ঘৃণা",
+    "example": "He felt a deep antipathy toward dishonesty.",
     "synonyms": [
-      "fictitious",
-      "spurious",
-      "unverified"
+      "hostility",
+      "aversion",
+      "animosity",
+      "hatred"
     ],
     "antonyms": [
-      "authentic",
-      "genuine",
-      "verified"
+      "affection",
+      "sympathy",
+      "fondness",
+      "liking"
+    ]
+  },
+  {
+    "word": "Apathy",
+    "meaning": "উদাসীনতা বা নির্লিপ্ততা",
+    "example": "Voter apathy led to a low turnout in the election.",
+    "synonyms": [
+      "indifference",
+      "unconcern",
+      "lethargy",
+      "disinterest"
+    ],
+    "antonyms": [
+      "enthusiasm",
+      "interest",
+      "concern",
+      "passion"
+    ]
+  },
+  {
+    "word": "Appease",
+    "meaning": "শান্ত করা বা তুষ্ট করা",
+    "example": "The government tried to appease the protesters with concessions.",
+    "synonyms": [
+      "pacify",
+      "placate",
+      "mollify",
+      "conciliate"
+    ],
+    "antonyms": [
+      "provoke",
+      "anger",
+      "aggravate",
+      "incite"
+    ]
+  },
+  {
+    "word": "Apprise",
+    "meaning": "অবহিত করা বা জানানো",
+    "example": "Please apprise me of any changes to the schedule.",
+    "synonyms": [
+      "inform",
+      "notify",
+      "advise",
+      "tell"
+    ],
+    "antonyms": [
+      "withhold",
+      "conceal",
+      "hide",
+      "suppress"
     ]
   },
   {
@@ -509,79 +402,54 @@
     ]
   },
   {
-    "word": "Arbitrary",
-    "meaning": "স্বেচ্ছাচারী বা খামখেয়ালী",
-    "example": "The dictator made arbitrary decisions without any reason.",
+    "word": "Appropriate",
+    "meaning": "উপযুক্ত বা যথাযথ",
+    "example": "Formal attire is appropriate for the wedding.",
     "synonyms": [
-      "capricious",
-      "random",
-      "whimsical"
+      "suitable",
+      "proper",
+      "fitting",
+      "apt"
     ],
     "antonyms": [
-      "rational",
-      "reasoned",
-      "systematic"
+      "inappropriate",
+      "unsuitable",
+      "improper",
+      "wrong"
     ]
   },
   {
-    "word": "Arboreal",
-    "meaning": "বৃক্ষसंबंधীয়",
-    "example": "Monkeys are arboreal animals that live in trees.",
+    "word": "Arduous",
+    "meaning": "কষ্টসাধ্য বা কঠিন",
+    "example": "Climbing Mount Everest is an arduous task.",
     "synonyms": [
-      "tree-dwelling",
-      "arborous"
+      "difficult",
+      "strenuous",
+      "laborious",
+      "taxing"
     ],
     "antonyms": [
-      "terrestrial",
-      "aquatic"
+      "easy",
+      "simple",
+      "effortless",
+      "facile"
     ]
   },
   {
-    "word": "Arcane",
-    "meaning": "রহস্যময় বা গুপ্ত",
-    "example": "He was the only one who understood the arcane rules of the ancient game.",
+    "word": "Artless",
+    "meaning": "সরল বা নিষ্কপট",
+    "example": "Her artless charm won everyone over.",
     "synonyms": [
-      "esoteric",
-      "mysterious",
-      "secret",
-      "obscure"
+      "naive",
+      "innocent",
+      "guileless",
+      "sincere"
     ],
     "antonyms": [
-      "common",
-      "known",
-      "public",
-      "clear"
-    ]
-  },
-  {
-    "word": "Archetypal",
-    "meaning": "আদর্শ বা মূল prototypical",
-    "example": "The hero in this story is an archetypal figure of courage and virtue.",
-    "synonyms": [
-      "quintessential",
-      "classic",
-      "prototypical"
-    ],
-    "antonyms": [
-      "atypical",
-      "unique",
-      "unusual"
-    ]
-  },
-  {
-    "word": "Arrogate",
-    "meaning": "অন্যায়ভাবে দাবি করা",
-    "example": "The committee arrogated to itself the power to make final decisions.",
-    "synonyms": [
-      "seize",
-      "usurp",
-      "claim",
-      "assume"
-    ],
-    "antonyms": [
-      "relinquish",
-      "waive",
-      "yield"
+      "cunning",
+      "artful",
+      "crafty",
+      "sophisticated"
     ]
   },
   {
@@ -597,21 +465,6 @@
       "hedonistic",
       "indulgent",
       "sybaritic"
-    ]
-  },
-  {
-    "word": "Aspersion",
-    "meaning": "কলঙ্ক বা কুৎসা",
-    "example": "Casting aspersions on your opponent is not a fair way to win.",
-    "synonyms": [
-      "slander",
-      "calumny",
-      "defamation"
-    ],
-    "antonyms": [
-      "praise",
-      "commendation",
-      "adulation"
     ]
   },
   {
@@ -632,113 +485,156 @@
     ]
   },
   {
-    "word": "Atrophy",
-    "meaning": "ক্ষয় বা শীর্ণতা",
-    "example": "Muscles can atrophy if they are not used regularly.",
+    "word": "Assuage",
+    "meaning": "প্রশমিত করা বা উপশম করা",
+    "example": "The nurse tried to assuage the patient's fears.",
     "synonyms": [
-      "wither",
-      "waste away",
-      "degenerate"
+      "relieve",
+      "ease",
+      "alleviate",
+      "soothe"
+    ],
+    "antonyms": [
+      "aggravate",
+      "intensify",
+      "worsen",
+      "exacerbate"
+    ]
+  },
+  {
+    "word": "Attenuate",
+    "meaning": "দুর্বল করা বা হ্রাস করা",
+    "example": "The vaccine will attenuate the severity of the disease.",
+    "synonyms": [
+      "weaken",
+      "reduce",
+      "diminish",
+      "lessen"
     ],
     "antonyms": [
       "strengthen",
-      "grow",
-      "develop"
+      "amplify",
+      "increase",
+      "intensify"
     ]
   },
   {
-    "word": "Bane",
-    "meaning": "সর্বনাশের কারণ",
-    "example": "Gambling was the bane of his existence.",
+    "word": "Audacious",
+    "meaning": "সাহসী বা দুঃসাহসী",
+    "example": "The audacious plan surprised everyone.",
     "synonyms": [
-      "curse",
-      "scourge",
-      "affliction",
-      "poison"
-    ],
-    "antonyms": [
-      "blessing",
-      "boon",
-      "benefit",
-      "solace"
-    ]
-  },
-  {
-    "word": "Bashful",
-    "meaning": "লাজুক",
-    "example": "The bashful child hid behind his mother's legs.",
-    "synonyms": [
-      "shy",
-      "timid",
-      "demure",
-      "retiring"
-    ],
-    "antonyms": [
-      "outgoing",
       "bold",
-      "confident",
-      "extroverted"
+      "daring",
+      "fearless",
+      "brave"
+    ],
+    "antonyms": [
+      "timid",
+      "cautious",
+      "cowardly",
+      "fearful"
     ]
   },
   {
-    "word": "Beguile",
-    "meaning": "প্রতারণা করা বা মোহিত করা",
-    "example": "He beguiled his investors with promises of high returns.",
+    "word": "Austere",
+    "meaning": "কঠোর বা সাদাসিধে",
+    "example": "The monk lived an austere life of self-denial.",
     "synonyms": [
-      "deceive",
-      "charm",
-      "enchant",
-      "mislead"
+      "severe",
+      "strict",
+      "stern",
+      "ascetic"
     ],
     "antonyms": [
-      "disenchant",
-      "repel",
-      "be honest"
+      "luxurious",
+      "ornate",
+      "indulgent",
+      "extravagant"
     ]
   },
   {
-    "word": "Bereft",
-    "meaning": "বঞ্চিত বা শোকে মুহ্যমান",
-    "example": "After his wife's death, he was bereft of all hope.",
+    "word": "Aver",
+    "meaning": "দৃঢ়ভাবে বলা বা জোর দেওয়া",
+    "example": "The witness averred that he saw the defendant at the scene.",
     "synonyms": [
-      "deprived",
-      "lacking",
-      "devoid"
+      "assert",
+      "declare",
+      "affirm",
+      "claim"
     ],
     "antonyms": [
-      "full",
-      "endowed",
-      "happy"
+      "deny",
+      "dispute",
+      "refute",
+      "contradict"
     ]
   },
   {
-    "word": "Blandishment",
-    "meaning": "চাটুকারিতা বা তোষামোদ",
-    "example": "She was impervious to his blandishments.",
+    "word": "Banal",
+    "meaning": "সাধারণ বা নীরস",
+    "example": "The movie's plot was banal and predictable.",
     "synonyms": [
-      "flattery",
-      "cajolery",
-      "adulation"
+      "trite",
+      "commonplace",
+      "mundane",
+      "hackneyed"
     ],
     "antonyms": [
-      "criticism",
-      "insult",
-      "scorn"
+      "original",
+      "novel",
+      "fresh",
+      "innovative"
     ]
   },
   {
-    "word": "Bilk",
-    "meaning": "ঠকানো",
-    "example": "The scammer tried to bilk the elderly couple out of their savings.",
+    "word": "Belie",
+    "meaning": "মিথ্যা প্রমাণ করা বা বিপরীত ইঙ্গিত দেওয়া",
+    "example": "Her calm demeanor belied her inner turmoil.",
     "synonyms": [
-      "swindle",
-      "defraud",
-      "cheat"
+      "contradict",
+      "misrepresent",
+      "falsify",
+      "disguise"
     ],
     "antonyms": [
-      "reward",
-      "pay",
-      "be honest"
+      "confirm",
+      "verify",
+      "reveal",
+      "demonstrate"
+    ]
+  },
+  {
+    "word": "Beneficent",
+    "meaning": "দানশীল বা উপকারী",
+    "example": "The beneficent donor contributed millions to charity.",
+    "synonyms": [
+      "charitable",
+      "generous",
+      "benevolent",
+      "philanthropic"
+    ],
+    "antonyms": [
+      "malevolent",
+      "harmful",
+      "selfish",
+      "cruel"
+    ]
+  },
+  {
+    "word": "Bolster",
+    "meaning": "সমর্থন করা বা শক্তিশালী করা",
+    "example": "The evidence will bolster our case in court.",
+    "synonyms": [
+      "support",
+      "strengthen",
+      "reinforce",
+      "boost"
+    ],
+    "antonyms": [
+      "weaken",
+      "undermine",
+      "hinder",
+      "diminish"
     ]
   },
   {
@@ -757,243 +653,207 @@
     ]
   },
   {
-    "word": "Cajole",
-    "meaning": "মিষ্টি কথায় ভোলানো",
-    "example": "He cajoled his friend into lending him the car.",
+    "word": "Boorish",
+    "meaning": "অভদ্র বা রুক্ষ",
+    "example": "His boorish behavior embarrassed his colleagues.",
     "synonyms": [
-      "coax",
-      "wheedle",
-      "persuade"
+      "rude",
+      "crude",
+      "uncouth",
+      "vulgar"
     ],
     "antonyms": [
-      "force",
-      "coerce",
-      "compel"
+      "refined",
+      "polite",
+      "cultured",
+      "sophisticated"
     ]
   },
   {
-    "word": "Callous",
-    "meaning": "নিষ্ঠুর বা অনুভূতিহীন",
-    "example": "He made a callous remark about her suffering.",
+    "word": "Burgeon",
+    "meaning": "দ্রুত বৃদ্ধি পাওয়া বা বিকশিত হওয়া",
+    "example": "The technology industry continues to burgeon.",
     "synonyms": [
-      "heartless",
-      "insensitive",
-      "unfeeling"
+      "flourish",
+      "thrive",
+      "expand",
+      "grow"
     ],
     "antonyms": [
-      "compassionate",
-      "sensitive",
-      "kind"
+      "decline",
+      "shrink",
+      "diminish",
+      "wither"
     ]
   },
   {
-    "word": "Calumny",
-    "meaning": "মিথ্যা অভিযোগ বা কুৎসা",
-    "example": "The politician was a victim of calumny spread by his rivals.",
+    "word": "Burnish",
+    "meaning": "ঘষে চকচকে করা বা উন্নত করা",
+    "example": "She worked to burnish her reputation in the industry.",
     "synonyms": [
-      "slander",
-      "defamation",
-      "aspersion"
+      "polish",
+      "brighten",
+      "enhance",
+      "improve"
+    ],
+    "antonyms": [
+      "tarnish",
+      "dull",
+      "damage",
+      "sully"
+    ]
+  },
+  {
+    "word": "Buttress",
+    "meaning": "সমর্থন করা বা শক্তিশালী করা",
+    "example": "Historical data buttress the theory.",
+    "synonyms": [
+      "support",
+      "reinforce",
+      "strengthen",
+      "prop"
+    ],
+    "antonyms": [
+      "weaken",
+      "undermine",
+      "oppose",
+      "hinder"
+    ]
+  },
+  {
+    "word": "Cacophonous",
+    "meaning": "কর্কশ বা বিশৃঙ্খল শব্দযুক্ত",
+    "example": "The cacophonous noise from the construction site was unbearable.",
+    "synonyms": [
+      "discordant",
+      "dissonant",
+      "harsh",
+      "jarring"
+    ],
+    "antonyms": [
+      "harmonious",
+      "melodious",
+      "pleasant",
+      "euphonious"
+    ]
+  },
+  {
+    "word": "Capricious",
+    "meaning": "মেজাজী বা খামখেয়ালী",
+    "example": "The capricious weather changed from sunny to stormy.",
+    "synonyms": [
+      "unpredictable",
+      "fickle",
+      "erratic",
+      "whimsical"
+    ],
+    "antonyms": [
+      "predictable",
+      "stable",
+      "constant",
+      "steady"
+    ]
+  },
+  {
+    "word": "Castigation",
+    "meaning": "কঠোর সমালোচনা বা তিরস্কার",
+    "example": "The report received castigation from critics.",
+    "synonyms": [
+      "criticism",
+      "rebuke",
+      "reprimand",
+      "censure"
     ],
     "antonyms": [
       "praise",
-      "accolade",
+      "commendation",
+      "approval",
       "compliment"
     ]
   },
   {
-    "word": "Camaraderie",
-    "meaning": "সৌহার্দ্য বা বন্ধুত্ব",
-    "example": "There was a great sense of camaraderie among the soldiers.",
+    "word": "Catalyst",
+    "meaning": "অনুঘটক বা প্রেরণাদাতা",
+    "example": "The protest was a catalyst for social change.",
     "synonyms": [
-      "friendship",
-      "fellowship",
-      "comradeship"
+      "stimulus",
+      "spur",
+      "impetus",
+      "trigger"
     ],
     "antonyms": [
-      "enmity",
-      "hostility",
-      "animosity"
+      "deterrent",
+      "hindrance",
+      "obstacle",
+      "impediment"
     ]
   },
   {
-    "word": "Candor",
-    "meaning": "সরলতা বা অকপটতা",
-    "example": "I appreciate your candor in this matter.",
+    "word": "Caustic",
+    "meaning": "তীক্ষ্ণ বা ক্ষয়কারী",
+    "example": "His caustic remarks hurt her feelings.",
     "synonyms": [
-      "frankness",
-      "honesty",
-      "openness"
+      "sarcastic",
+      "biting",
+      "acerbic",
+      "cutting"
     ],
     "antonyms": [
+      "mild",
+      "gentle",
+      "soothing",
+      "kind"
+    ]
+  },
+  {
+    "word": "Chicanery",
+    "meaning": "ছলচাতুরী বা প্রতারণা",
+    "example": "The lawyer's chicanery was exposed in court.",
+    "synonyms": [
+      "deception",
+      "trickery",
       "deceit",
-      "insincerity",
-      "evasion"
-    ]
-  },
-  {
-    "word": "Capitulate",
-    "meaning": "আত্মসমর্পণ করা",
-    "example": "The outnumbered army had to capitulate to the enemy.",
-    "synonyms": [
-      "surrender",
-      "yield",
-      "submit"
+      "fraud"
     ],
     "antonyms": [
-      "resist",
-      "fight",
-      "defy"
-    ]
-  },
-  {
-    "word": "Carouse",
-    "meaning": "মদ্যপান করে হৈ-হুল্লোড় করা",
-    "example": "They caroused all night to celebrate their victory.",
-    "synonyms": [
-      "revel",
-      "make merry",
-      "party"
-    ],
-    "antonyms": [
-      "mourn",
-      "grieve",
-      "be sober"
-    ]
-  },
-  {
-    "word": "Carp",
-    "meaning": "খুঁত ধরা",
-    "example": "He is always carping about his coworkers.",
-    "synonyms": [
-      "complain",
-      "criticize",
-      "nag"
-    ],
-    "antonyms": [
-      "praise",
-      "compliment",
-      "approve"
-    ]
-  },
-  {
-    "word": "Caucus",
-    "meaning": "রাজনৈতিক বৈঠক",
-    "example": "The party members held a caucus to select their candidate.",
-    "synonyms": [
-      "meeting",
-      "assembly",
-      "conference",
-      "gathering"
-    ],
-    "antonyms": [
-      "dispersion",
-      "separation"
-    ]
-  },
-  {
-    "word": "Cavort",
-    "meaning": "আনন্দে লাফানো",
-    "example": "The children were cavorting in the garden.",
-    "synonyms": [
-      "frolic",
-      "prance",
-      "romp"
-    ],
-    "antonyms": [
-      "sulk",
-      "mope"
-    ]
-  },
-  {
-    "word": "Circumlocution",
-    "meaning": "বাকচাতুরী বা ঘুরিয়ে কথা বলা",
-    "example": "The politician used circumlocution to avoid answering the direct question.",
-    "synonyms": [
-      "verbosity",
-      "indirectness",
-      "euphemism"
-    ],
-    "antonyms": [
-      "directness",
-      "conciseness",
+      "honesty",
+      "truthfulness",
+      "sincerity",
       "candor"
     ]
   },
   {
-    "word": "Circumscribe",
-    "meaning": "সীমা নির্ধারণ করা",
-    "example": "His activities were circumscribed by the new regulations.",
+    "word": "Coagulate",
+    "meaning": "জমাট বাঁধা বা ঘন হওয়া",
+    "example": "Blood will coagulate when exposed to air.",
     "synonyms": [
-      "restrict",
-      "limit",
-      "confine"
+      "clot",
+      "congeal",
+      "solidify",
+      "thicken"
     ],
     "antonyms": [
-      "expand",
-      "liberate",
-      "unbound"
+      "liquefy",
+      "dissolve",
+      "melt",
+      "thin"
     ]
   },
   {
-    "word": "Circumvent",
-    "meaning": "কৌশলে এড়িয়ে যাওয়া",
-    "example": "They found a way to circumvent the security system.",
+    "word": "Coda",
+    "meaning": "উপসংহার বা সমাপ্তি অংশ",
+    "example": "The coda provided a satisfying conclusion to the symphony.",
     "synonyms": [
-      "bypass",
-      "evade",
-      "avoid",
-      "sidestep"
+      "conclusion",
+      "finale",
+      "ending",
+      "epilogue"
     ],
     "antonyms": [
-      "confront",
-      "face",
-      "obey"
-    ]
-  },
-  {
-    "word": "Clamor",
-    "meaning": "শোরগোল বা উচ্চ দাবি",
-    "example": "The public began to clamor for a change in leadership.",
-    "synonyms": [
-      "uproar",
-      "din",
-      "outcry"
-    ],
-    "antonyms": [
-      "silence",
-      "quiet",
-      "peace"
-    ]
-  },
-  {
-    "word": "Cleave",
-    "meaning": "আঁকড়ে থাকা বা বিভক্ত করা",
-    "example": "The child cleaved to his mother in fear. / The axe cleaved the log in two.",
-    "synonyms": [
-      "stick",
-      "adhere",
-      "split",
-      "sever"
-    ],
-    "antonyms": [
-      "separate",
-      "detach",
-      "unite"
-    ]
-  },
-  {
-    "word": "Cobbler",
-    "meaning": "মুচি",
-    "example": "I took my worn-out shoes to the cobbler for repair.",
-    "synonyms": [
-      "shoemaker",
-      "shoemender",
-      "bootmaker"
-    ],
-    "antonyms": [
-      "customer",
-      "buyer"
+      "prelude",
+      "introduction",
+      "beginning",
+      "opening"
     ]
   },
   {
@@ -1012,135 +872,173 @@
     ]
   },
   {
-    "word": "Cognizant",
-    "meaning": "অবগত বা সচেতন",
-    "example": "He was cognizant of the risks involved in the project.",
+    "word": "Commensurate",
+    "meaning": "সমানুপাতিক বা সমান",
+    "example": "The salary is commensurate with experience.",
     "synonyms": [
-      "aware",
-      "conscious",
-      "mindful"
+      "proportionate",
+      "equivalent",
+      "corresponding",
+      "appropriate"
     ],
     "antonyms": [
-      "unaware",
-      "ignorant",
-      "oblivious"
+      "disproportionate",
+      "unequal",
+      "inadequate",
+      "inappropriate"
     ]
   },
   {
-    "word": "Concomitant",
-    "meaning": "সহগামী বা আনুষঙ্গিক",
-    "example": "Loss of appetite is a concomitant effect of the medication.",
+    "word": "Compendium",
+    "meaning": "সংক্ষিপ্ত সংগ্রহ বা সারসংকলন",
+    "example": "The book is a compendium of medical knowledge.",
     "synonyms": [
-      "accompanying",
-      "associated",
-      "concurrent"
+      "collection",
+      "compilation",
+      "summary",
+      "digest"
     ],
     "antonyms": [
-      "unrelated",
-      "independent",
-      "separate"
+      "expansion",
+      "elaboration",
+      "detail",
+      "extension"
     ]
   },
   {
-    "word": "Conduit",
-    "meaning": "নালি বা মাধ্যম",
-    "example": "The pipe serves as a conduit for water.",
+    "word": "Complaisant",
+    "meaning": "বাধ্য বা অনুগত",
+    "example": "His complaisant nature made him easy to work with.",
     "synonyms": [
-      "channel",
-      "pipe",
-      "duct"
+      "obliging",
+      "agreeable",
+      "accommodating",
+      "willing"
     ],
     "antonyms": [
-      "barrier",
-      "obstacle"
+      "uncooperative",
+      "obstinate",
+      "defiant",
+      "difficult"
     ]
   },
   {
-    "word": "Conflagration",
-    "meaning": "বড় অগ্নিকাণ্ড",
-    "example": "The forest conflagration took days to control.",
+    "word": "Compliant",
+    "meaning": "বাধ্য বা আজ্ঞাকারী",
+    "example": "The company must be compliant with safety regulations.",
     "synonyms": [
-      "firestorm",
-      "blaze",
-      "inferno",
-      "wildfire"
+      "obedient",
+      "submissive",
+      "conforming",
+      "cooperative"
     ],
     "antonyms": [
-      "extinguishment",
-      "quench"
+      "defiant",
+      "rebellious",
+      "resistant",
+      "disobedient"
     ]
   },
   {
-    "word": "Congruity",
-    "meaning": "সামঞ্জস্য বা মিল",
-    "example": "There is a lack of congruity between his words and actions.",
+    "word": "Conciliatory",
+    "meaning": "সমঝোতামূলক বা শান্তিপ্রিয়",
+    "example": "She made a conciliatory gesture to end the dispute.",
     "synonyms": [
+      "appeasing",
+      "pacifying",
+      "placatory",
+      "diplomatic"
+    ],
+    "antonyms": [
+      "antagonistic",
+      "hostile",
+      "aggressive",
+      "provocative"
+    ]
+  },
+  {
+    "word": "Condone",
+    "meaning": "ক্ষমা করা বা উপেক্ষা করা",
+    "example": "The school does not condone bullying.",
+    "synonyms": [
+      "overlook",
+      "excuse",
+      "forgive",
+      "pardon"
+    ],
+    "antonyms": [
+      "condemn",
+      "criticize",
+      "punish",
+      "denounce"
+    ]
+  },
+  {
+    "word": "Confound",
+    "meaning": "বিভ্রান্ত করা বা হতবুদ্ধি করা",
+    "example": "The mystery continues to confound investigators.",
+    "synonyms": [
+      "bewilder",
+      "perplex",
+      "puzzle",
+      "mystify"
+    ],
+    "antonyms": [
+      "clarify",
+      "explain",
+      "enlighten",
+      "illuminate"
+    ]
+  },
+  {
+    "word": "Connoisseur",
+    "meaning": "বিশেষজ্ঞ বা রসজ্ঞ",
+    "example": "He is a connoisseur of fine wine.",
+    "synonyms": [
+      "expert",
+      "authority",
+      "specialist",
+      "aficionado"
+    ],
+    "antonyms": [
+      "novice",
+      "amateur",
+      "beginner",
+      "layperson"
+    ]
+  },
+  {
+    "word": "Contention",
+    "meaning": "বিতর্ক বা মতভেদ",
+    "example": "The main contention is over resource allocation.",
+    "synonyms": [
+      "dispute",
+      "argument",
+      "controversy",
+      "disagreement"
+    ],
+    "antonyms": [
+      "agreement",
       "harmony",
-      "consistency",
-      "agreement"
-    ],
-    "antonyms": [
-      "incongruity",
-      "disagreement",
-      "conflict"
+      "accord",
+      "consensus"
     ]
   },
   {
-    "word": "Connive",
-    "meaning": "গোপনে ষড়যন্ত্র করা",
-    "example": "The officials connived to embezzle public funds.",
+    "word": "Contentious",
+    "meaning": "বিতর্কিত বা বিবাদমূলক",
+    "example": "The contentious issue divided the community.",
     "synonyms": [
-      "collude",
-      "conspire",
-      "plot"
+      "controversial",
+      "disputed",
+      "debatable",
+      "argumentative"
     ],
     "antonyms": [
-      "expose",
-      "oppose"
-    ]
-  },
-  {
-    "word": "Consign",
-    "meaning": "হস্তান্তর করা বা অর্পণ করা",
-    "example": "He consigned the old furniture to the attic.",
-    "synonyms": [
-      "entrust",
-      "commit",
-      "assign"
-    ],
-    "antonyms": [
-      "receive",
-      "keep",
-      "retain"
-    ]
-  },
-  {
-    "word": "Constituent",
-    "meaning": "উপাদান বা নির্বাচক",
-    "example": "The politician met with his constituents to discuss their concerns.",
-    "synonyms": [
-      "component",
-      "element",
-      "voter"
-    ],
-    "antonyms": [
-      "whole",
-      "aggregate"
-    ]
-  },
-  {
-    "word": "Construe",
-    "meaning": "ব্যাখ্যা করা",
-    "example": "His silence was construed as agreement.",
-    "synonyms": [
-      "interpret",
-      "understand",
-      "perceive"
-    ],
-    "antonyms": [
-      "misconstrue",
-      "misunderstand",
-      "confuse"
+      "uncontroversial",
+      "agreeable",
+      "harmonious",
+      "peaceful"
     ]
   },
   {
@@ -1156,21 +1054,6 @@
       "unrepentant",
       "shameless",
       "impenitent"
-    ]
-  },
-  {
-    "word": "Contusion",
-    "meaning": "আঘাত বা কালশিটে",
-    "example": "He suffered a severe contusion on his leg after the fall.",
-    "synonyms": [
-      "bruise",
-      "injury",
-      "swelling",
-      "hematoma"
-    ],
-    "antonyms": [
-      "healing",
-      "unblemished"
     ]
   },
   {
@@ -1190,185 +1073,139 @@
     ]
   },
   {
-    "word": "Convivial",
-    "meaning": "উৎসবমুখর ও বন্ধুত্বপূর্ণ",
-    "example": "It was a convivial gathering of old friends.",
+    "word": "Converge",
+    "meaning": "একত্রিত হওয়া বা মিলিত হওয়া",
+    "example": "The roads converge at the town center.",
     "synonyms": [
-      "sociable",
-      "jovial",
-      "genial",
-      "festive"
+      "meet",
+      "merge",
+      "unite",
+      "join"
     ],
     "antonyms": [
-      "unsociable",
-      "gloomy",
-      "reserved"
+      "diverge",
+      "separate",
+      "scatter",
+      "disperse"
     ]
   },
   {
-    "word": "Corpulence",
-    "meaning": "স্থূলতা",
-    "example": "His corpulence was a result of a poor diet and lack of exercise.",
+    "word": "Convoluted",
+    "meaning": "জটিল বা বক্র",
+    "example": "His convoluted explanation confused everyone.",
     "synonyms": [
-      "obesity",
-      "fatness",
-      "portliness"
+      "complex",
+      "complicated",
+      "intricate",
+      "twisted"
     ],
     "antonyms": [
-      "thinness",
-      "slimness",
-      "leanness"
+      "simple",
+      "straightforward",
+      "clear",
+      "direct"
     ]
   },
   {
-    "word": "Covet",
-    "meaning": "লোভ করা",
-    "example": "He coveted his neighbor's new car.",
+    "word": "Craven",
+    "meaning": "ভীরু বা কাপুরুষ",
+    "example": "The craven soldier deserted his post.",
     "synonyms": [
-      "desire",
-      "crave",
-      "yearn for"
+      "cowardly",
+      "timid",
+      "fearful",
+      "pusillanimous"
     ],
     "antonyms": [
-      "abjure",
-      "dislike",
-      "spurn"
+      "brave",
+      "courageous",
+      "bold",
+      "fearless"
     ]
   },
   {
-    "word": "Culpable",
-    "meaning": "নিন্দনীয় বা দোষী",
-    "example": "The driver was found culpable for the accident.",
+    "word": "Daunt",
+    "meaning": "ভীত করা বা নিরুৎসাহিত করা",
+    "example": "The difficult task did not daunt her determination.",
     "synonyms": [
-      "guilty",
-      "blameworthy",
-      "responsible"
+      "intimidate",
+      "discourage",
+      "dismay",
+      "frighten"
     ],
     "antonyms": [
-      "innocent",
-      "blameless",
-      "faultless"
+      "encourage",
+      "embolden",
+      "inspire",
+      "hearten"
     ]
   },
   {
-    "word": "Dearth",
-    "meaning": "অভাব বা স্বল্পতা",
-    "example": "There is a dearth of skilled workers in this field.",
+    "word": "Decorum",
+    "meaning": "শিষ্টাচার বা শালীনতা",
+    "example": "The ceremony was conducted with proper decorum.",
     "synonyms": [
-      "scarcity",
-      "lack",
-      "shortage",
-      "paucity"
+      "propriety",
+      "etiquette",
+      "dignity",
+      "politeness"
     ],
     "antonyms": [
-      "abundance",
-      "surplus",
-      "plethora"
+      "impropriety",
+      "rudeness",
+      "indecorum",
+      "vulgarity"
     ]
   },
   {
-    "word": "Debacle",
-    "meaning": "বিপর্যয় বা চরম ব্যর্থতা",
-    "example": "The project ended in a complete debacle.",
+    "word": "Default",
+    "meaning": "খেলাপি হওয়া বা ব্যর্থ হওয়া",
+    "example": "The company defaulted on its loan payments.",
     "synonyms": [
-      "fiasco",
-      "disaster",
-      "catastrophe"
+      "fail",
+      "neglect",
+      "omit",
+      "evade"
     ],
     "antonyms": [
-      "success",
-      "triumph",
-      "achievement"
+      "fulfill",
+      "honor",
+      "meet",
+      "satisfy"
     ]
   },
   {
-    "word": "Debauch",
-    "meaning": "নৈতিকভাবে দূষিত করা",
-    "example": "He debauched the young man with promises of wealth.",
+    "word": "Deference",
+    "meaning": "সম্মান বা শ্রদ্ধা",
+    "example": "He showed deference to his elders.",
     "synonyms": [
-      "corrupt",
-      "deprave",
-      "pervert"
+      "respect",
+      "regard",
+      "esteem",
+      "reverence"
     ],
     "antonyms": [
-      "purify",
-      "uplift",
-      "improve"
+      "disrespect",
+      "contempt",
+      "disdain",
+      "scorn"
     ]
   },
   {
-    "word": "Debilitate",
-    "meaning": "দুর্বল করা",
-    "example": "The long illness debilitated the patient.",
+    "word": "Delineate",
+    "meaning": "বর্ণনা করা বা চিত্রিত করা",
+    "example": "The report clearly delineates the boundaries.",
     "synonyms": [
-      "weaken",
-      "enfeeble",
-      "enervate"
+      "outline",
+      "describe",
+      "depict",
+      "define"
     ],
     "antonyms": [
-      "strengthen",
-      "energize",
-      "fortify"
-    ]
-  },
-  {
-    "word": "Debunk",
-    "meaning": "মুখোশ খুলে দেওয়া বা ভুল প্রমাণ করা",
-    "example": "The scientist debunked the popular myth.",
-    "synonyms": [
-      "disprove",
-      "expose",
-      "refute"
-    ],
-    "antonyms": [
-      "confirm",
-      "validate",
-      "support"
-    ]
-  },
-  {
-    "word": "Decimate",
-    "meaning": "ব্যাপকভাবে ধ্বংস করা",
-    "example": "The disease decimated the population of the village.",
-    "synonyms": [
-      "annihilate",
-      "destroy",
-      "devastate"
-    ],
-    "antonyms": [
-      "build",
-      "create",
-      "preserve"
-    ]
-  },
-  {
-    "word": "Deleterious",
-    "meaning": "ক্ষতিকর",
-    "example": "Smoking has a deleterious effect on your health.",
-    "synonyms": [
-      "harmful",
-      "damaging",
-      "injurious",
-      "detrimental"
-    ],
-    "antonyms": [
-      "beneficial",
-      "harmless",
-      "advantageous"
-    ]
-  },
-  {
-    "word": "Demagogue",
-    "meaning": "জননেতা যিনি আবেগ ব্যবহার করেন",
-    "example": "The demagogue incited the crowd with his fiery speech.",
-    "synonyms": [
-      "rabble-rouser",
-      "agitator",
-      "instigator"
-    ],
-    "antonyms": [
-      "statesman",
-      "unifier"
+      "obscure",
+      "confuse",
+      "blur",
+      "muddle"
     ]
   },
   {
@@ -1388,21 +1225,6 @@
     ]
   },
   {
-    "word": "Deprecate",
-    "meaning": "নিন্দা করা বা অসম্মতি প্রকাশ করা",
-    "example": "He deprecated the use of violence in protests.",
-    "synonyms": [
-      "disapprove",
-      "denounce",
-      "deplore"
-    ],
-    "antonyms": [
-      "approve",
-      "praise",
-      "endorse"
-    ]
-  },
-  {
     "word": "Deride",
     "meaning": "উপহাস করা",
     "example": "The other children derided him for his strange accent.",
@@ -1419,46 +1241,71 @@
     ]
   },
   {
-    "word": "Desecrate",
-    "meaning": "অপবিত্র করা",
-    "example": "The vandals desecrated the ancient temple.",
+    "word": "Derivative",
+    "meaning": "অনুকরণমূলক বা গৌণ",
+    "example": "The novel was criticized as derivative of earlier works.",
     "synonyms": [
-      "profane",
-      "violate",
-      "defile"
+      "imitative",
+      "unoriginal",
+      "secondary",
+      "borrowed"
     ],
     "antonyms": [
-      "consecrate",
-      "sanctify",
-      "hallow"
+      "original",
+      "innovative",
+      "creative",
+      "novel"
     ]
   },
   {
-    "word": "Despot",
-    "meaning": "স্বৈরাচারী শাসক",
-    "example": "The people suffered under the rule of the cruel despot.",
+    "word": "Desiccate",
+    "meaning": "শুকিয়ে ফেলা বা রসশূন্য করা",
+    "example": "The hot sun will desiccate the plants.",
     "synonyms": [
-      "tyrant",
-      "dictator",
-      "autocrat"
+      "dehydrate",
+      "dry",
+      "parch",
+      "wither"
     ],
     "antonyms": [
-      "democrat"
+      "hydrate",
+      "moisten",
+      "wet",
+      "saturate"
     ]
   },
   {
-    "word": "Diaphanous",
-    "meaning": "স্বচ্ছ বা পাতলা",
-    "example": "She wore a diaphanous silk scarf.",
+    "word": "Desultory",
+    "meaning": "অসংলগ্ন বা এলোমেলো",
+    "example": "His desultory efforts yielded poor results.",
     "synonyms": [
-      "sheer",
-      "transparent",
-      "translucent"
+      "random",
+      "haphazard",
+      "aimless",
+      "erratic"
     ],
     "antonyms": [
-      "opaque",
-      "thick",
-      "heavy"
+      "systematic",
+      "methodical",
+      "focused",
+      "organized"
+    ]
+  },
+  {
+    "word": "Deterrent",
+    "meaning": "প্রতিরোধক বা নিবারক",
+    "example": "Harsh punishments serve as a deterrent to crime.",
+    "synonyms": [
+      "hindrance",
+      "obstacle",
+      "discouragement",
+      "disincentive"
+    ],
+    "antonyms": [
+      "incentive",
+      "encouragement",
+      "stimulus",
+      "motivation"
     ]
   },
   {
@@ -1477,64 +1324,71 @@
     ]
   },
   {
-    "word": "Didactic",
-    "meaning": "শিক্ষামূলক (নৈতিক)",
-    "example": "The fable is a didactic story meant to teach a moral lesson.",
+    "word": "Dichotomy",
+    "meaning": "দ্বিধাবিভাজন বা বিপরীত বিভাজন",
+    "example": "There is a dichotomy between theory and practice.",
     "synonyms": [
-      "instructive",
-      "educational",
-      "moralistic"
+      "division",
+      "split",
+      "separation",
+      "contrast"
     ],
     "antonyms": [
-      "unenlightening",
-      "uninformative"
+      "unity",
+      "agreement",
+      "harmony",
+      "uniformity"
     ]
   },
   {
-    "word": "Diffident",
-    "meaning": "আত্মবিশ্বাসহীন বা লাজুক",
-    "example": "He was too diffident to express his opinion in the meeting.",
+    "word": "Diffidence",
+    "meaning": "সংকোচ বা আত্মবিশ্বাসের অভাব",
+    "example": "Her diffidence prevented her from speaking up.",
     "synonyms": [
-      "shy",
-      "bashful",
-      "hesitant",
-      "timid"
+      "shyness",
+      "timidity",
+      "modesty",
+      "hesitancy"
     ],
     "antonyms": [
-      "confident",
-      "bold",
-      "assertive"
+      "confidence",
+      "boldness",
+      "assertiveness",
+      "assurance"
     ]
   },
   {
-    "word": "Dilatory",
-    "meaning": "দীর্ঘসূত্রী বা বিলম্বকারী",
-    "example": "The government was dilatory in its response to the crisis.",
+    "word": "Diffuse",
+    "meaning": "ছড়িয়ে দেওয়া বা বিস্তৃত করা",
+    "example": "Light will diffuse through the frosted glass.",
     "synonyms": [
-      "slow",
-      "procrastinating",
-      "tardy",
-      "sluggish"
+      "spread",
+      "scatter",
+      "disperse",
+      "disseminate"
     ],
     "antonyms": [
-      "prompt",
-      "punctual",
-      "expeditious"
+      "concentrate",
+      "focus",
+      "gather",
+      "collect"
     ]
   },
   {
-    "word": "Dilettante",
-    "meaning": "অপেশাদার অনুরাগী",
-    "example": "He's a dilettante who dabbles in art but has no real skill.",
+    "word": "Digression",
+    "meaning": "প্রসঙ্গান্তর বা বিষয়চ্যুতি",
+    "example": "His speech contained too many digressions.",
     "synonyms": [
-      "amateur",
-      "dabbler",
-      "nonprofessional"
+      "deviation",
+      "departure",
+      "wandering",
+      "tangent"
     ],
     "antonyms": [
-      "professional",
-      "expert",
-      "connoisseur"
+      "focus",
+      "concentration",
+      "adherence",
+      "consistency"
     ]
   },
   {
@@ -1552,34 +1406,190 @@
     ]
   },
   {
-    "word": "Disaffected",
-    "meaning": "অসন্তুষ্ট ও বিদ্রোহী",
-    "example": "The disaffected soldiers planned a mutiny.",
+    "word": "Disabuse",
+    "meaning": "ভ্রান্তি দূর করা বা সংশোধন করা",
+    "example": "We must disabuse him of that false notion.",
     "synonyms": [
-      "discontented",
-      "dissatisfied",
-      "alienated"
+      "correct",
+      "enlighten",
+      "undeceive",
+      "inform"
     ],
     "antonyms": [
-      "content",
-      "satisfied",
-      "loyal"
+      "deceive",
+      "mislead",
+      "misinform",
+      "delude"
     ]
   },
   {
-    "word": "Discomfit",
-    "meaning": "বিব্রত বা অস্বস্তিতে ফেলা",
-    "example": "He was discomfited by the unexpected question.",
+    "word": "Discerning",
+    "meaning": "বিচক্ষণ বা বোধসম্পন্ন",
+    "example": "She has a discerning eye for quality.",
     "synonyms": [
-      "embarrass",
-      "unsettle",
-      "fluster",
-      "abash"
+      "perceptive",
+      "astute",
+      "discriminating",
+      "insightful"
     ],
     "antonyms": [
-      "reassure",
-      "comfort",
-      "soothe"
+      "undiscerning",
+      "obtuse",
+      "unperceptive",
+      "ignorant"
+    ]
+  },
+  {
+    "word": "Discordant",
+    "meaning": "অসামঞ্জস্যপূর্ণ বা বেসুরো",
+    "example": "The discordant notes jarred the audience.",
+    "synonyms": [
+      "conflicting",
+      "disagreeing",
+      "dissonant",
+      "incompatible"
+    ],
+    "antonyms": [
+      "harmonious",
+      "concordant",
+      "agreeing",
+      "compatible"
+    ]
+  },
+  {
+    "word": "Discredit",
+    "meaning": "অসম্মান করা বা বিশ্বাসযোগ্যতা নষ্ট করা",
+    "example": "The scandal served to discredit the politician.",
+    "synonyms": [
+      "dishonor",
+      "disgrace",
+      "disclaim",
+      "disrepute"
+    ],
+    "antonyms": [
+      "credit",
+      "honor",
+      "validate",
+      "confirm"
+    ]
+  },
+  {
+    "word": "Discrepancy",
+    "meaning": "অমিল বা পার্থক্য",
+    "example": "There is a discrepancy between the two accounts.",
+    "synonyms": [
+      "difference",
+      "inconsistency",
+      "variance",
+      "disparity"
+    ],
+    "antonyms": [
+      "agreement",
+      "consistency",
+      "conformity",
+      "similarity"
+    ]
+  },
+  {
+    "word": "Discrete",
+    "meaning": "পৃথক বা আলাদা",
+    "example": "The data was divided into discrete categories.",
+    "synonyms": [
+      "separate",
+      "distinct",
+      "individual",
+      "detached"
+    ],
+    "antonyms": [
+      "continuous",
+      "connected",
+      "joined",
+      "unified"
+    ]
+  },
+  {
+    "word": "Disingenuous",
+    "meaning": "অসৎ বা প্রতারণাপূর্ণ",
+    "example": "His disingenuous apology fooled no one.",
+    "synonyms": [
+      "insincere",
+      "dishonest",
+      "deceitful",
+      "false"
+    ],
+    "antonyms": [
+      "sincere",
+      "honest",
+      "genuine",
+      "candid"
+    ]
+  },
+  {
+    "word": "Disinterested",
+    "meaning": "নিরপেক্ষ বা স্বার্থহীন",
+    "example": "A judge must remain disinterested in the case.",
+    "synonyms": [
+      "impartial",
+      "unbiased",
+      "neutral",
+      "objective"
+    ],
+    "antonyms": [
+      "biased",
+      "partial",
+      "interested",
+      "prejudiced"
+    ]
+  },
+  {
+    "word": "Disjointed",
+    "meaning": "অসংলগ্ন বা বিচ্ছিন্ন",
+    "example": "His disjointed narrative was hard to follow.",
+    "synonyms": [
+      "disconnected",
+      "incoherent",
+      "fragmented",
+      "rambling"
+    ],
+    "antonyms": [
+      "coherent",
+      "connected",
+      "organized",
+      "unified"
+    ]
+  },
+  {
+    "word": "Dismiss",
+    "meaning": "বরখাস্ত করা বা প্রত্যাখ্যান করা",
+    "example": "The judge dismissed the case for lack of evidence.",
+    "synonyms": [
+      "reject",
+      "discard",
+      "repudiate",
+      "disregard"
+    ],
+    "antonyms": [
+      "accept",
+      "approve",
+      "consider",
+      "retain"
+    ]
+  },
+  {
+    "word": "Disparage",
+    "meaning": "অবমাননা করা বা তুচ্ছ করা",
+    "example": "He often disparages his colleagues' work.",
+    "synonyms": [
+      "belittle",
+      "depreciate",
+      "denigrate",
+      "criticize"
+    ],
+    "antonyms": [
+      "praise",
+      "commend",
+      "acclaim",
+      "compliment"
     ]
   },
   {
@@ -1615,31 +1625,139 @@
     ]
   },
   {
-    "word": "Dither",
-    "meaning": "দ্বিধা করা",
-    "example": "Stop dithering and make a decision.",
+    "word": "Disseminate",
+    "meaning": "ছড়িয়ে দেওয়া বা প্রচার করা",
+    "example": "The organization disseminates health information.",
     "synonyms": [
-      "hesitate",
-      "waver",
-      "vacillate"
+      "spread",
+      "circulate",
+      "distribute",
+      "propagate"
     ],
     "antonyms": [
-      "decide",
-      "resolve",
-      "be certain"
+      "suppress",
+      "conceal",
+      "withhold",
+      "gather"
     ]
   },
   {
-    "word": "Diurnal",
-    "meaning": "দৈনিক বা দিনের বেলায় সক্রিয়",
-    "example": "Most birds are diurnal, while owls are nocturnal.",
+    "word": "Dissolution",
+    "meaning": "বিলোপ বা বিচ্ছেদ",
+    "example": "The dissolution of the partnership was amicable.",
     "synonyms": [
-      "daily",
-      "daytime"
+      "termination",
+      "breakup",
+      "disintegration",
+      "disbandment"
     ],
     "antonyms": [
-      "nocturnal",
-      "nightly"
+      "formation",
+      "creation",
+      "establishment",
+      "union"
+    ]
+  },
+  {
+    "word": "Dissonance",
+    "meaning": "অসামঞ্জস্য বা বেসুরো শব্দ",
+    "example": "The dissonance in the music was intentional.",
+    "synonyms": [
+      "discord",
+      "disagreement",
+      "conflict",
+      "cacophony"
+    ],
+    "antonyms": [
+      "harmony",
+      "consonance",
+      "agreement",
+      "accord"
+    ]
+  },
+  {
+    "word": "Distend",
+    "meaning": "ফুলে যাওয়া বা প্রসারিত হওয়া",
+    "example": "The balloon will distend when filled with air.",
+    "synonyms": [
+      "swell",
+      "expand",
+      "inflate",
+      "enlarge"
+    ],
+    "antonyms": [
+      "contract",
+      "shrink",
+      "deflate",
+      "compress"
+    ]
+  },
+  {
+    "word": "Distill",
+    "meaning": "পাতন করা বা নির্যাস বের করা",
+    "example": "We need to distill the essence of the argument.",
+    "synonyms": [
+      "extract",
+      "purify",
+      "refine",
+      "concentrate"
+    ],
+    "antonyms": [
+      "dilute",
+      "pollute",
+      "contaminate",
+      "expand"
+    ]
+  },
+  {
+    "word": "Diverge",
+    "meaning": "বিচ্ছিন্ন হওয়া বা আলাদা হওয়া",
+    "example": "The paths diverge at this point.",
+    "synonyms": [
+      "separate",
+      "deviate",
+      "differ",
+      "branch"
+    ],
+    "antonyms": [
+      "converge",
+      "meet",
+      "unite",
+      "join"
+    ]
+  },
+  {
+    "word": "Divest",
+    "meaning": "বিলুপ্ত করা বা ছিনিয়ে নেওয়া",
+    "example": "The company decided to divest its overseas assets.",
+    "synonyms": [
+      "strip",
+      "deprive",
+      "dispose",
+      "relinquish"
+    ],
+    "antonyms": [
+      "invest",
+      "acquire",
+      "obtain",
+      "endow"
+    ]
+  },
+  {
+    "word": "Document",
+    "meaning": "নথিভুক্ত করা বা লিপিবদ্ধ করা",
+    "example": "Please document all your findings.",
+    "synonyms": [
+      "record",
+      "chronicle",
+      "register",
+      "certify"
+    ],
+    "antonyms": [
+      "conceal",
+      "hide",
+      "suppress",
+      "ignore"
     ]
   },
   {
@@ -1659,34 +1777,37 @@
     ]
   },
   {
-    "word": "Dour",
-    "meaning": "কঠোর ও বিষণ্ণ",
-    "example": "The dour expression on his face never changed.",
+    "word": "Dormant",
+    "meaning": "সুপ্ত বা নিষ্ক্রিয়",
+    "example": "The volcano has been dormant for centuries.",
     "synonyms": [
-      "stern",
-      "gloomy",
-      "sullen",
-      "grim"
+      "inactive",
+      "sleeping",
+      "latent",
+      "quiescent"
     ],
     "antonyms": [
-      "cheerful",
-      "genial",
-      "friendly"
+      "active",
+      "awake",
+      "operating",
+      "functional"
     ]
   },
   {
-    "word": "Duplicity",
-    "meaning": "প্রতারণা বা কপটতা",
-    "example": "He was accused of duplicity in his business dealings.",
+    "word": "Dupe",
+    "meaning": "প্রতারিত করা বা ঠকানো",
+    "example": "The con artist duped many investors.",
     "synonyms": [
-      "deceit",
-      "deception",
-      "dishonesty"
+      "deceive",
+      "trick",
+      "fool",
+      "mislead"
     ],
     "antonyms": [
-      "honesty",
-      "sincerity",
-      "candor"
+      "enlighten",
+      "inform",
+      "undeceive",
+      "alert"
     ]
   },
   {
@@ -1722,6 +1843,23 @@
     ]
   },
   {
+    "word": "Efficacy",
+    "meaning": "কার্যকারিতা বা ক্ষমতা",
+    "example": "The efficacy of the treatment has been proven.",
+    "synonyms": [
+      "effectiveness",
+      "potency",
+      "power",
+      "capability"
+    ],
+    "antonyms": [
+      "inefficacy",
+      "ineffectiveness",
+      "impotence",
+      "weakness"
+    ]
+  },
+  {
     "word": "Effrontery",
     "meaning": "নির্লজ্জতা বা ঔদ্ধত্য",
     "example": "He had the effrontery to ask for a raise after only a week on the job.",
@@ -1735,22 +1873,6 @@
       "timidity",
       "modesty",
       "shyness"
-    ]
-  },
-  {
-    "word": "Egregious",
-    "meaning": "মারাত্মক বা গুরুতর (ভুল)",
-    "example": "It was an egregious error that cost the company millions.",
-    "synonyms": [
-      "shocking",
-      "appalling",
-      "atrocious",
-      "flagrant"
-    ],
-    "antonyms": [
-      "minor",
-      "trivial",
-      "insignificant"
     ]
   },
   {
@@ -1784,48 +1906,20 @@
     ]
   },
   {
-    "word": "Eloquent",
-    "meaning": "বাগ্মী বা সুন্দরভাবে কথা বলতে পটু",
-    "example": "She delivered an eloquent speech that moved the audience.",
+    "word": "Embellish",
+    "meaning": "সাজানো বা অলংকৃত করা",
+    "example": "She tends to embellish her stories.",
     "synonyms": [
-      "articulate",
-      "fluent",
-      "persuasive"
+      "decorate",
+      "adorn",
+      "ornament",
+      "enhance"
     ],
     "antonyms": [
-      "inarticulate",
-      "halting",
-      "tongue-tied"
-    ]
-  },
-  {
-    "word": "Embezzle",
-    "meaning": "অর্থ আত্মসাৎ করা",
-    "example": "The accountant was caught embezzling funds from the company.",
-    "synonyms": [
-      "misappropriate",
-      "steal",
-      "defalcate"
-    ],
-    "antonyms": [
-      "donate",
-      "contribute",
-      "reimburse"
-    ]
-  },
-  {
-    "word": "Empathy",
-    "meaning": "সহানুভূতি বা অন্যের অনুভূতি বোঝা",
-    "example": "Having empathy for others is a sign of emotional intelligence.",
-    "synonyms": [
-      "compassion",
-      "understanding",
-      "sympathy"
-    ],
-    "antonyms": [
-      "apathy",
-      "indifference",
-      "callousness"
+      "simplify",
+      "strip",
+      "plain",
+      "diminish"
     ]
   },
   {
@@ -1841,6 +1935,40 @@
       "theoretical",
       "hypothetical",
       "speculative"
+    ]
+  },
+  {
+    "word": "Emulate",
+    "meaning": "অনুকরণ করা বা অনুসরণ করা",
+    "example": "He tries to emulate his mentor's success.",
+    "synonyms": [
+      "imitate",
+      "copy",
+      "mimic",
+      "follow"
+    ],
+    "antonyms": [
+      "ignore",
+      "avoid",
+      "diverge",
+      "differ"
+    ]
+  },
+  {
+    "word": "Endemic",
+    "meaning": "স্থানীয় বা দেশজ",
+    "example": "Malaria is endemic to tropical regions.",
+    "synonyms": [
+      "native",
+      "indigenous",
+      "local",
+      "regional"
+    ],
+    "antonyms": [
+      "foreign",
+      "exotic",
+      "imported",
+      "alien"
     ]
   },
   {
@@ -1860,19 +1988,6 @@
     ]
   },
   {
-    "word": "Enfranchise",
-    "meaning": "ভোটাধিকার দেওয়া",
-    "example": "The new law enfranchised women, giving them the right to vote.",
-    "synonyms": [
-      "empower",
-      "give suffrage"
-    ],
-    "antonyms": [
-      "disenfranchise",
-      "disempower"
-    ]
-  },
-  {
     "word": "Engender",
     "meaning": "জন্ম দেওয়া বা কারণ হওয়া",
     "example": "His policies engendered widespread resentment.",
@@ -1889,49 +2004,20 @@
     ]
   },
   {
-    "word": "Enigma",
-    "meaning": "রহস্য বা ধাঁধা",
-    "example": "How the ancient Egyptians built the pyramids remains an enigma.",
+    "word": "Enhance",
+    "meaning": "বৃদ্ধি করা বা উন্নত করা",
+    "example": "The lighting will enhance the room's appearance.",
     "synonyms": [
-      "mystery",
-      "puzzle",
-      "conundrum",
-      "riddle"
+      "improve",
+      "augment",
+      "boost",
+      "intensify"
     ],
     "antonyms": [
-      "clarity",
-      "explanation",
-      "answer"
-    ]
-  },
-  {
-    "word": "Enmity",
-    "meaning": "শত্রুতা",
-    "example": "There has been long-standing enmity between the two families.",
-    "synonyms": [
-      "hostility",
-      "animosity",
-      "antagonism"
-    ],
-    "antonyms": [
-      "friendship",
-      "amity",
-      "camaraderie"
-    ]
-  },
-  {
-    "word": "Ennui",
-    "meaning": "অবসাদ বা একঘেয়েমি",
-    "example": "He suffered from a deep sense of ennui and boredom.",
-    "synonyms": [
-      "boredom",
-      "tedium",
-      "listlessness"
-    ],
-    "antonyms": [
-      "excitement",
-      "enthusiasm",
-      "interest"
+      "diminish",
+      "reduce",
+      "weaken",
+      "impair"
     ]
   },
   {
@@ -1947,33 +2033,6 @@
       "permanent",
       "eternal",
       "lasting"
-    ]
-  },
-  {
-    "word": "Epicure",
-    "meaning": "খাদ্যরসিক",
-    "example": "As an epicure, he traveled the world to taste different cuisines.",
-    "synonyms": [
-      "gourmet",
-      "connoisseur",
-      "foodie"
-    ],
-    "antonyms": [
-      "glutton"
-    ]
-  },
-  {
-    "word": "Epitome",
-    "meaning": "নিখুঁত প্রতীক বা উদাহরণ",
-    "example": "She is the epitome of grace and elegance.",
-    "synonyms": [
-      "personification",
-      "embodiment",
-      "quintessence"
-    ],
-    "antonyms": [
-      "antithesis",
-      "opposite"
     ]
   },
   {
@@ -2022,21 +2081,6 @@
     ]
   },
   {
-    "word": "Eschew",
-    "meaning": "এড়িয়ে চলা বা বর্জন করা",
-    "example": "He eschewed processed foods and followed a healthy diet.",
-    "synonyms": [
-      "avoid",
-      "shun",
-      "abstain from"
-    ],
-    "antonyms": [
-      "embrace",
-      "seek",
-      "indulge in"
-    ]
-  },
-  {
     "word": "Esoteric",
     "meaning": "রহস্যময় বা অল্প লোক জানে এমন",
     "example": "The book is full of esoteric references that only experts would understand.",
@@ -2052,34 +2096,20 @@
     ]
   },
   {
-    "word": "Espouse",
-    "meaning": "সমর্থন করা",
-    "example": "She espouses the cause of animal rights.",
+    "word": "Eulogy",
+    "meaning": "প্রশংসা বা স্তুতি",
+    "example": "He delivered a moving eulogy at the funeral.",
     "synonyms": [
-      "adopt",
-      "support",
-      "champion",
-      "advocate"
+      "tribute",
+      "praise",
+      "commendation",
+      "panegyric"
     ],
     "antonyms": [
-      "reject",
-      "oppose",
-      "renounce"
-    ]
-  },
-  {
-    "word": "Ethereal",
-    "meaning": "সূক্ষ্ম বা স্বর্গীয়",
-    "example": "The ballerina danced with an ethereal grace.",
-    "synonyms": [
-      "delicate",
-      "heavenly",
-      "celestial"
-    ],
-    "antonyms": [
-      "earthly",
-      "heavy",
-      "substantial"
+      "criticism",
+      "condemnation",
+      "denunciation",
+      "censure"
     ]
   },
   {
@@ -2094,37 +2124,6 @@
     "antonyms": [
       "dysphemism",
       "bluntness"
-    ]
-  },
-  {
-    "word": "Evanescent",
-    "meaning": "ক্ষণস্থায়ী বা দ্রুত মিলিয়ে যায় এমন",
-    "example": "Fame can be as evanescent as a morning mist.",
-    "synonyms": [
-      "fleeting",
-      "transient",
-      "ephemeral"
-    ],
-    "antonyms": [
-      "permanent",
-      "eternal",
-      "enduring"
-    ]
-  },
-  {
-    "word": "Evince",
-    "meaning": "প্রকাশ করা বা প্রদর্শন করা",
-    "example": "Her sad smile evinced a deep sense of loss.",
-    "synonyms": [
-      "show",
-      "demonstrate",
-      "reveal",
-      "manifest"
-    ],
-    "antonyms": [
-      "conceal",
-      "hide",
-      "suppress"
     ]
   },
   {
@@ -2160,168 +2159,37 @@
     ]
   },
   {
-    "word": "Execrable",
-    "meaning": "জঘন্য বা অত্যন্ত ঘৃণ্য",
-    "example": "The food at the restaurant was execrable.",
+    "word": "Exigency",
+    "meaning": "জরুরি অবস্থা বা জরুরি প্রয়োজন",
+    "example": "The exigency of the situation required immediate action.",
     "synonyms": [
-      "abominable",
-      "detestable",
-      "atrocious"
+      "urgency",
+      "emergency",
+      "necessity",
+      "crisis"
     ],
     "antonyms": [
-      "excellent",
-      "admirable",
-      "wonderful"
+      "leisure",
+      "luxury",
+      "option",
+      "choice"
     ]
   },
   {
-    "word": "Exigent",
-    "meaning": "জরুরি বা দাবিদার",
-    "example": "The exigent circumstances required immediate action.",
+    "word": "Extrapolation",
+    "meaning": "অনুমান বা ধারণা",
+    "example": "The prediction was based on extrapolation from current trends.",
     "synonyms": [
-      "urgent",
-      "pressing",
-      "demanding"
+      "inference",
+      "projection",
+      "estimation",
+      "conclusion"
     ],
     "antonyms": [
-      "trivial",
-      "non-urgent",
-      "minor"
-    ]
-  },
-  {
-    "word": "Exonerate",
-    "meaning": "দায়মুক্তি দেওয়া",
-    "example": "The court exonerated him of all charges.",
-    "synonyms": [
-      "absolve",
-      "acquit",
-      "exculpate",
-      "vindicate"
-    ],
-    "antonyms": [
-      "convict",
-      "condemn",
-      "blame"
-    ]
-  },
-  {
-    "word": "Exorbitant",
-    "meaning": "অতিরিক্ত বা অত্যধিক",
-    "example": "The hotel charges exorbitant rates during the peak season.",
-    "synonyms": [
-      "excessive",
-      "extortionate",
-      "unreasonable"
-    ],
-    "antonyms": [
-      "reasonable",
-      "moderate",
-      "fair"
-    ]
-  },
-  {
-    "word": "Expatiate",
-    "meaning": "বিস্তারিতভাবে আলোচনা করা",
-    "example": "The professor expatiated on the causes of the war.",
-    "synonyms": [
-      "elaborate",
-      "expound",
-      "dilate"
-    ],
-    "antonyms": [
-      "summarize",
-      "abbreviate",
-      "curtail"
-    ]
-  },
-  {
-    "word": "Expatriate",
-    "meaning": "প্রবাসী",
-    "example": "He lived as an expatriate in Paris for many years.",
-    "synonyms": [
-      "emigrant",
-      "exile"
-    ],
-    "antonyms": [
-      "native",
-      "resident"
-    ]
-  },
-  {
-    "word": "Expedient",
-    "meaning": "সুবিধাজনক কিন্তু অনৈতিক",
-    "example": "It was expedient to lie to avoid trouble, but it wasn't right.",
-    "synonyms": [
-      "convenient",
-      "advantageous",
-      "pragmatic"
-    ],
-    "antonyms": [
-      "inexpedient",
-      "unwise",
-      "improper"
-    ]
-  },
-  {
-    "word": "Extant",
-    "meaning": "বিদ্যমান বা টিকে আছে এমন",
-    "example": "There are only a few extant copies of the ancient manuscript.",
-    "synonyms": [
-      "surviving",
-      "existing",
-      "in existence"
-    ],
-    "antonyms": [
-      "extinct",
-      "vanished",
-      "lost"
-    ]
-  },
-  {
-    "word": "Extol",
-    "meaning": "উচ্চ প্রশংসা করা",
-    "example": "The critic extolled the virtues of the new film.",
-    "synonyms": [
-      "praise",
-      "laud",
-      "acclaim"
-    ],
-    "antonyms": [
-      "criticize",
-      "denigrate",
-      "censure"
-    ]
-  },
-  {
-    "word": "Extraneous",
-    "meaning": "অপ্রাসঙ্গিক বা বাইরের",
-    "example": "Please stick to the topic and avoid extraneous details.",
-    "synonyms": [
-      "irrelevant",
-      "unrelated",
-      "superfluous"
-    ],
-    "antonyms": [
-      "relevant",
-      "pertinent",
-      "essential"
-    ]
-  },
-  {
-    "word": "Extrapolate",
-    "meaning": "পূর্বানুমান করা",
-    "example": "We can extrapolate future trends from the current data.",
-    "synonyms": [
-      "infer",
-      "deduce",
-      "project",
-      "conclude"
-    ],
-    "antonyms": [
-      "interpolate",
-      "insert",
-      "know"
+      "certainty",
+      "fact",
+      "measurement",
+      "observation"
     ]
   },
   {
@@ -2340,18 +2208,20 @@
     ]
   },
   {
-    "word": "Facile",
-    "meaning": "সহজলভ্য বা অগভীর",
-    "example": "He offered a facile solution to a complex problem.",
+    "word": "Facilitate",
+    "meaning": "সহজ করা বা সুবিধা করা",
+    "example": "The new software will facilitate data entry.",
     "synonyms": [
-      "superficial",
-      "simplistic",
-      "effortless"
+      "ease",
+      "expedite",
+      "assist",
+      "enable"
     ],
     "antonyms": [
-      "profound",
-      "complex",
-      "difficult"
+      "hinder",
+      "impede",
+      "obstruct",
+      "complicate"
     ]
   },
   {
@@ -2385,47 +2255,20 @@
     ]
   },
   {
-    "word": "Fawn",
-    "meaning": "তোষামোদ করা",
-    "example": "The intern was fawning over the CEO to get a promotion.",
+    "word": "Fawning",
+    "meaning": "তোষামোদপূর্ণ বা চাটুকারিতাপূর্ণ",
+    "example": "His fawning behavior toward the boss was embarrassing.",
     "synonyms": [
-      "flatter",
-      "sycophant",
-      "grovel"
+      "obsequious",
+      "servile",
+      "sycophantic",
+      "flattering"
     ],
     "antonyms": [
-      "ignore",
-      "scorn",
-      "insult"
-    ]
-  },
-  {
-    "word": "Fecund",
-    "meaning": "উর্বর বা উৎপাদনশীল",
-    "example": "The fecund soil produced a rich harvest.",
-    "synonyms": [
-      "fertile",
-      "fruitful",
-      "prolific"
-    ],
-    "antonyms": [
-      "barren",
-      "infertile",
-      "unproductive"
-    ]
-  },
-  {
-    "word": "Feign",
-    "meaning": "ভান করা",
-    "example": "She feigned illness to avoid going to school.",
-    "synonyms": [
-      "pretend",
-      "simulate",
-      "fake"
-    ],
-    "antonyms": [
-      "be genuine",
-      "be sincere"
+      "independent",
+      "assertive",
+      "defiant",
+      "critical"
     ]
   },
   {
@@ -2457,21 +2300,6 @@
       "apathy",
       "indifference",
       "lethargy"
-    ]
-  },
-  {
-    "word": "Fetter",
-    "meaning": "শৃঙ্খল বা বাধা দেওয়া",
-    "example": "He felt fettered by the responsibilities of his job.",
-    "synonyms": [
-      "shackle",
-      "restrain",
-      "hamper"
-    ],
-    "antonyms": [
-      "liberate",
-      "free",
-      "release"
     ]
   },
   {
@@ -2536,20 +2364,6 @@
     ]
   },
   {
-    "word": "Forbearance",
-    "meaning": "সহনশীলতা বা ধৈর্য",
-    "example": "He showed great forbearance in dealing with the difficult customer.",
-    "synonyms": [
-      "patience",
-      "tolerance",
-      "self-control"
-    ],
-    "antonyms": [
-      "impatience",
-      "intolerance"
-    ]
-  },
-  {
     "word": "Forestall",
     "meaning": "আগেই প্রতিরোধ করা",
     "example": "He acted quickly to forestall any potential problems.",
@@ -2565,92 +2379,37 @@
     ]
   },
   {
-    "word": "Forswear",
-    "meaning": "শপথ করে ত্যাগ করা",
-    "example": "He had to forswear his allegiance to his former country.",
+    "word": "Frugality",
+    "meaning": "মিতব্যয়িতা বা কৃপণতা",
+    "example": "His frugality allowed him to save money.",
     "synonyms": [
-      "renounce",
-      "abjure",
-      "relinquish"
+      "thrift",
+      "economy",
+      "prudence",
+      "parsimony"
     ],
     "antonyms": [
-      "embrace",
-      "swear allegiance to"
+      "extravagance",
+      "wastefulness",
+      "lavishness",
+      "prodigality"
     ]
   },
   {
-    "word": "Fortuitous",
-    "meaning": "আকস্মিক বা ভাগ্যক্রমে ঘটা",
-    "example": "Their meeting was purely fortuitous.",
+    "word": "Futile",
+    "meaning": "নিরর্থক বা বৃথা",
+    "example": "All attempts to rescue them were futile.",
     "synonyms": [
-      "accidental",
-      "chance",
-      "unexpected"
+      "useless",
+      "vain",
+      "fruitless",
+      "ineffective"
     ],
     "antonyms": [
-      "planned",
-      "deliberate",
-      "intentional"
-    ]
-  },
-  {
-    "word": "Fractious",
-    "meaning": "ঝগড়াটে বা খিটখিটে",
-    "example": "The fractious children were constantly fighting.",
-    "synonyms": [
-      "irritable",
-      "quarrelsome",
-      "grumpy"
-    ],
-    "antonyms": [
-      "agreeable",
-      "placid",
-      "peaceful"
-    ]
-  },
-  {
-    "word": "Frugal",
-    "meaning": "মিতব্যয়ী",
-    "example": "She lives a frugal lifestyle, saving money wherever she can.",
-    "synonyms": [
-      "thrifty",
-      "economical",
-      "sparing"
-    ],
-    "antonyms": [
-      "extravagant",
-      "spendthrift",
-      "prodigal"
-    ]
-  },
-  {
-    "word": "Fulminate",
-    "meaning": "তীব্র সমালোচনা করা",
-    "example": "He fulminated against the new tax policy.",
-    "synonyms": [
-      "rail",
-      "protest",
-      "denounce"
-    ],
-    "antonyms": [
-      "praise",
-      "approve",
-      "commend"
-    ]
-  },
-  {
-    "word": "Furtive",
-    "meaning": "গোপন বা চোরা",
-    "example": "She cast a furtive glance in his direction.",
-    "synonyms": [
-      "secretive",
-      "stealthy",
-      "sly"
-    ],
-    "antonyms": [
-      "open",
-      "overt",
-      "public"
+      "effective",
+      "productive",
+      "successful",
+      "fruitful"
     ]
   },
   {
@@ -2696,6 +2455,23 @@
       "dissuade",
       "calm",
       "pacify"
+    ]
+  },
+  {
+    "word": "Gouge",
+    "meaning": "খোদাই করা বা আঁচড় দেওয়া",
+    "example": "The accident gouged a hole in the wall.",
+    "synonyms": [
+      "scoop",
+      "hollow",
+      "dig",
+      "chisel"
+    ],
+    "antonyms": [
+      "fill",
+      "smooth",
+      "level",
+      "flatten"
     ]
   },
   {
@@ -2775,61 +2551,37 @@
     ]
   },
   {
-    "word": "Hedonism",
-    "meaning": "ভোগবাদ বা সুখবাদ",
-    "example": "He lived a life of pure hedonism, seeking pleasure above all else.",
+    "word": "Homogenous",
+    "meaning": "সমজাতীয় বা একরকম",
+    "example": "The population is relatively homogenous.",
     "synonyms": [
-      "indulgence",
-      "sensualism",
-      "pleasure-seeking"
+      "uniform",
+      "similar",
+      "identical",
+      "consistent"
     ],
     "antonyms": [
-      "asceticism",
-      "self-denial",
-      "abstinence"
+      "heterogeneous",
+      "diverse",
+      "varied",
+      "mixed"
     ]
   },
   {
-    "word": "Hegemony",
-    "meaning": "আধিপত্য",
-    "example": "The nation's economic hegemony was challenged by its rivals.",
+    "word": "Hyperbole",
+    "meaning": "অতিরঞ্জন বা অত্যুক্তি",
+    "example": "His claim was obvious hyperbole.",
     "synonyms": [
-      "dominance",
-      "supremacy",
-      "leadership"
+      "exaggeration",
+      "overstatement",
+      "embellishment",
+      "magnification"
     ],
     "antonyms": [
-      "subordination",
-      "inferiority"
-    ]
-  },
-  {
-    "word": "Heretical",
-    "meaning": "ধর্মবিরোধী বা প্রথাবিরোধী",
-    "example": "His heretical views were condemned by the church.",
-    "synonyms": [
-      "unorthodox",
-      "nonconformist",
-      "dissident"
-    ],
-    "antonyms": [
-      "orthodox",
-      "conventional",
-      "conformist"
-    ]
-  },
-  {
-    "word": "Hiatus",
-    "meaning": "বিরতি",
-    "example": "The band is taking a hiatus after a long tour.",
-    "synonyms": [
-      "break",
-      "pause",
-      "interruption"
-    ],
-    "antonyms": [
-      "continuation",
-      "continuity"
+      "understatement",
+      "minimization",
+      "restraint",
+      "moderation"
     ]
   },
   {
@@ -2862,21 +2614,6 @@
     ]
   },
   {
-    "word": "Ignominious",
-    "meaning": "লজ্জাজনক বা অপমানজনক",
-    "example": "The team suffered an ignominious defeat.",
-    "synonyms": [
-      "humiliating",
-      "shameful",
-      "disgraceful"
-    ],
-    "antonyms": [
-      "honorable",
-      "glorious",
-      "dignified"
-    ]
-  },
-  {
     "word": "Immutable",
     "meaning": "অপরিবর্তনীয়",
     "example": "The laws of physics are considered immutable.",
@@ -2892,48 +2629,71 @@
     ]
   },
   {
-    "word": "Impecunious",
-    "meaning": "দরিদ্র বা নিঃস্ব",
-    "example": "The impecunious artist struggled to buy art supplies.",
+    "word": "Impair",
+    "meaning": "ক্ষতিগ্রস্ত করা বা দুর্বল করা",
+    "example": "Smoking can impair your health.",
     "synonyms": [
-      "penniless",
-      "poor",
-      "destitute"
+      "damage",
+      "harm",
+      "weaken",
+      "diminish"
     ],
     "antonyms": [
-      "wealthy",
-      "affluent",
-      "rich"
+      "improve",
+      "enhance",
+      "strengthen",
+      "repair"
     ]
   },
   {
-    "word": "Imperious",
-    "meaning": "দাম্ভিক বা কর্তৃত্বপরায়ণ",
-    "example": "She had an imperious manner and expected everyone to obey her.",
+    "word": "Impassive",
+    "meaning": "নির্বিকার বা ভাবলেশহীন",
+    "example": "His impassive expression revealed nothing.",
     "synonyms": [
-      "arrogant",
-      "haughty",
-      "domineering"
+      "emotionless",
+      "stoic",
+      "unmoved",
+      "indifferent"
     ],
     "antonyms": [
-      "humble",
-      "meek",
-      "subservient"
+      "emotional",
+      "expressive",
+      "passionate",
+      "animated"
     ]
   },
   {
-    "word": "Impertinent",
-    "meaning": "অপ্রাসঙ্গিক বা অভদ্র",
-    "example": "The impertinent student interrupted the teacher constantly.",
+    "word": "Impede",
+    "meaning": "বাধা দেওয়া বা প্রতিবন্ধকতা সৃষ্টি করা",
+    "example": "Bad weather will impede our progress.",
     "synonyms": [
-      "rude",
-      "insolent",
-      "disrespectful"
+      "hinder",
+      "obstruct",
+      "block",
+      "hamper"
     ],
     "antonyms": [
-      "polite",
-      "respectful",
-      "courteous"
+      "facilitate",
+      "assist",
+      "aid",
+      "promote"
+    ]
+  },
+  {
+    "word": "Impermeable",
+    "meaning": "অভেদ্য বা অপ্রবেশ্য",
+    "example": "The material is impermeable to water.",
+    "synonyms": [
+      "impervious",
+      "waterproof",
+      "sealed",
+      "resistant"
+    ],
+    "antonyms": [
+      "permeable",
+      "porous",
+      "penetrable",
+      "absorbent"
     ]
   },
   {
@@ -2967,21 +2727,6 @@
     ]
   },
   {
-    "word": "Impetuous",
-    "meaning": "হঠকারী বা আবেগপ্রবণ",
-    "example": "Making impetuous decisions can lead to regret.",
-    "synonyms": [
-      "impulsive",
-      "rash",
-      "hasty"
-    ],
-    "antonyms": [
-      "cautious",
-      "prudent",
-      "considered"
-    ]
-  },
-  {
     "word": "Implacable",
     "meaning": "নির্দয় বা যাকে শান্ত করা যায় না",
     "example": "He was an implacable enemy.",
@@ -3012,18 +2757,37 @@
     ]
   },
   {
-    "word": "Impunity",
-    "meaning": "শাস্তি থেকে অব্যাহতি",
-    "example": "The corrupt official acted with impunity, knowing he wouldn't be caught.",
+    "word": "Implode",
+    "meaning": "ভিতরের দিকে ফেটে যাওয়া বা ধসে পড়া",
+    "example": "The building seemed to implode during demolition.",
     "synonyms": [
-      "exemption",
-      "immunity",
-      "freedom"
+      "collapse",
+      "crumble",
+      "disintegrate",
+      "cave"
     ],
     "antonyms": [
-      "liability",
-      "responsibility",
-      "punishment"
+      "explode",
+      "expand",
+      "burst",
+      "grow"
+    ]
+  },
+  {
+    "word": "Inadvertently",
+    "meaning": "অসাবধানতাবশত বা অনিচ্ছাকৃতভাবে",
+    "example": "She inadvertently revealed the secret.",
+    "synonyms": [
+      "accidentally",
+      "unintentionally",
+      "unknowingly",
+      "unwittingly"
+    ],
+    "antonyms": [
+      "deliberately",
+      "intentionally",
+      "purposely",
+      "consciously"
     ]
   },
   {
@@ -3042,78 +2806,88 @@
     ]
   },
   {
-    "word": "Incipient",
-    "meaning": "প্রাথমিক বা সবে শুরু হচ্ছে",
-    "example": "He could feel the incipient signs of a cold.",
+    "word": "Incongruity",
+    "meaning": "অসঙ্গতি বা বৈপরীত্য",
+    "example": "The incongruity of the situation was striking.",
     "synonyms": [
-      "emerging",
-      "developing",
-      "nascent"
+      "inconsistency",
+      "incompatibility",
+      "mismatch",
+      "disparity"
     ],
     "antonyms": [
-      "developed",
-      "full-fledged",
-      "mature"
+      "congruity",
+      "harmony",
+      "consistency",
+      "compatibility"
     ]
   },
   {
-    "word": "Incontrovertible",
-    "meaning": "অকাট্য বা অনস্বীকার্য",
-    "example": "The DNA evidence was incontrovertible proof of his guilt.",
+    "word": "Inconsequential",
+    "meaning": "গুরুত্বহীন বা তুচ্ছ",
+    "example": "The error was inconsequential to the final result.",
     "synonyms": [
-      "indisputable",
-      "irrefutable",
-      "undeniable"
+      "insignificant",
+      "trivial",
+      "unimportant",
+      "minor"
     ],
     "antonyms": [
-      "debatable",
-      "questionable",
-      "disputable"
+      "significant",
+      "important",
+      "consequential",
+      "major"
     ]
   },
   {
-    "word": "Incorrigible",
-    "meaning": "অসংশোধনীয়",
-    "example": "He is an incorrigible liar who cannot be trusted.",
+    "word": "Incorporate",
+    "meaning": "অন্তর্ভুক্ত করা বা সংযুক্ত করা",
+    "example": "We will incorporate your suggestions into the plan.",
     "synonyms": [
-      "inveterate",
-      "habitual",
-      "unreformable"
+      "include",
+      "integrate",
+      "combine",
+      "merge"
     ],
     "antonyms": [
-      "reformable",
-      "manageable",
-      "repentant"
+      "exclude",
+      "separate",
+      "remove",
+      "extract"
     ]
   },
   {
-    "word": "Indefatigable",
-    "meaning": "অক্লান্ত বা ক্লান্তিহীন",
-    "example": "She was an indefatigable campaigner for human rights.",
+    "word": "Indeterminate",
+    "meaning": "অনিশ্চিত বা অনির্দিষ্ট",
+    "example": "The outcome remains indeterminate.",
     "synonyms": [
-      "tireless",
-      "unflagging",
-      "relentless"
+      "uncertain",
+      "indefinite",
+      "vague",
+      "unclear"
     ],
     "antonyms": [
-      "lethargic",
-      "weary",
-      "exhausted"
+      "definite",
+      "certain",
+      "specific",
+      "determined"
     ]
   },
   {
-    "word": "Indigent",
-    "meaning": "দরিদ্র বা নিঃস্ব",
-    "example": "The charity provides food and shelter for indigent people.",
+    "word": "Indigence",
+    "meaning": "দারিদ্র্য বা অভাব",
+    "example": "Many families live in indigence.",
     "synonyms": [
-      "needy",
-      "impoverished",
-      "destitute"
+      "poverty",
+      "destitution",
+      "penury",
+      "hardship"
     ],
     "antonyms": [
-      "wealthy",
-      "affluent",
-      "rich"
+      "wealth",
+      "affluence",
+      "prosperity",
+      "riches"
     ]
   },
   {
@@ -3162,33 +2936,20 @@
     ]
   },
   {
-    "word": "Inimical",
-    "meaning": "শত্রুভাবাপন্ন বা ক্ষতিকর",
-    "example": "The policy was inimical to the interests of the poor.",
+    "word": "Inherent",
+    "meaning": "অন্তর্নিহিত বা স্বাভাবিক",
+    "example": "Courage is inherent in her character.",
     "synonyms": [
-      "hostile",
-      "adverse",
-      "harmful"
+      "intrinsic",
+      "innate",
+      "natural",
+      "built-in"
     ],
     "antonyms": [
-      "friendly",
-      "favorable",
-      "beneficial"
-    ]
-  },
-  {
-    "word": "Iniquity",
-    "meaning": "অন্যায় বা দুষ্টুমি",
-    "example": "The city was a den of iniquity, filled with crime and corruption.",
-    "synonyms": [
-      "wickedness",
-      "sin",
-      "immorality"
-    ],
-    "antonyms": [
-      "righteousness",
-      "virtue",
-      "morality"
+      "extrinsic",
+      "external",
+      "acquired",
+      "learned"
     ]
   },
   {
@@ -3207,18 +2968,37 @@
     ]
   },
   {
-    "word": "Inscrutable",
-    "meaning": "দুর্বোধ্য বা রহস্যময়",
-    "example": "His expression was inscrutable, making it hard to know what he was thinking.",
+    "word": "Insensible",
+    "meaning": "অসংবেদনশীল বা অজ্ঞান",
+    "example": "He was insensible to pain.",
     "synonyms": [
-      "enigmatic",
-      "mysterious",
-      "impenetrable"
+      "unconscious",
+      "numb",
+      "unaware",
+      "imperceptible"
     ],
     "antonyms": [
-      "transparent",
-      "clear",
-      "expressive"
+      "sensible",
+      "conscious",
+      "aware",
+      "sensitive"
+    ]
+  },
+  {
+    "word": "Insinuate",
+    "meaning": "ইঙ্গিত করা বা পরোক্ষভাবে বলা",
+    "example": "Are you insinuating that I lied?",
+    "synonyms": [
+      "imply",
+      "suggest",
+      "hint",
+      "intimate"
+    ],
+    "antonyms": [
+      "state",
+      "declare",
+      "announce",
+      "proclaim"
     ]
   },
   {
@@ -3237,33 +3017,20 @@
     ]
   },
   {
-    "word": "Insolvent",
-    "meaning": "দেউলিয়া",
-    "example": "The company was declared insolvent after failing to pay its debts.",
+    "word": "Insularity",
+    "meaning": "সংকীর্ণতা বা বিচ্ছিন্নতা",
+    "example": "His insularity prevented him from accepting new ideas.",
     "synonyms": [
-      "bankrupt",
-      "broke",
-      "penniless"
+      "isolation",
+      "narrowness",
+      "provincialism",
+      "detachment"
     ],
     "antonyms": [
-      "solvent",
-      "wealthy",
-      "rich"
-    ]
-  },
-  {
-    "word": "Insular",
-    "meaning": "সংকীর্ণমনা",
-    "example": "Living in a small village can lead to an insular perspective.",
-    "synonyms": [
-      "narrow-minded",
-      "parochial",
-      "provincial"
-    ],
-    "antonyms": [
-      "cosmopolitan",
-      "broad-minded",
-      "open"
+      "openness",
+      "cosmopolitanism",
+      "broad-mindedness",
+      "integration"
     ]
   },
   {
@@ -3282,18 +3049,20 @@
     ]
   },
   {
-    "word": "Intransigent",
-    "meaning": "একগুঁয়ে বা আপোষহীন",
-    "example": "The intransigent union refused to negotiate with the management.",
+    "word": "Intransigence",
+    "meaning": "জেদ বা নমনীয়তার অভাব",
+    "example": "Their intransigence prevented a compromise.",
     "synonyms": [
-      "uncompromising",
-      "inflexible",
-      "obstinate"
+      "stubbornness",
+      "inflexibility",
+      "obstinacy",
+      "rigidity"
     ],
     "antonyms": [
-      "flexible",
-      "compliant",
-      "conciliatory"
+      "flexibility",
+      "compromise",
+      "cooperation",
+      "adaptability"
     ]
   },
   {
@@ -3311,17 +3080,20 @@
     ]
   },
   {
-    "word": "Inure",
-    "meaning": "অভ্যস্ত করা (কষ্টে)",
-    "example": "The soldiers were inured to the hardships of war.",
+    "word": "Inured",
+    "meaning": "অভ্যস্ত বা কঠোর করা",
+    "example": "Soldiers become inured to hardship.",
     "synonyms": [
-      "harden",
-      "accustom",
-      "toughen"
+      "accustomed",
+      "hardened",
+      "habituated",
+      "toughened"
     ],
     "antonyms": [
-      "sensitize",
-      "soften"
+      "unaccustomed",
+      "sensitive",
+      "vulnerable",
+      "inexperienced"
     ]
   },
   {
@@ -3370,61 +3142,20 @@
     ]
   },
   {
-    "word": "Itinerant",
-    "meaning": "ভ্রমণকারী বা ভ্রাম্যমাণ",
-    "example": "The itinerant workers traveled from farm to farm, looking for work.",
+    "word": "Itinerary",
+    "meaning": "ভ্রমণসূচি বা কর্মসূচি",
+    "example": "Our itinerary includes visits to five cities.",
     "synonyms": [
-      "wandering",
-      "nomadic",
-      "peripatetic"
+      "schedule",
+      "route",
+      "plan",
+      "agenda"
     ],
     "antonyms": [
-      "settled",
-      "permanent",
-      "stationary"
-    ]
-  },
-  {
-    "word": "Jettison",
-    "meaning": "পরিত্যাগ করা বা ফেলে দেওয়া",
-    "example": "The captain ordered the crew to jettison the cargo to lighten the ship.",
-    "synonyms": [
-      "discard",
-      "dump",
-      "abandon"
-    ],
-    "antonyms": [
-      "load",
-      "keep",
-      "retain"
-    ]
-  },
-  {
-    "word": "Jingoism",
-    "meaning": "উগ্র দেশপ্রেম",
-    "example": "The politician's speech was full of jingoism and xenophobia.",
-    "synonyms": [
-      "chauvinism",
-      "extreme patriotism",
-      "nationalism"
-    ],
-    "antonyms": [
-      "internationalism",
-      "pacifism"
-    ]
-  },
-  {
-    "word": "Juxtapose",
-    "meaning": "পাশাপাশি স্থাপন করা",
-    "example": "The artist juxtaposed bright colors with dark shades.",
-    "synonyms": [
-      "place side-by-side",
-      "compare",
-      "contrast"
-    ],
-    "antonyms": [
-      "separate",
-      "isolate"
+      "spontaneity",
+      "improvisation",
+      "randomness",
+      "flexibility"
     ]
   },
   {
@@ -3441,36 +3172,6 @@
       "verbose",
       "loquacious",
       "garrulous"
-    ]
-  },
-  {
-    "word": "Languid",
-    "meaning": "অবসন্ন বা শক্তিহীন",
-    "example": "They spent a languid afternoon by the river.",
-    "synonyms": [
-      "lethargic",
-      "listless",
-      "sluggish"
-    ],
-    "antonyms": [
-      "energetic",
-      "vigorous",
-      "active"
-    ]
-  },
-  {
-    "word": "Largess",
-    "meaning": "দানশীলতা",
-    "example": "The millionaire was known for his largess to charities.",
-    "synonyms": [
-      "generosity",
-      "munificence",
-      "bounty"
-    ],
-    "antonyms": [
-      "stinginess",
-      "meanness",
-      "parsimony"
     ]
   },
   {
@@ -3564,77 +3265,20 @@
     ]
   },
   {
-    "word": "Libertine",
-    "meaning": "স্বেচ্ছাচারী বা চরিত্রহীন ব্যক্তি",
-    "example": "He was a well-known libertine who cared only for his own pleasure.",
+    "word": "Log",
+    "meaning": "লিপিবদ্ধ করা বা দিনলিপি",
+    "example": "The captain logged all events in the ship's journal.",
     "synonyms": [
-      "profligate",
-      "rake",
-      "philanderer"
+      "record",
+      "register",
+      "chronicle",
+      "document"
     ],
     "antonyms": [
-      "ascetic",
-      "puritan"
-    ]
-  },
-  {
-    "word": "Lionize",
-    "meaning": "বিখ্যাত ব্যক্তি হিসেবে সমাদর করা",
-    "example": "The public lionized the returning war hero.",
-    "synonyms": [
-      "celebrate",
-      "glorify",
-      "idolize"
-    ],
-    "antonyms": [
-      "vilify",
-      "criticize",
-      "denigrate"
-    ]
-  },
-  {
-    "word": "Lissome",
-    "meaning": "নমনীয় বা কমনীয়",
-    "example": "The lissome dancer moved gracefully across the stage.",
-    "synonyms": [
-      "agile",
-      "lithe",
-      "supple"
-    ],
-    "antonyms": [
-      "stiff",
-      "clumsy",
-      "awkward"
-    ]
-  },
-  {
-    "word": "Listless",
-    "meaning": "উদ্যমহীন বা নিস্পৃহ",
-    "example": "He was listless and uninterested after his illness.",
-    "synonyms": [
-      "lethargic",
-      "languid",
-      "spiritless"
-    ],
-    "antonyms": [
-      "energetic",
-      "enthusiastic",
-      "lively"
-    ]
-  },
-  {
-    "word": "Livid",
-    "meaning": "প্রচণ্ড ক্রুদ্ধ",
-    "example": "She was livid when she found out he had lied to her.",
-    "synonyms": [
-      "furious",
-      "enraged",
-      "incensed"
-    ],
-    "antonyms": [
-      "calm",
-      "pleased",
-      "delighted"
+      "erase",
+      "delete",
+      "omit",
+      "ignore"
     ]
   },
   {
@@ -3668,36 +3312,6 @@
     ]
   },
   {
-    "word": "Lugubrious",
-    "meaning": "শোকাতুর বা বিষণ্ণ",
-    "example": "He played a lugubrious tune on the violin.",
-    "synonyms": [
-      "mournful",
-      "gloomy",
-      "melancholy"
-    ],
-    "antonyms": [
-      "cheerful",
-      "joyful",
-      "optimistic"
-    ]
-  },
-  {
-    "word": "Lumber",
-    "meaning": "ভারীভাবে ও ধীরে চলা",
-    "example": "The tired elephant lumbered through the jungle.",
-    "synonyms": [
-      "trudge",
-      "plod",
-      "stumble"
-    ],
-    "antonyms": [
-      "glide",
-      "skip",
-      "sprint"
-    ]
-  },
-  {
     "word": "Luminous",
     "meaning": "উজ্জ্বল বা আলো ছড়ায় এমন",
     "example": "The luminous moon lit up the night sky.",
@@ -3713,106 +3327,37 @@
     ]
   },
   {
-    "word": "Macabre",
-    "meaning": "ভয়ানক (মৃত্যু সম্পর্কিত)",
-    "example": "The film had several macabre scenes that were quite disturbing.",
+    "word": "Magnanimity",
+    "meaning": "মহানুভবতা বা উদারতা",
+    "example": "He showed magnanimity in victory.",
     "synonyms": [
-      "gruesome",
-      "ghastly",
-      "horrifying"
+      "generosity",
+      "nobility",
+      "benevolence",
+      "kindness"
     ],
     "antonyms": [
-      "pleasant",
-      "beautiful",
-      "cheerful"
+      "pettiness",
+      "meanness",
+      "selfishness",
+      "vindictiveness"
     ]
   },
   {
-    "word": "Machination",
-    "meaning": "ষড়যন্ত্র",
-    "example": "He was a victim of the political machinations of his enemies.",
+    "word": "Malingerer",
+    "meaning": "ভান করা রোগী বা কাজ এড়ানো ব্যক্তি",
+    "example": "The supervisor suspected he was a malingerer.",
     "synonyms": [
-      "plot",
-      "scheme",
-      "intrigue"
+      "shirker",
+      "faker",
+      "pretender",
+      "slacker"
     ],
     "antonyms": [
-      "honesty",
-      "candor",
-      "openness"
-    ]
-  },
-  {
-    "word": "Maelstrom",
-    "meaning": "ঘূর্ণিস্রোত বা চরম বিশৃঙ্খলা",
-    "example": "The country was plunged into a maelstrom of civil war.",
-    "synonyms": [
-      "whirlpool",
-      "vortex",
-      "turmoil"
-    ],
-    "antonyms": [
-      "calm",
-      "peace",
-      "order"
-    ]
-  },
-  {
-    "word": "Magnanimous",
-    "meaning": "মহানুভব বা উদার",
-    "example": "He was magnanimous in victory and praised his opponents.",
-    "synonyms": [
-      "generous",
-      "charitable",
-      "benevolent"
-    ],
-    "antonyms": [
-      "petty",
-      "selfish",
-      "mean-spirited"
-    ]
-  },
-  {
-    "word": "Malediction",
-    "meaning": "অভিশাপ",
-    "example": "The witch uttered a malediction against the prince.",
-    "synonyms": [
-      "curse",
-      "anathema",
-      "imprecation"
-    ],
-    "antonyms": [
-      "blessing",
-      "benediction"
-    ]
-  },
-  {
-    "word": "Malevolent",
-    "meaning": "হিংস্র বা অমঙ্গলকামী",
-    "example": "She gave him a malevolent glare.",
-    "synonyms": [
-      "malicious",
-      "spiteful",
-      "wicked"
-    ],
-    "antonyms": [
-      "benevolent",
-      "kind",
-      "charitable"
-    ]
-  },
-  {
-    "word": "Malinger",
-    "meaning": "কাজ এড়ানোর জন্য অসুস্থতার ভান করা",
-    "example": "He was caught malingering to get out of his duties.",
-    "synonyms": [
-      "feign illness",
-      "shirk",
-      "skive"
-    ],
-    "antonyms": [
-      "work diligently",
-      "be responsible"
+      "worker",
+      "contributor",
+      "performer",
+      "participant"
     ]
   },
   {
@@ -3831,36 +3376,6 @@
     ]
   },
   {
-    "word": "Manifest",
-    "meaning": "সুস্পষ্ট বা প্রকাশ করা",
-    "example": "His guilt was manifest on his face.",
-    "synonyms": [
-      "obvious",
-      "clear",
-      "evident",
-      "display"
-    ],
-    "antonyms": [
-      "hidden",
-      "unclear",
-      "conceal"
-    ]
-  },
-  {
-    "word": "Martinet",
-    "meaning": "কঠোর নিয়মনিষ্ঠ ব্যক্তি",
-    "example": "The drill sergeant was a strict martinet.",
-    "synonyms": [
-      "disciplinarian",
-      "taskmaster",
-      "tyrant"
-    ],
-    "antonyms": [
-      "liberal",
-      "lenient person"
-    ]
-  },
-  {
     "word": "Maverick",
     "meaning": "প্রথাবিরোধী বা স্বাধীনচেতা ব্যক্তি",
     "example": "He was a maverick in the world of politics, always going against his party.",
@@ -3872,21 +3387,6 @@
     "antonyms": [
       "conformist",
       "follower"
-    ]
-  },
-  {
-    "word": "Mellifluous",
-    "meaning": "সুমধুর",
-    "example": "She has a mellifluous voice that is perfect for singing.",
-    "synonyms": [
-      "melodious",
-      "euphonious",
-      "dulcet"
-    ],
-    "antonyms": [
-      "cacophonous",
-      "harsh",
-      "grating"
     ]
   },
   {
@@ -3905,46 +3405,20 @@
     ]
   },
   {
-    "word": "Mendicant",
-    "meaning": "ভিক্ষুক",
-    "example": "A mendicant approached us on the street, asking for alms.",
+    "word": "Metamorphosis",
+    "meaning": "রূপান্তর বা পরিবর্তন",
+    "example": "The butterfly undergoes metamorphosis from a caterpillar.",
     "synonyms": [
-      "beggar",
-      "panhandler"
+      "transformation",
+      "change",
+      "conversion",
+      "mutation"
     ],
     "antonyms": [
-      "donor",
-      "benefactor"
-    ]
-  },
-  {
-    "word": "Mercurial",
-    "meaning": "পরিবর্তনশীল (মেজাজ)",
-    "example": "She has a mercurial temperament, happy one moment and angry the next.",
-    "synonyms": [
-      "volatile",
-      "capricious",
-      "fickle"
-    ],
-    "antonyms": [
-      "stable",
-      "steady",
-      "predictable"
-    ]
-  },
-  {
-    "word": "Meretricious",
-    "meaning": "লোক দেখানো কিন্তু অন্তঃসারশূন্য",
-    "example": "He wore a meretricious gold watch to impress others.",
-    "synonyms": [
-      "gaudy",
-      "tawdry",
-      "superficially attractive"
-    ],
-    "antonyms": [
-      "tasteful",
-      "genuine",
-      "authentic"
+      "stasis",
+      "stability",
+      "constancy",
+      "permanence"
     ]
   },
   {
@@ -4008,21 +3482,6 @@
     ]
   },
   {
-    "word": "Monotony",
-    "meaning": "একঘেয়েমি",
-    "example": "She was tired of the monotony of her daily routine.",
-    "synonyms": [
-      "tedium",
-      "boredom",
-      "sameness"
-    ],
-    "antonyms": [
-      "variety",
-      "excitement",
-      "diversity"
-    ]
-  },
-  {
     "word": "Morose",
     "meaning": "বিষণ্ণ বা খিটখিটে",
     "example": "He became morose and withdrawn after losing his job.",
@@ -4053,93 +3512,20 @@
     ]
   },
   {
-    "word": "Munificent",
-    "meaning": "দানশীল",
-    "example": "The munificent donor gave a large sum to the hospital.",
+    "word": "Negate",
+    "meaning": "অস্বীকার করা বা বাতিল করা",
+    "example": "His actions negate his previous statements.",
     "synonyms": [
-      "generous",
-      "lavish",
-      "bountiful"
+      "nullify",
+      "invalidate",
+      "contradict",
+      "cancel"
     ],
     "antonyms": [
-      "stingy",
-      "miserly",
-      "parsimonious"
-    ]
-  },
-  {
-    "word": "Myriad",
-    "meaning": "অসংখ্য",
-    "example": "There are a myriad of stars in the night sky.",
-    "synonyms": [
-      "countless",
-      "innumerable",
-      "multitude"
-    ],
-    "antonyms": [
-      "few",
-      "limited",
-      "countable"
-    ]
-  },
-  {
-    "word": "Nadir",
-    "meaning": "সর্বনিম্ন বিন্দু",
-    "example": "The company reached its nadir during the economic recession.",
-    "synonyms": [
-      "lowest point",
-      "rock bottom",
-      "all-time low"
-    ],
-    "antonyms": [
-      "zenith",
-      "peak",
-      "pinnacle"
-    ]
-  },
-  {
-    "word": "Nascent",
-    "meaning": "জন্মলাভ করছে এমন বা প্রাথমিক",
-    "example": "The nascent tech industry is showing great potential.",
-    "synonyms": [
-      "emerging",
-      "developing",
-      "inchoate"
-    ],
-    "antonyms": [
-      "mature",
-      "developed",
-      "declining"
-    ]
-  },
-  {
-    "word": "Nebulous",
-    "meaning": "অস্পষ্ট বা মেঘাচ্ছন্ন",
-    "example": "She had only a nebulous idea of what she wanted to do.",
-    "synonyms": [
-      "vague",
-      "hazy",
-      "indistinct"
-    ],
-    "antonyms": [
-      "clear",
-      "precise",
-      "distinct"
-    ]
-  },
-  {
-    "word": "Nefarious",
-    "meaning": "দুষ্ট বা অপরাধমূলক",
-    "example": "The villain had a nefarious plan to take over the world.",
-    "synonyms": [
-      "wicked",
-      "evil",
-      "villainous"
-    ],
-    "antonyms": [
-      "virtuous",
-      "righteous",
-      "honorable"
+      "confirm",
+      "validate",
+      "support",
+      "affirm"
     ]
   },
   {
@@ -4158,80 +3544,6 @@
     ]
   },
   {
-    "word": "Nettle",
-    "meaning": "বিরক্ত করা",
-    "example": "His constant interruptions began to nettle her.",
-    "synonyms": [
-      "irritate",
-      "annoy",
-      "vex"
-    ],
-    "antonyms": [
-      "soothe",
-      "please",
-      "placate"
-    ]
-  },
-  {
-    "word": "Noisome",
-    "meaning": "দুর্গন্ধযুক্ত বা ক্ষতিকর",
-    "example": "A noisome smell was coming from the garbage dump.",
-    "synonyms": [
-      "foul-smelling",
-      "offensive",
-      "unpleasant"
-    ],
-    "antonyms": [
-      "fragrant",
-      "pleasant",
-      "aromatic"
-    ]
-  },
-  {
-    "word": "Nonplussed",
-    "meaning": "হতবাক বা কিংকর্তব্যবিমূঢ়",
-    "example": "He was nonplussed by her strange behavior.",
-    "synonyms": [
-      "perplexed",
-      "baffled",
-      "bewildered"
-    ],
-    "antonyms": [
-      "composed",
-      "unfazed",
-      "clear"
-    ]
-  },
-  {
-    "word": "Noxious",
-    "meaning": "ক্ষতিকর বা বিষাক্ত",
-    "example": "Noxious fumes from the factory polluted the air.",
-    "synonyms": [
-      "harmful",
-      "poisonous",
-      "toxic"
-    ],
-    "antonyms": [
-      "harmless",
-      "innocuous",
-      "safe"
-    ]
-  },
-  {
-    "word": "Nuance",
-    "meaning": "সূক্ষ্ম পার্থক্য",
-    "example": "He was sensitive to every nuance of her voice.",
-    "synonyms": [
-      "subtlety",
-      "fine distinction",
-      "shade"
-    ],
-    "antonyms": [
-      "blatancy",
-      "obviousness"
-    ]
-  },
-  {
     "word": "Obdurate",
     "meaning": "একগুঁয়ে বা কঠোর",
     "example": "The obdurate old man refused to listen to anyone's advice.",
@@ -4247,36 +3559,6 @@
     ]
   },
   {
-    "word": "Obfuscate",
-    "meaning": "বিভ্রান্ত করা বা অস্পষ্ট করা",
-    "example": "The politician tried to obfuscate the issue with irrelevant details.",
-    "synonyms": [
-      "confuse",
-      "obscure",
-      "muddy"
-    ],
-    "antonyms": [
-      "clarify",
-      "elucidate",
-      "explain"
-    ]
-  },
-  {
-    "word": "Oblique",
-    "meaning": "তির্যক বা পরোক্ষ",
-    "example": "She made an oblique reference to her troubled past.",
-    "synonyms": [
-      "indirect",
-      "slanting",
-      "angled"
-    ],
-    "antonyms": [
-      "direct",
-      "straightforward",
-      "forthright"
-    ]
-  },
-  {
     "word": "Obsequious",
     "meaning": "চাটুকার বা অতিরিক্ত অনুগত",
     "example": "The obsequious waiter flattered every wealthy customer.",
@@ -4289,51 +3571,6 @@
       "arrogant",
       "assertive",
       "domineering"
-    ]
-  },
-  {
-    "word": "Obstinate",
-    "meaning": "একগুঁয়ে বা জেদি",
-    "example": "Her obstinate refusal to compromise made negotiations difficult.",
-    "synonyms": [
-      "stubborn",
-      "headstrong",
-      "intransigent"
-    ],
-    "antonyms": [
-      "amenable",
-      "compliant",
-      "flexible"
-    ]
-  },
-  {
-    "word": "Obstreperous",
-    "meaning": "অবাধ্য বা গোলমালকারী",
-    "example": "The obstreperous children were difficult to control.",
-    "synonyms": [
-      "unruly",
-      "boisterous",
-      "disorderly"
-    ],
-    "antonyms": [
-      "quiet",
-      "orderly",
-      "behaved"
-    ]
-  },
-  {
-    "word": "Obtuse",
-    "meaning": "স্থূলবুদ্ধি বা বুঝতে ধীর",
-    "example": "He was too obtuse to understand the joke.",
-    "synonyms": [
-      "dull",
-      "slow-witted",
-      "stupid"
-    ],
-    "antonyms": [
-      "sharp",
-      "bright",
-      "intelligent"
     ]
   },
   {
@@ -4367,18 +3604,20 @@
     ]
   },
   {
-    "word": "Odious",
-    "meaning": "ঘৃণ্য বা জঘন্য",
-    "example": "He had the odious task of cleaning the sewers.",
+    "word": "Officious",
+    "meaning": "অতি উৎসাহী বা হস্তক্ষেপকারী",
+    "example": "The officious clerk annoyed customers.",
     "synonyms": [
-      "hateful",
-      "abominable",
-      "repulsive"
+      "meddlesome",
+      "interfering",
+      "intrusive",
+      "pushy"
     ],
     "antonyms": [
-      "delightful",
-      "pleasant",
-      "lovable"
+      "helpful",
+      "considerate",
+      "unobtrusive",
+      "modest"
     ]
   },
   {
@@ -4397,77 +3636,20 @@
     ]
   },
   {
-    "word": "Opaque",
-    "meaning": "অস্বচ্ছ",
-    "example": "The opaque glass of the window prevented us from seeing inside.",
+    "word": "Oscillate",
+    "meaning": "দোলায়মান হওয়া বা পরিবর্তিত হওয়া",
+    "example": "The pendulum will oscillate back and forth.",
     "synonyms": [
-      "non-transparent",
-      "cloudy",
-      "blurred"
+      "swing",
+      "fluctuate",
+      "vary",
+      "alternate"
     ],
     "antonyms": [
-      "transparent",
-      "clear",
-      "lucid"
-    ]
-  },
-  {
-    "word": "Opprobrium",
-    "meaning": "নিন্দা বা অপমান",
-    "example": "The disgraced CEO faced public opprobrium for his actions.",
-    "synonyms": [
-      "disgrace",
-      "infamy",
-      "vilification"
-    ],
-    "antonyms": [
-      "honor",
-      "praise",
-      "acclaim"
-    ]
-  },
-  {
-    "word": "Ornate",
-    "meaning": "সুসজ্জিত",
-    "example": "The palace had an ornate ceiling with intricate carvings.",
-    "synonyms": [
-      "elaborate",
-      "decorated",
-      "fancy"
-    ],
-    "antonyms": [
-      "plain",
-      "simple",
-      "unadorned"
-    ]
-  },
-  {
-    "word": "Orthodox",
-    "meaning": "প্রচলিত বা ঐতিহ্যবাহী",
-    "example": "He held orthodox views on religion and politics.",
-    "synonyms": [
-      "conventional",
-      "traditional",
-      "mainstream"
-    ],
-    "antonyms": [
-      "unorthodox",
-      "heretical",
-      "unconventional"
-    ]
-  },
-  {
-    "word": "Ossify",
-    "meaning": "শক্ত বা অনমনীয় হয়ে যাওয়া",
-    "example": "As people get older, their attitudes tend to ossify.",
-    "synonyms": [
-      "harden",
-      "rigidify",
-      "stagnate"
-    ],
-    "antonyms": [
-      "soften",
-      "become flexible"
+      "stabilize",
+      "steady",
+      "remain",
+      "fix"
     ]
   },
   {
@@ -4486,108 +3668,6 @@
     ]
   },
   {
-    "word": "Ostracize",
-    "meaning": "সমাজচ্যুত করা",
-    "example": "He was ostracized by his community for his radical beliefs.",
-    "synonyms": [
-      "exclude",
-      "shun",
-      "banish"
-    ],
-    "antonyms": [
-      "welcome",
-      "include",
-      "accept"
-    ]
-  },
-  {
-    "word": "Palliate",
-    "meaning": "উপশম করা (মূল কারণ না সারিয়ে)",
-    "example": "The painkillers only palliate the symptoms without curing the disease.",
-    "synonyms": [
-      "alleviate",
-      "soothe",
-      "mitigate"
-    ],
-    "antonyms": [
-      "exacerbate",
-      "worsen",
-      "cure"
-    ]
-  },
-  {
-    "word": "Pallid",
-    "meaning": "ফ্যাকাশে",
-    "example": "Her face was pallid and drawn after the long illness.",
-    "synonyms": [
-      "pale",
-      "wan",
-      "ashen"
-    ],
-    "antonyms": [
-      "rosy",
-      "ruddy",
-      "flushed"
-    ]
-  },
-  {
-    "word": "Panacea",
-    "meaning": "সর্বরোগহর ঔষধ বা সমাধান",
-    "example": "Unfortunately, there is no panacea for all the world's problems.",
-    "synonyms": [
-      "cure-all",
-      "universal remedy",
-      "elixir"
-    ],
-    "antonyms": [
-      "disease",
-      "problem"
-    ]
-  },
-  {
-    "word": "Panegyric",
-    "meaning": "স্তুতি বা প্রশংসাসূচক বক্তৃতা",
-    "example": "He delivered a panegyric on the life and works of the great poet.",
-    "synonyms": [
-      "eulogy",
-      "tribute",
-      "accolade"
-    ],
-    "antonyms": [
-      "diatribe",
-      "condemnation",
-      "criticism"
-    ]
-  },
-  {
-    "word": "Paradigm",
-    "meaning": "দৃষ্টান্ত বা মডেল",
-    "example": "The discovery of DNA was a new paradigm in biology.",
-    "synonyms": [
-      "model",
-      "pattern",
-      "example"
-    ],
-    "antonyms": [
-      "anomaly",
-      "exception"
-    ]
-  },
-  {
-    "word": "Paradox",
-    "meaning": "আপাতবিরোধী উক্তি",
-    "example": "It is a paradox that in a land of plenty, many people are hungry.",
-    "synonyms": [
-      "contradiction",
-      "inconsistency",
-      "enigma"
-    ],
-    "antonyms": [
-      "axiom",
-      "truism"
-    ]
-  },
-  {
     "word": "Paragon",
     "meaning": "আদর্শ বা নিখুঁত উদাহরণ",
     "example": "She was considered a paragon of virtue in her community.",
@@ -4600,65 +3680,6 @@
       "flaw",
       "imperfection",
       "travesty"
-    ]
-  },
-  {
-    "word": "Pariah",
-    "meaning": "সমাজচ্যুত ব্যক্তি",
-    "example": "After the scandal, he became a pariah in his own town.",
-    "synonyms": [
-      "outcast",
-      "leper",
-      "undesirable"
-    ],
-    "antonyms": [
-      "insider",
-      "favorite",
-      "idol"
-    ]
-  },
-  {
-    "word": "Parochial",
-    "meaning": "সংকীর্ণ বা সীমিত",
-    "example": "His parochial views prevented him from appreciating other cultures.",
-    "synonyms": [
-      "narrow-minded",
-      "provincial",
-      "insular"
-    ],
-    "antonyms": [
-      "cosmopolitan",
-      "broad-minded",
-      "liberal"
-    ]
-  },
-  {
-    "word": "Parody",
-    "meaning": "ব্যঙ্গাত্মক অনুকরণ",
-    "example": "The show was a clever parody of a famous action movie.",
-    "synonyms": [
-      "spoof",
-      "satire",
-      "caricature"
-    ],
-    "antonyms": [
-      "tribute",
-      "homage"
-    ]
-  },
-  {
-    "word": "Parsimonious",
-    "meaning": "মিতব্যয়ী বা কৃপণ",
-    "example": "The parsimonious man refused to spend money even on necessities.",
-    "synonyms": [
-      "miserly",
-      "stingy",
-      "frugal"
-    ],
-    "antonyms": [
-      "generous",
-      "extravagant",
-      "lavish"
     ]
   },
   {
@@ -4677,18 +3698,20 @@
     ]
   },
   {
-    "word": "Pathos",
-    "meaning": "করুণা বা মর্মস্পর্শী অনুভূতি",
-    "example": "The scene was filled with pathos as the hero died.",
+    "word": "Pathological",
+    "meaning": "রোগসংক্রান্ত বা অস্বাভাবিক",
+    "example": "He is a pathological liar.",
     "synonyms": [
-      "pity",
-      "sadness",
-      "poignancy"
+      "compulsive",
+      "chronic",
+      "habitual",
+      "morbid"
     ],
     "antonyms": [
-      "joy",
-      "humor",
-      "glee"
+      "healthy",
+      "normal",
+      "occasional",
+      "rational"
     ]
   },
   {
@@ -4707,21 +3730,6 @@
     ]
   },
   {
-    "word": "Peccadillo",
-    "meaning": "ছোটখাটো ভুল বা ত্রুটি",
-    "example": "His only peccadillo was a fondness for sweets.",
-    "synonyms": [
-      "minor offense",
-      "misdemeanor",
-      "foible"
-    ],
-    "antonyms": [
-      "felony",
-      "mortal sin",
-      "serious crime"
-    ]
-  },
-  {
     "word": "Pedantic",
     "meaning": "পাণ্ডিত্য জাহিরকারী",
     "example": "The pedantic professor always corrected his students' minor grammar mistakes.",
@@ -4734,51 +3742,6 @@
       "informal",
       "simple",
       "imprecise"
-    ]
-  },
-  {
-    "word": "Pedestrian",
-    "meaning": "সাধারণ বা আকর্ষণহীন",
-    "example": "The plot of the movie was pedestrian and predictable.",
-    "synonyms": [
-      "dull",
-      "mundane",
-      "unimaginative"
-    ],
-    "antonyms": [
-      "exciting",
-      "imaginative",
-      "extraordinary"
-    ]
-  },
-  {
-    "word": "Pejorative",
-    "meaning": "অবমাননাকর",
-    "example": "'Idiot' is a pejorative term.",
-    "synonyms": [
-      "derogatory",
-      "disparaging",
-      "insulting"
-    ],
-    "antonyms": [
-      "complimentary",
-      "praising",
-      "positive"
-    ]
-  },
-  {
-    "word": "Pellucid",
-    "meaning": "স্বচ্ছ বা পরিষ্কার",
-    "example": "The pellucid water of the lake revealed the stones at the bottom.",
-    "synonyms": [
-      "transparent",
-      "clear",
-      "lucid"
-    ],
-    "antonyms": [
-      "opaque",
-      "muddy",
-      "obscure"
     ]
   },
   {
@@ -4797,18 +3760,37 @@
     ]
   },
   {
-    "word": "Penurious",
-    "meaning": "দরিদ্র বা কৃপণ",
-    "example": "The penurious family struggled to make ends meet.",
+    "word": "Penury",
+    "meaning": "চরম দারিদ্র্য বা অভাব",
+    "example": "The family lived in penury.",
     "synonyms": [
-      "impoverished",
-      "stingy",
-      "miserly"
+      "poverty",
+      "destitution",
+      "indigence",
+      "want"
     ],
     "antonyms": [
-      "wealthy",
-      "generous",
-      "affluent"
+      "wealth",
+      "affluence",
+      "prosperity",
+      "abundance"
+    ]
+  },
+  {
+    "word": "Perennial",
+    "meaning": "বহুবর্ষজীবী বা চিরস্থায়ী",
+    "example": "Unemployment is a perennial problem.",
+    "synonyms": [
+      "enduring",
+      "lasting",
+      "permanent",
+      "perpetual"
+    ],
+    "antonyms": [
+      "temporary",
+      "brief",
+      "short-lived",
+      "fleeting"
     ]
   },
   {
@@ -4842,134 +3824,37 @@
     ]
   },
   {
-    "word": "Peripatetic",
-    "meaning": "ভ্রমণরত",
-    "example": "As a salesman, he lived a peripatetic life.",
+    "word": "Permeable",
+    "meaning": "ভেদ্য বা প্রবেশযোগ্য",
+    "example": "The fabric is permeable to air.",
     "synonyms": [
-      "itinerant",
-      "nomadic",
-      "wandering"
+      "porous",
+      "penetrable",
+      "absorbent",
+      "pervious"
     ],
     "antonyms": [
-      "settled",
-      "stationary"
+      "impermeable",
+      "impervious",
+      "waterproof",
+      "sealed"
     ]
   },
   {
-    "word": "Permeate",
-    "meaning": "ব্যাপ্ত হওয়া বা ছড়িয়ে পড়া",
-    "example": "The smell of coffee permeated the entire house.",
+    "word": "Pervasive",
+    "meaning": "ব্যাপক বা সর্বব্যাপী",
+    "example": "There is a pervasive sense of fear in the city.",
     "synonyms": [
-      "pervade",
-      "saturate",
-      "infiltrate"
+      "widespread",
+      "prevalent",
+      "ubiquitous",
+      "extensive"
     ],
     "antonyms": [
-      "dry",
-      "dehydrate"
-    ]
-  },
-  {
-    "word": "Pernicious",
-    "meaning": "ক্ষতিকর (বিশেষ করে ধীরে ধীরে)",
-    "example": "The pernicious effects of smoking are well-documented.",
-    "synonyms": [
-      "harmful",
-      "damaging",
-      "destructive",
-      "deleterious"
-    ],
-    "antonyms": [
-      "beneficial",
-      "harmless",
-      "benign"
-    ]
-  },
-  {
-    "word": "Perquisite",
-    "meaning": "অতিরিক্ত সুবিধা বা পারিশ্রমিক",
-    "example": "A company car is a perquisite of the job.",
-    "synonyms": [
-      "perk",
-      "benefit",
-      "bonus"
-    ],
-    "antonyms": [
-      "disadvantage",
-      "drawback"
-    ]
-  },
-  {
-    "word": "Perspicacious",
-    "meaning": "তীক্ষ্ণবুদ্ধিসম্পন্ন",
-    "example": "The perspicacious detective quickly solved the case.",
-    "synonyms": [
-      "shrewd",
-      "astute",
-      "insightful"
-    ],
-    "antonyms": [
-      "dull",
-      "obtuse",
-      "unobservant"
-    ]
-  },
-  {
-    "word": "Pertinacious",
-    "meaning": "নাছোড়বান্দা বা জেদি",
-    "example": "The pertinacious reporter kept asking difficult questions.",
-    "synonyms": [
-      "persistent",
-      "tenacious",
-      "determined"
-    ],
-    "antonyms": [
-      "irresolute",
-      "wavering",
-      "indecisive"
-    ]
-  },
-  {
-    "word": "Pervade",
-    "meaning": "সর্বত্র ছড়িয়ে পড়া",
-    "example": "A sense of optimism pervaded the country after the election.",
-    "synonyms": [
-      "permeate",
-      "fill",
-      "suffuse"
-    ],
-    "antonyms": [
-      "be localized",
-      "be contained"
-    ]
-  },
-  {
-    "word": "Petulant",
-    "meaning": "খিটখিটে বা বদমেজাজি (শিশুর মতো)",
-    "example": "The petulant child cried when he didn't get what he wanted.",
-    "synonyms": [
-      "peevish",
-      "irritable",
-      "cranky"
-    ],
-    "antonyms": [
-      "good-humored",
-      "affable",
-      "easygoing"
-    ]
-  },
-  {
-    "word": "Philanthropic",
-    "meaning": "জনহিতকর বা পরোপকারী",
-    "example": "The foundation is known for its philanthropic activities.",
-    "synonyms": [
-      "charitable",
-      "benevolent",
-      "humanitarian"
-    ],
-    "antonyms": [
-      "misanthropic",
-      "selfish"
+      "limited",
+      "confined",
+      "restricted",
+      "rare"
     ]
   },
   {
@@ -4988,33 +3873,20 @@
     ]
   },
   {
-    "word": "Pious",
-    "meaning": "ধার্মিক",
-    "example": "She was a pious woman who went to church every day.",
+    "word": "Piety",
+    "meaning": "ধর্মপরায়ণতা বা ভক্তি",
+    "example": "She is known for her piety and devotion.",
     "synonyms": [
-      "devout",
-      "religious",
-      "reverent"
+      "devotion",
+      "religiousness",
+      "reverence",
+      "godliness"
     ],
     "antonyms": [
-      "impious",
-      "irreligious",
-      "atheistic"
-    ]
-  },
-  {
-    "word": "Pithy",
-    "meaning": "সংক্ষিপ্ত ও অর্থপূর্ণ",
-    "example": "His speech ended with a pithy and memorable quote.",
-    "synonyms": [
-      "concise",
-      "terse",
-      "succinct"
-    ],
-    "antonyms": [
-      "verbose",
-      "long-winded",
-      "prolix"
+      "impiety",
+      "irreverence",
+      "blasphemy",
+      "sacrilege"
     ]
   },
   {
@@ -5033,18 +3905,20 @@
     ]
   },
   {
-    "word": "Placid",
-    "meaning": "শান্ত বা স্থির",
-    "example": "The placid lake was like a mirror.",
+    "word": "Plasticity",
+    "meaning": "নমনীয়তা বা পরিবর্তনশীলতা",
+    "example": "The brain shows remarkable plasticity.",
     "synonyms": [
-      "calm",
-      "serene",
-      "tranquil"
+      "flexibility",
+      "malleability",
+      "adaptability",
+      "pliability"
     ],
     "antonyms": [
-      "turbulent",
-      "agitated",
-      "stormy"
+      "rigidity",
+      "inflexibility",
+      "stiffness",
+      "firmness"
     ]
   },
   {
@@ -5063,36 +3937,6 @@
     ]
   },
   {
-    "word": "Plausible",
-    "meaning": "বিশ্বাসযোগ্য",
-    "example": "He gave a plausible explanation for his absence.",
-    "synonyms": [
-      "believable",
-      "credible",
-      "convincing"
-    ],
-    "antonyms": [
-      "implausible",
-      "unbelievable",
-      "unlikely"
-    ]
-  },
-  {
-    "word": "Plebeian",
-    "meaning": "সাধারণ বা নিম্নবিত্ত শ্রেণীর",
-    "example": "He dismissed her tastes in music as plebeian.",
-    "synonyms": [
-      "common",
-      "vulgar",
-      "proletarian"
-    ],
-    "antonyms": [
-      "aristocratic",
-      "patrician",
-      "refined"
-    ]
-  },
-  {
     "word": "Plethora",
     "meaning": "আধিক্য বা প্রাচুর্য",
     "example": "There is a plethora of information available on the internet.",
@@ -5108,62 +3952,37 @@
     ]
   },
   {
-    "word": "Polemic",
-    "meaning": "তর্কমূলক বা বিতর্কিত রচনা",
-    "example": "She wrote a fierce polemic against the new government policy.",
+    "word": "Plummet",
+    "meaning": "দ্রুত পতন বা নিমজ্জন",
+    "example": "Stock prices plummeted after the announcement.",
     "synonyms": [
-      "diatribe",
-      "tirade",
-      "critique"
+      "plunge",
+      "drop",
+      "fall",
+      "dive"
     ],
     "antonyms": [
-      "panegyric",
-      "eulogy"
+      "soar",
+      "rise",
+      "ascend",
+      "climb"
     ]
   },
   {
-    "word": "Politic",
-    "meaning": "বিচক্ষণ বা কৌশলী",
-    "example": "It would not be politic to argue with the boss.",
+    "word": "Porous",
+    "meaning": "ছিদ্রযুক্ত বা শোষক",
+    "example": "The rock is porous and absorbs water.",
     "synonyms": [
-      "prudent",
-      "wise",
-      "shrewd"
+      "permeable",
+      "absorbent",
+      "spongy",
+      "pervious"
     ],
     "antonyms": [
-      "impolitic",
-      "unwise",
-      "tactless"
-    ]
-  },
-  {
-    "word": "Ponderous",
-    "meaning": "ভারী বা ধীর",
-    "example": "He spoke in a ponderous and boring manner.",
-    "synonyms": [
-      "clumsy",
-      "heavy",
-      "dull"
-    ],
-    "antonyms": [
-      "light",
-      "graceful",
-      "lively"
-    ]
-  },
-  {
-    "word": "Portent",
-    "meaning": "পূর্বাভাস (অশুভ)",
-    "example": "The dark clouds were a portent of the coming storm.",
-    "synonyms": [
-      "omen",
-      "sign",
-      "forewarning",
-      "presage"
-    ],
-    "antonyms": [
-      "surprise",
-      "randomness"
+      "impermeable",
+      "solid",
+      "dense",
+      "waterproof"
     ]
   },
   {
@@ -5182,17 +4001,37 @@
     ]
   },
   {
-    "word": "Prattle",
-    "meaning": "বাজে বা অর্থহীন কথা বলা",
-    "example": "The children prattled on about their toys.",
+    "word": "Preamble",
+    "meaning": "ভূমিকা বা প্রারম্ভিক বক্তব্য",
+    "example": "The preamble to the Constitution outlines its purpose.",
     "synonyms": [
-      "chatter",
-      "babble",
-      "blabber"
+      "introduction",
+      "preface",
+      "prologue",
+      "foreword"
     ],
     "antonyms": [
-      "speak sensibly",
-      "articulate"
+      "conclusion",
+      "epilogue",
+      "postscript",
+      "ending"
+    ]
+  },
+  {
+    "word": "Precarious",
+    "meaning": "অনিশ্চিত বা বিপজ্জনক",
+    "example": "His financial situation is precarious.",
+    "synonyms": [
+      "unstable",
+      "uncertain",
+      "risky",
+      "dangerous"
+    ],
+    "antonyms": [
+      "secure",
+      "stable",
+      "safe",
+      "certain"
     ]
   },
   {
@@ -5224,49 +4063,6 @@
       "successor",
       "descendant",
       "follower"
-    ]
-  },
-  {
-    "word": "Predilection",
-    "meaning": "পক্ষপাত বা বিশেষ পছন্দ",
-    "example": "He has a predilection for spicy food.",
-    "synonyms": [
-      "preference",
-      "penchant",
-      "liking"
-    ],
-    "antonyms": [
-      "aversion",
-      "dislike",
-      "antipathy"
-    ]
-  },
-  {
-    "word": "Preen",
-    "meaning": "সাজসজ্জা করা",
-    "example": "She spent hours preening in front of the mirror.",
-    "synonyms": [
-      "primp",
-      "groom",
-      "beautify"
-    ],
-    "antonyms": [
-      "mess up",
-      "dishevel"
-    ]
-  },
-  {
-    "word": "Prescience",
-    "meaning": "ভবিষ্যৎ জ্ঞান",
-    "example": "He had the prescience to sell his stocks before the market crashed.",
-    "synonyms": [
-      "foresight",
-      "foreknowledge",
-      "premonition"
-    ],
-    "antonyms": [
-      "hindsight",
-      "ignorance"
     ]
   },
   {
@@ -5329,17 +4125,20 @@
     ]
   },
   {
-    "word": "Proclivity",
-    "meaning": "স্বাভাবিক প্রবণতা",
-    "example": "He has a proclivity for getting into trouble.",
+    "word": "Problematic",
+    "meaning": "সমস্যাযুক্ত বা জটিল",
+    "example": "The plan is problematic and needs revision.",
     "synonyms": [
-      "inclination",
-      "tendency",
-      "propensity"
+      "difficult",
+      "troublesome",
+      "complicated",
+      "challenging"
     ],
     "antonyms": [
-      "aversion",
-      "disinclination"
+      "simple",
+      "easy",
+      "straightforward",
+      "unproblematic"
     ]
   },
   {
@@ -5358,33 +4157,37 @@
     ]
   },
   {
-    "word": "Prodigious",
-    "meaning": "বিশাল বা অসাধারণ",
-    "example": "He has a prodigious talent for music.",
+    "word": "Profound",
+    "meaning": "গভীর বা তাৎপর্যপূর্ণ",
+    "example": "She had a profound impact on my life.",
     "synonyms": [
-      "enormous",
-      "huge",
-      "immense"
+      "deep",
+      "intense",
+      "significant",
+      "meaningful"
     ],
     "antonyms": [
-      "small",
-      "tiny",
-      "minuscule"
+      "superficial",
+      "shallow",
+      "trivial",
+      "insignificant"
     ]
   },
   {
-    "word": "Profligate",
-    "meaning": "অসচ্চরিত্র বা অপব্যয়ী",
-    "example": "He led a profligate lifestyle of gambling and drinking.",
+    "word": "Prohibitive",
+    "meaning": "নিষেধাত্মক বা অত্যধিক",
+    "example": "The cost is prohibitive for most families.",
     "synonyms": [
-      "dissolute",
-      "debauched",
-      "wasteful"
+      "restrictive",
+      "excessive",
+      "expensive",
+      "forbidding"
     ],
     "antonyms": [
-      "virtuous",
-      "frugal",
-      "moral"
+      "affordable",
+      "reasonable",
+      "permissive",
+      "enabling"
     ]
   },
   {
@@ -5400,36 +4203,6 @@
       "decrease",
       "dwindle",
       "diminish"
-    ]
-  },
-  {
-    "word": "Prolix",
-    "meaning": "শব্দবহুল বা দীর্ঘ",
-    "example": "His prolix speech bored the audience.",
-    "synonyms": [
-      "verbose",
-      "long-winded",
-      "wordy"
-    ],
-    "antonyms": [
-      "concise",
-      "terse",
-      "pithy"
-    ]
-  },
-  {
-    "word": "Promulgate",
-    "meaning": "আনুষ্ঠানিকভাবে প্রচার বা ঘোষণা করা",
-    "example": "The new law was promulgated by the government.",
-    "synonyms": [
-      "proclaim",
-      "publish",
-      "declare"
-    ],
-    "antonyms": [
-      "suppress",
-      "conceal",
-      "hide"
     ]
   },
   {
@@ -5476,21 +4249,6 @@
     ]
   },
   {
-    "word": "Prosaic",
-    "meaning": "গতানুগতিক বা নীরস",
-    "example": "The novel had a prosaic plot with no surprises.",
-    "synonyms": [
-      "dull",
-      "mundane",
-      "unimaginative"
-    ],
-    "antonyms": [
-      "poetic",
-      "imaginative",
-      "inspiring"
-    ]
-  },
-  {
     "word": "Proscribe",
     "meaning": "নিষিদ্ধ করা",
     "example": "The government proscribed the sale of certain drugs.",
@@ -5503,110 +4261,6 @@
       "permit",
       "allow",
       "authorize"
-    ]
-  },
-  {
-    "word": "Protean",
-    "meaning": "সহজে পরিবর্তনশীল",
-    "example": "He is a protean actor who can play any role.",
-    "synonyms": [
-      "versatile",
-      "changeable",
-      "variable"
-    ],
-    "antonyms": [
-      "immutable",
-      "stable",
-      "consistent"
-    ]
-  },
-  {
-    "word": "Prudence",
-    "meaning": "বিচক্ষণতা",
-    "example": "She showed great prudence in managing her finances.",
-    "synonyms": [
-      "caution",
-      "wisdom",
-      "discretion"
-    ],
-    "antonyms": [
-      "imprudence",
-      "recklessness",
-      "folly"
-    ]
-  },
-  {
-    "word": "Puerile",
-    "meaning": "শিশুসুলভ বা অপরিণত",
-    "example": "His puerile jokes were not funny.",
-    "synonyms": [
-      "childish",
-      "immature",
-      "juvenile"
-    ],
-    "antonyms": [
-      "mature",
-      "adult",
-      "sophisticated"
-    ]
-  },
-  {
-    "word": "Pugnacious",
-    "meaning": "যুদ্ধংদেহী বা ঝগড়াটে",
-    "example": "The pugnacious dog was always starting fights.",
-    "synonyms": [
-      "combative",
-      "aggressive",
-      "belligerent"
-    ],
-    "antonyms": [
-      "peaceful",
-      "placid",
-      "friendly"
-    ]
-  },
-  {
-    "word": "Pulchritude",
-    "meaning": "শারীরিক সৌন্দর্য",
-    "example": "The actress was admired for her pulchritude.",
-    "synonyms": [
-      "beauty",
-      "loveliness",
-      "comeliness"
-    ],
-    "antonyms": [
-      "ugliness",
-      "homeliness"
-    ]
-  },
-  {
-    "word": "Punctilious",
-    "meaning": "খুঁতখুঁতে বা অতি সতর্ক",
-    "example": "He was punctilious about following the rules.",
-    "synonyms": [
-      "meticulous",
-      "scrupulous",
-      "conscientious"
-    ],
-    "antonyms": [
-      "careless",
-      "sloppy",
-      "informal"
-    ]
-  },
-  {
-    "word": "Pundit",
-    "meaning": "বিশেষজ্ঞ বা পণ্ডিত",
-    "example": "The political pundit offered his analysis on the news channel.",
-    "synonyms": [
-      "expert",
-      "authority",
-      "specialist"
-    ],
-    "antonyms": [
-      "amateur",
-      "novice",
-      "layman"
     ]
   },
   {
@@ -5625,106 +4279,20 @@
     ]
   },
   {
-    "word": "Pusillanimous",
-    "meaning": "ভীরু বা কাপুরুষ",
-    "example": "The pusillanimous soldier deserted his post in fear.",
+    "word": "Qualified",
+    "meaning": "যোগ্য বা শর্তসাপেক্ষ",
+    "example": "She is qualified for the position.",
     "synonyms": [
-      "cowardly",
-      "timid",
-      "timorous"
+      "competent",
+      "capable",
+      "eligible",
+      "certified"
     ],
     "antonyms": [
-      "brave",
-      "courageous",
-      "valiant"
-    ]
-  },
-  {
-    "word": "Quaff",
-    "meaning": "ঢকঢক করে পান করা",
-    "example": "He quaffed the entire mug of beer in one go.",
-    "synonyms": [
-      "drink",
-      "gulp",
-      "swig"
-    ],
-    "antonyms": [
-      "sip",
-      "dribble"
-    ]
-  },
-  {
-    "word": "Quagmire",
-    "meaning": "জলাভূমি বা জটিল পরিস্থিতি",
-    "example": "The political situation became a quagmire of corruption.",
-    "synonyms": [
-      "marsh",
-      "bog",
-      "predicament",
-      "dilemma"
-    ],
-    "antonyms": [
-      "solution",
-      "firm ground"
-    ]
-  },
-  {
-    "word": "Quail",
-    "meaning": "ভয়ে পিছিয়ে যাওয়া",
-    "example": "He quailed at the sight of the huge dog.",
-    "synonyms": [
-      "cower",
-      "flinch",
-      "recoil"
-    ],
-    "antonyms": [
-      "confront",
-      "face",
-      "defy"
-    ]
-  },
-  {
-    "word": "Qualm",
-    "meaning": "সংশয় বা অস্বস্তি",
-    "example": "He had no qualms about cheating on the exam.",
-    "synonyms": [
-      "misgiving",
-      "scruple",
-      "doubt"
-    ],
-    "antonyms": [
-      "confidence",
-      "certainty",
-      "assurance"
-    ]
-  },
-  {
-    "word": "Quandary",
-    "meaning": "কিংকর্তব্যবিমূঢ় অবস্থা",
-    "example": "I'm in a quandary about whether to accept the job offer.",
-    "synonyms": [
-      "dilemma",
-      "predicament",
-      "impasse"
-    ],
-    "antonyms": [
-      "solution",
-      "certainty"
-    ]
-  },
-  {
-    "word": "Querulous",
-    "meaning": "অভি্যোগপ্রবণ বা খিটখিটে",
-    "example": "The querulous patient complained about everything.",
-    "synonyms": [
-      "petulant",
-      "complaining",
-      "fretful"
-    ],
-    "antonyms": [
-      "content",
-      "satisfied",
-      "good-humored"
+      "unqualified",
+      "incompetent",
+      "ineligible",
+      "unsuitable"
     ]
   },
   {
@@ -5757,135 +4325,20 @@
     ]
   },
   {
-    "word": "Quintessential",
-    "meaning": "সর্বোৎকৃষ্ট বা আদর্শ উদাহরণ",
-    "example": "This painting is the quintessential example of the artist's style.",
+    "word": "Rarefied",
+    "meaning": "বিরল বা পাতলা",
+    "example": "He moves in rarefied academic circles.",
     "synonyms": [
-      "archetypal",
-      "prototypical",
-      "classic"
+      "refined",
+      "elevated",
+      "exclusive",
+      "esoteric"
     ],
     "antonyms": [
-      "atypical",
-      "anomalous"
-    ]
-  },
-  {
-    "word": "Quixotic",
-    "meaning": "আদর্শবাদী কিন্তু অবাস্তব",
-    "example": "He had a quixotic dream of ending world poverty.",
-    "synonyms": [
-      "idealistic",
-      "impractical",
-      "utopian"
-    ],
-    "antonyms": [
-      "pragmatic",
-      "realistic",
-      "practical"
-    ]
-  },
-  {
-    "word": "Quotidian",
-    "meaning": "দৈনন্দিন বা সাধারণ",
-    "example": "She was bored with the quotidian routine of her life.",
-    "synonyms": [
-      "daily",
-      "everyday",
-      "mundane"
-    ],
-    "antonyms": [
-      "extraordinary",
-      "unusual",
-      "remarkable"
-    ]
-  },
-  {
-    "word": "Rancor",
-    "meaning": "তীব্র ঘৃণা বা বিদ্বেষ",
-    "example": "He spoke about his ex-wife without any rancor.",
-    "synonyms": [
-      "bitterness",
-      "resentment",
-      "animosity"
-    ],
-    "antonyms": [
-      "amity",
-      "goodwill",
-      "friendliness"
-    ]
-  },
-  {
-    "word": "Rapport",
-    "meaning": "সৌহার্দ্যপূর্ণ সম্পর্ক",
-    "example": "The teacher built a good rapport with her students.",
-    "synonyms": [
-      "bond",
-      "affinity",
-      "understanding"
-    ],
-    "antonyms": [
-      "discord",
-      "antagonism"
-    ]
-  },
-  {
-    "word": "Rarefy",
-    "meaning": "বিরল বা পাতলা করা",
-    "example": "The air becomes rarefied at high altitudes.",
-    "synonyms": [
-      "thin",
-      "make less dense",
-      "attenuate"
-    ],
-    "antonyms": [
-      "condense",
-      "thicken"
-    ]
-  },
-  {
-    "word": "Raucous",
-    "meaning": "কর্কশ",
-    "example": "The bar was filled with raucous laughter.",
-    "synonyms": [
-      "harsh",
-      "strident",
-      "jarring"
-    ],
-    "antonyms": [
-      "soft",
-      "mellifluous",
-      "dulcet"
-    ]
-  },
-  {
-    "word": "Raze",
-    "meaning": "সম্পূর্ণরূপে ধ্বংস করা",
-    "example": "The old building was razed to make way for a new one.",
-    "synonyms": [
-      "demolish",
-      "destroy",
-      "flatten"
-    ],
-    "antonyms": [
-      "build",
-      "construct",
-      "erect"
-    ]
-  },
-  {
-    "word": "Rebuff",
-    "meaning": "অভদ্রভাবে প্রত্যাখ্যান করা",
-    "example": "She rebuffed his invitation to dinner.",
-    "synonyms": [
-      "reject",
-      "snub",
-      "spurn"
-    ],
-    "antonyms": [
-      "accept",
-      "welcome",
-      "embrace"
+      "common",
+      "ordinary",
+      "dense",
+      "widespread"
     ]
   },
   {
@@ -5919,6 +4372,23 @@
     ]
   },
   {
+    "word": "Recluse",
+    "meaning": "নির্জনবাসী বা একাকী ব্যক্তি",
+    "example": "The author lived as a recluse for many years.",
+    "synonyms": [
+      "hermit",
+      "loner",
+      "solitary",
+      "isolate"
+    ],
+    "antonyms": [
+      "socialite",
+      "extrovert",
+      "mixer",
+      "gregarious"
+    ]
+  },
+  {
     "word": "Recondite",
     "meaning": "দুর্বোধ্য বা গভীর",
     "example": "The book was full of recondite information about ancient rituals.",
@@ -5931,20 +4401,6 @@
       "simple",
       "clear",
       "obvious"
-    ]
-  },
-  {
-    "word": "Redoubtable",
-    "meaning": "ভীতিপ্রদ বা সম্মানযোগ্য",
-    "example": "He was a redoubtable opponent in the chess tournament.",
-    "synonyms": [
-      "formidable",
-      "fearsome",
-      "awesome"
-    ],
-    "antonyms": [
-      "unimpressive",
-      "contemptible"
     ]
   },
   {
@@ -5978,21 +4434,6 @@
     ]
   },
   {
-    "word": "Regale",
-    "meaning": "আনন্দ দেওয়া",
-    "example": "He regaled us with stories of his travels.",
-    "synonyms": [
-      "entertain",
-      "amuse",
-      "delight"
-    ],
-    "antonyms": [
-      "bore",
-      "tire",
-      "annoy"
-    ]
-  },
-  {
     "word": "Relegate",
     "meaning": "পদাবনতি ঘটানো",
     "example": "He was relegated to a less important position in the company.",
@@ -6005,80 +4446,6 @@
       "promote",
       "upgrade",
       "elevate"
-    ]
-  },
-  {
-    "word": "Remiss",
-    "meaning": "অবহেলাকারী বা দায়িত্বহীন",
-    "example": "It was remiss of me not to thank you earlier.",
-    "synonyms": [
-      "negligent",
-      "careless",
-      "lax"
-    ],
-    "antonyms": [
-      "diligent",
-      "careful",
-      "conscientious"
-    ]
-  },
-  {
-    "word": "Renegade",
-    "meaning": "দলত্যাগী বা বিদ্রোহী",
-    "example": "He was a renegade who fought against his own people.",
-    "synonyms": [
-      "traitor",
-      "deserter",
-      "rebel"
-    ],
-    "antonyms": [
-      "loyalist",
-      "follower"
-    ]
-  },
-  {
-    "word": "Replete",
-    "meaning": "পরিপূর্ণ",
-    "example": "The book is replete with historical inaccuracies.",
-    "synonyms": [
-      "filled",
-      "full",
-      "abundant"
-    ],
-    "antonyms": [
-      "empty",
-      "lacking",
-      "devoid"
-    ]
-  },
-  {
-    "word": "Reprehensible",
-    "meaning": "নিন্দনীয়",
-    "example": "His behavior was reprehensible and deserved punishment.",
-    "synonyms": [
-      "deplorable",
-      "disgraceful",
-      "shameful"
-    ],
-    "antonyms": [
-      "commendable",
-      "praiseworthy",
-      "admirable"
-    ]
-  },
-  {
-    "word": "Reprisal",
-    "meaning": "প্রতিশোধমূলক কাজ",
-    "example": "The enemy launched a reprisal attack.",
-    "synonyms": [
-      "retaliation",
-      "revenge",
-      "retribution"
-    ],
-    "antonyms": [
-      "forgiveness",
-      "pardon",
-      "reconciliation"
     ]
   },
   {
@@ -6141,18 +4508,37 @@
     ]
   },
   {
-    "word": "Resolute",
-    "meaning": "দৃঢ়প্রতিজ্ঞ",
-    "example": "She was resolute in her decision to pursue her dreams.",
+    "word": "Resolution",
+    "meaning": "সংকল্প বা সমাধান",
+    "example": "She made a resolution to exercise daily.",
     "synonyms": [
-      "determined",
-      "steadfast",
-      "unwavering"
+      "determination",
+      "decision",
+      "resolve",
+      "commitment"
     ],
     "antonyms": [
-      "irresolute",
-      "hesitant",
-      "wavering"
+      "indecision",
+      "hesitation",
+      "uncertainty",
+      "vacillation"
+    ]
+  },
+  {
+    "word": "Resolve",
+    "meaning": "সমাধান করা বা দৃঢ় সংকল্প",
+    "example": "We must resolve this conflict peacefully.",
+    "synonyms": [
+      "settle",
+      "solve",
+      "determine",
+      "decide"
+    ],
+    "antonyms": [
+      "complicate",
+      "confuse",
+      "hesitate",
+      "waver"
     ]
   },
   {
@@ -6186,77 +4572,20 @@
     ]
   },
   {
-    "word": "Rhetoric",
-    "meaning": "অলঙ্কারশাস্ত্র বা বাগাড়ম্বর",
-    "example": "The politician's speech was full of empty rhetoric.",
-    "synonyms": [
-      "oratory",
-      "eloquence",
-      "bombast"
-    ],
-    "antonyms": [
-      "conciseness",
-      "substance",
-      "quiet"
-    ]
-  },
-  {
-    "word": "Risible",
-    "meaning": "হাস্যকর",
-    "example": "His attempt to sing was so bad it was risible.",
-    "synonyms": [
-      "laughable",
-      "ridiculous",
-      "ludicrous"
-    ],
-    "antonyms": [
-      "serious",
-      "solemn",
-      "grave"
-    ]
-  },
-  {
-    "word": "Ruminate",
-    "meaning": "গভীরভাবে চিন্তা করা",
-    "example": "He sat there ruminating on the meaning of life.",
-    "synonyms": [
-      "ponder",
-      "contemplate",
-      "meditate"
-    ],
-    "antonyms": [
-      "act impulsively",
-      "ignore"
-    ]
-  },
-  {
-    "word": "Sagacious",
-    "meaning": "বিজ্ঞ বা বিচক্ষণ",
-    "example": "The sagacious leader made wise decisions for his country.",
+    "word": "Sage",
+    "meaning": "জ্ঞানী বা প্রজ্ঞাবান",
+    "example": "The sage offered wise counsel.",
     "synonyms": [
       "wise",
-      "shrewd",
-      "astute"
+      "learned",
+      "prudent",
+      "judicious"
     ],
     "antonyms": [
       "foolish",
-      "stupid",
-      "unwise"
-    ]
-  },
-  {
-    "word": "Salient",
-    "meaning": "প্রধান বা লক্ষণীয়",
-    "example": "Let's focus on the salient points of the argument.",
-    "synonyms": [
-      "prominent",
-      "important",
-      "conspicuous"
-    ],
-    "antonyms": [
-      "minor",
-      "inconspicuous",
-      "unimportant"
+      "ignorant",
+      "unwise",
+      "imprudent"
     ]
   },
   {
@@ -6275,21 +4604,6 @@
     ]
   },
   {
-    "word": "Salutary",
-    "meaning": "উপকারী (বিশেষত অপ্রীতিকর)",
-    "example": "The failure was a salutary lesson for him.",
-    "synonyms": [
-      "beneficial",
-      "valuable",
-      "advantageous"
-    ],
-    "antonyms": [
-      "detrimental",
-      "harmful",
-      "pernicious"
-    ]
-  },
-  {
     "word": "Sanction",
     "meaning": "অনুমোদন বা নিষেধাজ্ঞা",
     "example": "The government imposed sanctions on the rogue state.",
@@ -6302,36 +4616,6 @@
       "prohibition",
       "disapproval",
       "ban"
-    ]
-  },
-  {
-    "word": "Sanguine",
-    "meaning": "আশাবাদী",
-    "example": "He is sanguine about the company's future.",
-    "synonyms": [
-      "optimistic",
-      "confident",
-      "hopeful"
-    ],
-    "antonyms": [
-      "pessimistic",
-      "gloomy",
-      "cynical"
-    ]
-  },
-  {
-    "word": "Sardonic",
-    "meaning": "বিদ্রূপাত্মক",
-    "example": "He had a sardonic smile on his face.",
-    "synonyms": [
-      "cynical",
-      "mocking",
-      "sarcastic"
-    ],
-    "antonyms": [
-      "sincere",
-      "genuine",
-      "polite"
     ]
   },
   {
@@ -6349,295 +4633,88 @@
     ]
   },
   {
-    "word": "Saturnine",
-    "meaning": "বিষণ্ণ বা গম্ভীর",
-    "example": "He had a saturnine expression and rarely smiled.",
+    "word": "Saturate",
+    "meaning": "সম্পৃক্ত করা বা ভিজিয়ে দেওয়া",
+    "example": "The rain will saturate the ground.",
     "synonyms": [
-      "gloomy",
-      "morose",
-      "sullen"
+      "soak",
+      "drench",
+      "permeate",
+      "fill"
     ],
     "antonyms": [
-      "cheerful",
-      "jovial",
-      "vivacious"
+      "dry",
+      "drain",
+      "dehydrate",
+      "empty"
     ]
   },
   {
-    "word": "Savant",
-    "meaning": "বিশেষজ্ঞ বা পণ্ডিত ব্যক্তি",
-    "example": "He was a musical savant who could play any instrument.",
+    "word": "Savor",
+    "meaning": "স্বাদ নেওয়া বা উপভোগ করা",
+    "example": "She savored every bite of the meal.",
     "synonyms": [
-      "scholar",
-      "intellectual",
-      "pundit"
+      "relish",
+      "enjoy",
+      "appreciate",
+      "taste"
     ],
     "antonyms": [
-      "ignoramus",
-      "dunce"
+      "dislike",
+      "detest",
+      "rush",
+      "ignore"
     ]
   },
   {
-    "word": "Scurrilous",
-    "meaning": "অপমানজনক বা কুরুচিপূর্ণ",
-    "example": "The tabloid published a scurrilous article about the celebrity.",
+    "word": "Secrete",
+    "meaning": "ক্ষরণ করা বা লুকিয়ে রাখা",
+    "example": "Glands secrete hormones into the bloodstream.",
     "synonyms": [
-      "defamatory",
-      "abusive",
-      "vulgar"
+      "exude",
+      "discharge",
+      "emit",
+      "hide"
     ],
     "antonyms": [
-      "complimentary",
-      "respectful",
-      "polite"
+      "reveal",
+      "expose",
+      "absorb",
+      "withhold"
     ]
   },
   {
-    "word": "Sedulous",
-    "meaning": "পরিশ্রমী বা অধ্যবসায়ী",
-    "example": "Her sedulous efforts finally paid off.",
+    "word": "Shard",
+    "meaning": "টুকরা বা খণ্ড",
+    "example": "A shard of glass cut his foot.",
     "synonyms": [
-      "diligent",
-      "assiduous",
-      "industrious"
+      "fragment",
+      "piece",
+      "splinter",
+      "chip"
     ],
     "antonyms": [
-      "lazy",
-      "indolent",
-      "negligent"
+      "whole",
+      "entirety",
+      "mass",
+      "bulk"
     ]
   },
   {
-    "word": "Seminal",
-    "meaning": "মৌলিক বা প্রভাবশালী",
-    "example": "It was a seminal work that influenced a generation of writers.",
+    "word": "Skeptic",
+    "meaning": "সংশয়বাদী বা অবিশ্বাসী",
+    "example": "He is a skeptic about climate change.",
     "synonyms": [
-      "influential",
-      "groundbreaking",
-      "pioneering"
+      "doubter",
+      "cynic",
+      "questioner",
+      "disbeliever"
     ],
     "antonyms": [
-      "derivative",
-      "unoriginal",
-      "minor"
-    ]
-  },
-  {
-    "word": "Sentient",
-    "meaning": "চেতনাসম্পন্ন",
-    "example": "Humans are sentient beings with the ability to feel emotions.",
-    "synonyms": [
-      "conscious",
-      "feeling",
-      "aware"
-    ],
-    "antonyms": [
-      "insentient",
-      "unconscious",
-      "inanimate"
-    ]
-  },
-  {
-    "word": "Sequester",
-    "meaning": "পৃথক বা আলাদা করা",
-    "example": "The jury was sequestered during the trial.",
-    "synonyms": [
-      "isolate",
-      "seclude",
-      "segregate"
-    ],
-    "antonyms": [
-      "integrate",
-      "unite",
-      "mingle"
-    ]
-  },
-  {
-    "word": "Serendipity",
-    "meaning": "আকস্মিক সৌভাগ্য",
-    "example": "Finding that rare book was a moment of serendipity.",
-    "synonyms": [
-      "happy accident",
-      "fluke",
-      "chance"
-    ],
-    "antonyms": [
-      "misfortune",
-      "bad luck"
-    ]
-  },
-  {
-    "word": "Servile",
-    "meaning": "দাসসুলভ",
-    "example": "He had a servile attitude towards his boss.",
-    "synonyms": [
-      "obsequious",
-      "sycophantic",
-      "subservient"
-    ],
-    "antonyms": [
-      "assertive",
-      "arrogant",
-      "domineering"
-    ]
-  },
-  {
-    "word": "Sinuous",
-    "meaning": "সর্পিল বা আঁকাবাঁকা",
-    "example": "The sinuous river flowed through the valley.",
-    "synonyms": [
-      "winding",
-      "meandering",
-      "curvy"
-    ],
-    "antonyms": [
-      "straight",
-      "direct"
-    ]
-  },
-  {
-    "word": "Skulk",
-    "meaning": "লুকিয়ে বেড়ানো",
-    "example": "The thief skulked in the shadows, waiting for a chance to strike.",
-    "synonyms": [
-      "lurk",
-      "slink",
-      "prowl"
-    ],
-    "antonyms": [
-      "parade",
-      "stride"
-    ]
-  },
-  {
-    "word": "Slake",
-    "meaning": "তৃষ্ণা মেটানো",
-    "example": "He drank a glass of water to slake his thirst.",
-    "synonyms": [
-      "quench",
-      "satisfy",
-      "sate"
-    ],
-    "antonyms": [
-      "worsen",
-      "increase"
-    ]
-  },
-  {
-    "word": "Slovenly",
-    "meaning": "অপরিচ্ছন্ন বা অগোছালো",
-    "example": "His slovenly appearance made a bad impression.",
-    "synonyms": [
-      "messy",
-      "untidy",
-      "disheveled"
-    ],
-    "antonyms": [
-      "neat",
-      "tidy",
-      "meticulous"
-    ]
-  },
-  {
-    "word": "Sojourn",
-    "meaning": "অস্থায়ী বসবাস",
-    "example": "He had a brief sojourn in Paris.",
-    "synonyms": [
-      "stay",
-      "visit",
-      "stopover"
-    ],
-    "antonyms": [
-      "permanent residence",
-      "migration"
-    ]
-  },
-  {
-    "word": "Solace",
-    "meaning": "সান্ত্বনা",
-    "example": "She found solace in music after her loss.",
-    "synonyms": [
-      "comfort",
-      "consolation",
-      "relief"
-    ],
-    "antonyms": [
-      "distress",
-      "agony",
-      "grief"
-    ]
-  },
-  {
-    "word": "Solicitous",
-    "meaning": "উদ্বিগ্ন বা যত্নশীল",
-    "example": "She was always solicitous about the welfare of her students.",
-    "synonyms": [
-      "concerned",
-      "attentive",
-      "caring"
-    ],
-    "antonyms": [
-      "indifferent",
-      "unconcerned",
-      "apathetic"
-    ]
-  },
-  {
-    "word": "Solvent",
-    "meaning": "সচ্ছল বা ঋণ পরিশোধে সক্ষম",
-    "example": "The company managed to remain solvent during the crisis.",
-    "synonyms": [
-      "financially stable",
-      "in the black"
-    ],
-    "antonyms": [
-      "insolvent",
-      "bankrupt",
-      "in debt"
-    ]
-  },
-  {
-    "word": "Somnolent",
-    "meaning": "ঘুম ঘুম ভাব",
-    "example": "The warm room made him feel somnolent.",
-    "synonyms": [
-      "sleepy",
-      "drowsy",
-      "lethargic"
-    ],
-    "antonyms": [
-      "alert",
-      "awake",
-      "energetic"
-    ]
-  },
-  {
-    "word": "Sonorous",
-    "meaning": "সুমধুর বা গম্ভীর (শব্দ)",
-    "example": "He had a deep, sonorous voice.",
-    "synonyms": [
-      "resonant",
-      "rich",
-      "booming"
-    ],
-    "antonyms": [
-      "thin",
-      "shrill",
-      "quiet"
-    ]
-  },
-  {
-    "word": "Sophistry",
-    "meaning": "কুযুক্তি বা প্রতারণামূলক তর্ক",
-    "example": "The politician's argument was a clever piece of sophistry.",
-    "synonyms": [
-      "fallacy",
-      "specious reasoning",
-      "casuistry"
-    ],
-    "antonyms": [
-      "logic",
-      "valid reasoning"
+      "believer",
+      "optimist",
+      "follower",
+      "supporter"
     ]
   },
   {
@@ -6652,21 +4729,6 @@
     "antonyms": [
       "stimulant",
       "invigorating"
-    ]
-  },
-  {
-    "word": "Sordid",
-    "meaning": "নোংরা বা অনৈতিক",
-    "example": "The newspaper revealed the sordid details of the scandal.",
-    "synonyms": [
-      "sleazy",
-      "squalid",
-      "vile"
-    ],
-    "antonyms": [
-      "respectable",
-      "honorable",
-      "clean"
     ]
   },
   {
@@ -6685,78 +4747,88 @@
     ]
   },
   {
-    "word": "Spurious",
-    "meaning": "জাল বা মিথ্যা",
-    "example": "He was arrested for making spurious claims.",
+    "word": "Spectrum",
+    "meaning": "বর্ণালী বা পরিসর",
+    "example": "The disease affects people across the age spectrum.",
     "synonyms": [
-      "false",
-      "fake",
-      "bogus"
+      "range",
+      "continuum",
+      "scale",
+      "gamut"
     ],
     "antonyms": [
-      "authentic",
-      "genuine",
-      "real"
+      "singularity",
+      "point",
+      "specific",
+      "narrow"
     ]
   },
   {
-    "word": "Squalid",
-    "meaning": "মলিন বা নোংরা",
-    "example": "The family lived in a squalid apartment.",
+    "word": "Sporadic",
+    "meaning": "বিক্ষিপ্ত বা অনিয়মিত",
+    "example": "There were sporadic outbreaks of violence.",
     "synonyms": [
-      "filthy",
-      "dirty",
-      "sordid"
+      "intermittent",
+      "occasional",
+      "irregular",
+      "scattered"
     ],
     "antonyms": [
-      "clean",
-      "pristine",
-      "immaculate"
+      "constant",
+      "continuous",
+      "regular",
+      "frequent"
     ]
   },
   {
-    "word": "Staid",
-    "meaning": "গম্ভীর বা রক্ষণশীল",
-    "example": "He was a staid and serious man.",
+    "word": "Stigma",
+    "meaning": "কলঙ্ক বা দাগ",
+    "example": "There is still a stigma attached to mental illness.",
     "synonyms": [
-      "sedate",
-      "sober",
-      "conventional"
+      "shame",
+      "disgrace",
+      "stain",
+      "mark"
     ],
     "antonyms": [
-      "frivolous",
-      "adventurous",
-      "unconventional"
+      "honor",
+      "pride",
+      "respect",
+      "esteem"
     ]
   },
   {
-    "word": "Stentorian",
-    "meaning": "উচ্চ ও শক্তিশালী (কণ্ঠস্বর)",
-    "example": "The commander's stentorian voice echoed across the field.",
+    "word": "Stint",
+    "meaning": "সীমিত সময় বা কৃপণতা করা",
+    "example": "She did a stint as a volunteer.",
     "synonyms": [
-      "loud",
-      "booming",
-      "thundering"
+      "period",
+      "term",
+      "turn",
+      "spell"
     ],
     "antonyms": [
-      "quiet",
-      "soft",
-      "whispering"
+      "excess",
+      "abundance",
+      "generosity",
+      "permanence"
     ]
   },
   {
-    "word": "Stoic",
-    "meaning": "নির্বিকার (সুখ-দুঃখে)",
-    "example": "He remained stoic in the face of adversity.",
+    "word": "Stipulate",
+    "meaning": "শর্ত আরোপ করা বা নির্দিষ্ট করা",
+    "example": "The contract stipulates payment terms.",
     "synonyms": [
-      "unemotional",
-      "impassive",
-      "phlegmatic"
+      "specify",
+      "require",
+      "demand",
+      "state"
     ],
     "antonyms": [
-      "emotional",
-      "sensitive",
-      "expressive"
+      "suggest",
+      "imply",
+      "generalize",
+      "ignore"
     ]
   },
   {
@@ -6775,196 +4847,105 @@
     ]
   },
   {
-    "word": "Striated",
-    "meaning": "ডোরাকাটা",
-    "example": "The striated muscles are responsible for voluntary movements.",
+    "word": "Strut",
+    "meaning": "গর্বভরে হাঁটা বা দম্ভ দেখানো",
+    "example": "The peacock strutted across the lawn.",
     "synonyms": [
-      "striped",
-      "grooved",
-      "furrowed"
+      "swagger",
+      "parade",
+      "prance",
+      "show off"
     ],
     "antonyms": [
-      "smooth",
-      "plain"
+      "slink",
+      "slouch",
+      "shuffle",
+      "hide"
     ]
   },
   {
-    "word": "Strident",
-    "meaning": "কর্কশ",
-    "example": "Her strident voice gave me a headache.",
+    "word": "Subpoena",
+    "meaning": "আদালতের সমন বা তলব করা",
+    "example": "The witness was issued a subpoena.",
     "synonyms": [
-      "harsh",
-      "raucous",
-      "jarring"
+      "summons",
+      "writ",
+      "citation",
+      "mandate"
     ],
     "antonyms": [
-      "mellifluous",
-      "soft",
-      "melodious"
+      "dismiss",
+      "release",
+      "excuse",
+      "exempt"
     ]
   },
   {
-    "word": "Stupefy",
-    "meaning": "হতবাক বা স্তম্ভিত করা",
-    "example": "She was stupefied by the shocking news.",
+    "word": "Subside",
+    "meaning": "প্রশমিত হওয়া বা কমে যাওয়া",
+    "example": "The storm will gradually subside.",
     "synonyms": [
-      "stun",
-      "astonish",
-      "dumbfound"
+      "diminish",
+      "decrease",
+      "abate",
+      "decline"
     ],
     "antonyms": [
-      "clarify",
-      "enlighten",
-      "bore"
+      "increase",
+      "intensify",
+      "grow",
+      "escalate"
     ]
   },
   {
-    "word": "Subjugate",
-    "meaning": "বশীভূত করা",
-    "example": "The empire subjugated many smaller nations.",
+    "word": "Substantiate",
+    "meaning": "প্রমাণ করা বা সমর্থন করা",
+    "example": "Can you substantiate your claims?",
     "synonyms": [
-      "conquer",
-      "vanquish",
-      "subdue"
+      "verify",
+      "confirm",
+      "prove",
+      "validate"
     ],
     "antonyms": [
-      "liberate",
-      "free",
-      "emancipate"
+      "disprove",
+      "refute",
+      "contradict",
+      "deny"
     ]
   },
   {
-    "word": "Sublime",
-    "meaning": "মহিমান্বিত বা অসাধারণ",
-    "example": "The view from the mountaintop was sublime.",
+    "word": "Supersede",
+    "meaning": "প্রতিস্থাপন করা বা বাতিল করা",
+    "example": "The new law will supersede the old one.",
     "synonyms": [
-      "magnificent",
-      "exalted",
-      "awe-inspiring"
+      "replace",
+      "supplant",
+      "displace",
+      "override"
     ],
     "antonyms": [
-      "mundane",
-      "ordinary",
-      "ridiculous"
+      "retain",
+      "maintain",
+      "keep",
+      "continue"
     ]
   },
   {
-    "word": "Subterfuge",
-    "meaning": "ছলনা বা কৌশল",
-    "example": "He used subterfuge to get what he wanted.",
+    "word": "Supposition",
+    "meaning": "অনুমান বা ধারণা",
+    "example": "Your argument is based on supposition, not fact.",
     "synonyms": [
-      "deceit",
-      "trickery",
-      "artifice"
+      "assumption",
+      "hypothesis",
+      "conjecture",
+      "speculation"
     ],
     "antonyms": [
-      "honesty",
-      "candor",
-      "openness"
-    ]
-  },
-  {
-    "word": "Succinct",
-    "meaning": "সংক্ষিপ্ত ও পরিষ্কার",
-    "example": "Please give a succinct summary of the report.",
-    "synonyms": [
-      "concise",
-      "terse",
-      "pithy"
-    ],
-    "antonyms": [
-      "verbose",
-      "prolix",
-      "long-winded"
-    ]
-  },
-  {
-    "word": "Supercilious",
-    "meaning": "অহংকারী বা উদ্ধত",
-    "example": "She gave a supercilious smile to her competitors.",
-    "synonyms": [
-      "arrogant",
-      "haughty",
-      "patronizing"
-    ],
-    "antonyms": [
-      "humble",
-      "modest",
-      "meek"
-    ]
-  },
-  {
-    "word": "Superfluous",
-    "meaning": "অতিরিক্ত বা অনাবশ্যক",
-    "example": "The report was full of superfluous details.",
-    "synonyms": [
-      "unnecessary",
-      "excess",
-      "redundant"
-    ],
-    "antonyms": [
-      "essential",
-      "necessary",
-      "required"
-    ]
-  },
-  {
-    "word": "Supine",
-    "meaning": "চিৎ হয়ে শোয়া বা নিষ্ক্রিয়",
-    "example": "He was lying supine on the grass. / The government was supine in the face of the crisis.",
-    "synonyms": [
-      "lying on back",
-      "lethargic",
-      "passive"
-    ],
-    "antonyms": [
-      "prone",
-      "active",
-      "vigorous"
-    ]
-  },
-  {
-    "word": "Surfeit",
-    "meaning": "আধিক্য",
-    "example": "There was a surfeit of food at the party.",
-    "synonyms": [
-      "excess",
-      "glut",
-      "surplus"
-    ],
-    "antonyms": [
-      "dearth",
-      "scarcity",
-      "lack"
-    ]
-  },
-  {
-    "word": "Surreptitious",
-    "meaning": "গোপন",
-    "example": "They had a surreptitious meeting in the park.",
-    "synonyms": [
-      "secret",
-      "stealthy",
-      "furtive"
-    ],
-    "antonyms": [
-      "open",
-      "public",
-      "overt"
-    ]
-  },
-  {
-    "word": "Sycophant",
-    "meaning": "চাটুকার",
-    "example": "The king was surrounded by sycophants who praised his every word.",
-    "synonyms": [
-      "flatterer",
-      "toady",
-      "yes-man"
-    ],
-    "antonyms": [
-      "critic",
-      "rebel"
+      "fact",
+      "certainty",
+      "proof",
+      "reality"
     ]
   },
   {
@@ -6983,91 +4964,20 @@
     ]
   },
   {
-    "word": "Taciturn",
-    "meaning": "স্বল্পভাষী",
-    "example": "The taciturn farmer rarely spoke a word.",
+    "word": "Tangential",
+    "meaning": "প্রাসঙ্গিক নয় এমন বা স্পর্শক",
+    "example": "His comments were tangential to the main issue.",
     "synonyms": [
-      "reticent",
-      "uncommunicative",
-      "reserved"
+      "peripheral",
+      "irrelevant",
+      "digressive",
+      "incidental"
     ],
     "antonyms": [
-      "loquacious",
-      "garrulous",
-      "talkative"
-    ]
-  },
-  {
-    "word": "Tantamount",
-    "meaning": "সমতুল্য",
-    "example": "His silence was tantamount to an admission of guilt.",
-    "synonyms": [
-      "equivalent to",
-      "equal to",
-      "as good as"
-    ],
-    "antonyms": [
-      "different from",
-      "opposite of"
-    ]
-  },
-  {
-    "word": "Tautology",
-    "meaning": "পুনরুক্তি",
-    "example": "'It is what it is' is a form of tautology.",
-    "synonyms": [
-      "repetition",
-      "redundancy",
-      "pleonasm"
-    ],
-    "antonyms": [
-      "conciseness",
-      "originality"
-    ]
-  },
-  {
-    "word": "Temerity",
-    "meaning": "দুঃসাহস বা ঔদ্ধত্য",
-    "example": "He had the temerity to challenge the world champion.",
-    "synonyms": [
-      "audacity",
-      "nerve",
-      "impudence"
-    ],
-    "antonyms": [
-      "timidity",
-      "caution",
-      "hesitation"
-    ]
-  },
-  {
-    "word": "Temperance",
-    "meaning": "সংযম",
-    "example": "He practiced temperance in all things, especially eating and drinking.",
-    "synonyms": [
-      "moderation",
-      "self-control",
-      "abstinence"
-    ],
-    "antonyms": [
-      "excess",
-      "indulgence",
-      "intemperance"
-    ]
-  },
-  {
-    "word": "Tenable",
-    "meaning": "যুক্তিযুক্ত বা সমর্থনযোগ্য",
-    "example": "His theory is no longer tenable in light of new evidence.",
-    "synonyms": [
-      "defensible",
-      "justifiable",
-      "sustainable"
-    ],
-    "antonyms": [
-      "indefensible",
-      "untenable",
-      "unjustifiable"
+      "central",
+      "relevant",
+      "pertinent",
+      "direct"
     ]
   },
   {
@@ -7086,36 +4996,6 @@
     ]
   },
   {
-    "word": "Tepid",
-    "meaning": "ঈষদুষ্ণ বা আগ্রহহীন",
-    "example": "He received only tepid applause for his performance.",
-    "synonyms": [
-      "lukewarm",
-      "unenthusiastic",
-      "apathetic"
-    ],
-    "antonyms": [
-      "hot",
-      "enthusiastic",
-      "passionate"
-    ]
-  },
-  {
-    "word": "Terse",
-    "meaning": "সংক্ষিপ্ত ও সরাসরি",
-    "example": "He gave a terse reply to my question.",
-    "synonyms": [
-      "concise",
-      "succinct",
-      "laconic"
-    ],
-    "antonyms": [
-      "prolix",
-      "verbose",
-      "long-winded"
-    ]
-  },
-  {
     "word": "Tirade",
     "meaning": "তীব্র সমালোচনামূলক দীর্ঘ বক্তৃতা",
     "example": "He launched into a tirade against the injustice of the system.",
@@ -7131,18 +5011,20 @@
     ]
   },
   {
-    "word": "Torpid",
-    "meaning": "নিষ্ক্রিয় বা অলস",
-    "example": "The torpid bear hibernated through the winter.",
+    "word": "Torpor",
+    "meaning": "অলসতা বা নিষ্ক্রিয়তা",
+    "example": "The heat induced a state of torpor.",
     "synonyms": [
-      "lethargic",
-      "inactive",
-      "sluggish"
+      "lethargy",
+      "sluggishness",
+      "inactivity",
+      "listlessness"
     ],
     "antonyms": [
-      "energetic",
-      "active",
-      "lively"
+      "energy",
+      "vigor",
+      "activity",
+      "liveliness"
     ]
   },
   {
@@ -7176,241 +5058,37 @@
     ]
   },
   {
-    "word": "Transient",
-    "meaning": "ক্ষণস্থায়ী",
-    "example": "Youth is a transient phase of life.",
+    "word": "Transgression",
+    "meaning": "লঙ্ঘন বা অপরাধ",
+    "example": "His transgression was forgiven.",
     "synonyms": [
-      "temporary",
-      "fleeting",
-      "ephemeral"
-    ],
-    "antonyms": [
-      "permanent",
-      "lasting",
-      "enduring"
-    ]
-  },
-  {
-    "word": "Transmute",
-    "meaning": "রূপান্তরিত করা",
-    "example": "Alchemists tried to transmute lead into gold.",
-    "synonyms": [
-      "transform",
-      "convert",
-      "change"
-    ],
-    "antonyms": [
-      "preserve",
-      "maintain"
-    ]
-  },
-  {
-    "word": "Travesty",
-    "meaning": "ব্যঙ্গানুকরণ বা প্রহসন",
-    "example": "The trial was a travesty of justice.",
-    "synonyms": [
-      "mockery",
-      "parody",
-      "caricature"
-    ],
-    "antonyms": [
-      "tribute",
-      "homage",
-      "serious representation"
-    ]
-  },
-  {
-    "word": "Trenchant",
-    "meaning": "তীক্ষ্ণ বা জোরালো (বক্তব্য)",
-    "example": "She is known for her trenchant wit and criticism.",
-    "synonyms": [
-      "incisive",
-      "sharp",
-      "caustic"
-    ],
-    "antonyms": [
-      "vague",
-      "mild",
-      "gentle"
-    ]
-  },
-  {
-    "word": "Trepidation",
-    "meaning": "ভয় বা উদ্বেগ",
-    "example": "He felt a great deal of trepidation before his first public speech.",
-    "synonyms": [
-      "fear",
-      "anxiety",
-      "apprehension"
-    ],
-    "antonyms": [
-      "calmness",
-      "composure",
-      "confidence"
-    ]
-  },
-  {
-    "word": "Trite",
-    "meaning": "মামুলি বা বহু ব্যবহারে জীর্ণ",
-    "example": "His speech was filled with trite expressions and clichés.",
-    "synonyms": [
-      "banal",
-      "hackneyed",
-      "clichéd"
-    ],
-    "antonyms": [
-      "original",
-      "fresh",
-      "novel"
-    ]
-  },
-  {
-    "word": "Truculent",
-    "meaning": "যুদ্ধংদেহী বা আক্রমণাত্মক",
-    "example": "He became truculent when he had too much to drink.",
-    "synonyms": [
-      "aggressive",
-      "belligerent",
-      "defiant"
-    ],
-    "antonyms": [
-      "peaceful",
-      "amiable",
-      "cooperative"
-    ]
-  },
-  {
-    "word": "Turbid",
-    "meaning": "ঘোলা",
-    "example": "The river was turbid after the heavy rain.",
-    "synonyms": [
-      "muddy",
-      "murky",
-      "cloudy"
-    ],
-    "antonyms": [
-      "clear",
-      "pellucid",
-      "limpid"
-    ]
-  },
-  {
-    "word": "Turgid",
-    "meaning": "স্ফীত বা আড়ম্বরপূর্ণ",
-    "example": "The river was turgid with floodwater. / His writing style is turgid and difficult to read.",
-    "synonyms": [
-      "swollen",
-      "pompous",
-      "bombastic"
-    ],
-    "antonyms": [
-      "deflated",
-      "simple",
-      "concise"
-    ]
-  },
-  {
-    "word": "Turpitude",
-    "meaning": "হীনতা বা নৈতিক অবক্ষয়",
-    "example": "He was guilty of moral turpitude.",
-    "synonyms": [
-      "depravity",
-      "wickedness",
-      "corruption"
-    ],
-    "antonyms": [
-      "virtue",
-      "righteousness",
-      "probity"
-    ]
-  },
-  {
-    "word": "Ubiquitous",
-    "meaning": "সর্বব্যাপী",
-    "example": "Smartphones have become ubiquitous in modern society.",
-    "synonyms": [
-      "omnipresent",
-      "pervasive",
-      "everywhere"
-    ],
-    "antonyms": [
-      "rare",
-      "scarce",
-      "infrequent"
-    ]
-  },
-  {
-    "word": "Umbrage",
-    "meaning": "বিরক্তি বা অপমান বোধ",
-    "example": "She took umbrage at his rude remarks.",
-    "synonyms": [
+      "violation",
       "offense",
-      "resentment",
-      "displeasure"
+      "sin",
+      "crime"
     ],
     "antonyms": [
-      "pleasure",
-      "delight",
-      "satisfaction"
+      "obedience",
+      "compliance",
+      "virtue",
+      "righteousness"
     ]
   },
   {
-    "word": "Unctuous",
-    "meaning": "চাটুকার বা মেকি আন্তরিক",
-    "example": "The unctuous salesman tried to flatter us into buying the car.",
+    "word": "Truculence",
+    "meaning": "আক্রমণাত্মকতা বা নিষ্ঠুরতা",
+    "example": "His truculence alienated his colleagues.",
     "synonyms": [
-      "sycophantic",
-      "ingratiating",
-      "oily"
+      "aggression",
+      "hostility",
+      "belligerence",
+      "defiance"
     ],
     "antonyms": [
-      "sincere",
-      "genuine",
-      "blunt"
-    ]
-  },
-  {
-    "word": "Untoward",
-    "meaning": "অনাকাঙ্ক্ষিত বা দুর্ভাগ্যজনক",
-    "example": "The party ended without any untoward incidents.",
-    "synonyms": [
-      "unfortunate",
-      "adverse",
-      "unforeseen"
-    ],
-    "antonyms": [
-      "favorable",
-      "fortunate",
-      "expected"
-    ]
-  },
-  {
-    "word": "Upbraid",
-    "meaning": "তিরস্কার করা",
-    "example": "The coach upbraided the team for their poor performance.",
-    "synonyms": [
-      "scold",
-      "reprimand",
-      "reproach"
-    ],
-    "antonyms": [
-      "praise",
-      "commend",
-      "laud"
-    ]
-  },
-  {
-    "word": "Usury",
-    "meaning": "সুদখোরি",
-    "example": "Charging exorbitant interest rates is considered usury.",
-    "synonyms": [
-      "loan-sharking",
-      "exploitation",
-      "exorbitant interest"
-    ],
-    "antonyms": [
-      "fair lending",
-      "altruism"
+      "friendliness",
+      "kindness",
+      "gentleness",
+      "cooperation"
     ]
   },
   {
@@ -7429,33 +5107,190 @@
     ]
   },
   {
-    "word": "Vacuous",
-    "meaning": "শূন্যগর্ভ বা বুদ্ধিহীন",
-    "example": "She had a vacuous expression on her face.",
+    "word": "Venerate",
+    "meaning": "শ্রদ্ধা করা বা পূজা করা",
+    "example": "They venerate their ancestors.",
     "synonyms": [
-      "inane",
-      "empty-headed",
-      "mindless"
+      "revere",
+      "respect",
+      "honor",
+      "worship"
     ],
     "antonyms": [
-      "intelligent",
-      "profound",
-      "meaningful"
+      "disrespect",
+      "despise",
+      "scorn",
+      "mock"
     ]
   },
   {
-    "word": "Vapid",
-    "meaning": "নীরস বা আকর্ষণহীন",
-    "example": "The conversation was vapid and uninteresting.",
+    "word": "Veracious",
+    "meaning": "সত্যবাদী বা নির্ভুল",
+    "example": "She is known as a veracious witness.",
     "synonyms": [
-      "insipid",
-      "dull",
-      "bland"
+      "truthful",
+      "honest",
+      "accurate",
+      "reliable"
     ],
     "antonyms": [
-      "lively",
-      "stimulating",
-      "interesting"
+      "false",
+      "dishonest",
+      "deceitful",
+      "lying"
+    ]
+  },
+  {
+    "word": "Verbose",
+    "meaning": "বাচাল বা শব্দবহুল",
+    "example": "His verbose writing style was criticized.",
+    "synonyms": [
+      "wordy",
+      "long-winded",
+      "prolix",
+      "rambling"
+    ],
+    "antonyms": [
+      "concise",
+      "brief",
+      "succinct",
+      "terse"
+    ]
+  },
+  {
+    "word": "Viable",
+    "meaning": "কার্যকর বা সম্ভাব্য",
+    "example": "The plan is economically viable.",
+    "synonyms": [
+      "feasible",
+      "workable",
+      "practical",
+      "possible"
+    ],
+    "antonyms": [
+      "unviable",
+      "impossible",
+      "impractical",
+      "unfeasible"
+    ]
+  },
+  {
+    "word": "Viscous",
+    "meaning": "আঠালো বা ঘন",
+    "example": "Honey is a viscous liquid.",
+    "synonyms": [
+      "thick",
+      "sticky",
+      "syrupy",
+      "glutinous"
+    ],
+    "antonyms": [
+      "thin",
+      "watery",
+      "fluid",
+      "runny"
+    ]
+  },
+  {
+    "word": "Vituperative",
+    "meaning": "নিন্দাপূর্ণ বা কটুক্তিযুক্ত",
+    "example": "His vituperative speech shocked the audience.",
+    "synonyms": [
+      "abusive",
+      "scathing",
+      "harsh",
+      "bitter"
+    ],
+    "antonyms": [
+      "complimentary",
+      "praising",
+      "kind",
+      "gentle"
+    ]
+  },
+  {
+    "word": "Volatile",
+    "meaning": "অস্থিতিশীল বা পরিবর্তনশীল",
+    "example": "The political situation is volatile.",
+    "synonyms": [
+      "unstable",
+      "unpredictable",
+      "erratic",
+      "explosive"
+    ],
+    "antonyms": [
+      "stable",
+      "constant",
+      "steady",
+      "predictable"
+    ]
+  },
+  {
+    "word": "Wary",
+    "meaning": "সতর্ক বা সন্দেহপ্রবণ",
+    "example": "Be wary of strangers offering help.",
+    "synonyms": [
+      "cautious",
+      "careful",
+      "vigilant",
+      "suspicious"
+    ],
+    "antonyms": [
+      "careless",
+      "reckless",
+      "trusting",
+      "unwary"
+    ]
+  },
+  {
+    "word": "Welter",
+    "meaning": "বিশৃঙ্খলা বা গোলমাল",
+    "example": "The desk was covered in a welter of papers.",
+    "synonyms": [
+      "jumble",
+      "confusion",
+      "mess",
+      "tangle"
+    ],
+    "antonyms": [
+      "order",
+      "organization",
+      "arrangement",
+      "tidiness"
+    ]
+  },
+  {
+    "word": "Whimsical",
+    "meaning": "খেয়ালী বা অদ্ভুত",
+    "example": "The story has a whimsical charm.",
+    "synonyms": [
+      "fanciful",
+      "playful",
+      "quirky",
+      "capricious"
+    ],
+    "antonyms": [
+      "serious",
+      "practical",
+      "realistic",
+      "predictable"
+    ]
+  },
+  {
+    "word": "Zealot",
+    "meaning": "ধর্মান্ধ বা উগ্র সমর্থক",
+    "example": "He is a political zealot.",
+    "synonyms": [
+      "fanatic",
+      "extremist",
+      "radical",
+      "enthusiast"
+    ],
+    "antonyms": [
+      "moderate",
+      "skeptic",
+      "indifferent",
+      "apathetic"
     ]
   }
 ]
