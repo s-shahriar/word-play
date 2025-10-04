@@ -49,16 +49,10 @@ export const Flashcard: React.FC<FlashcardProps> = ({
 
   const qualityButtons = [
     {
-      quality: 0 as Quality,
-      label: "Again",
-      color: "#ff4757",
-      description: "Complete blackout",
-    },
-    {
       quality: 1 as Quality,
       label: "Hard",
-      color: "#ff6b7d",
-      description: "Incorrect, but remembered",
+      color: "#ff4757",
+      description: "Incorrect or didn't remember",
     },
     {
       quality: 3 as Quality,
@@ -142,6 +136,12 @@ export const Flashcard: React.FC<FlashcardProps> = ({
           </div>
         ) : (
           <div className="back-controls">
+            <button
+              className="control-button flip-card-button"
+              onClick={handleFlip}
+            >
+              Flip Back
+            </button>
             <div className="quality-buttons">
               <p className="quality-prompt">
                 How well did you remember this word?
