@@ -167,19 +167,68 @@ export class GoogleAuth {
 
   static async refreshTokenIfNeeded(): Promise<void> {
     const user = this.getCurrentUser();
-    if (!user) return;
+    if (!user) {
+      throw new Error('Not authenticated');
+    }
 
     // Check if token is still valid by making a test API call
     try {
-      await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
+      const response = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
         headers: {
           Authorization: `Bearer ${user.accessToken}`,
         },
       });
+
+      if (response.ok) {
+        // Token is still valid
+        return;
+      }
     } catch (error) {
-      // Token expired, need to re-login
-      this.logout();
-      throw new Error('Session expired. Please login again.');
+      // Continue to token refresh
     }
+
+    // Token expired or invalid, request a new one silently
+    if (!this.gapiInited || !this.gisInited) {
+      await this.initialize();
+    }
+
+    return new Promise((resolve, reject) => {
+      this.tokenClient.callback = async (response: any) => {
+        if (response.error) {
+          console.error('Token refresh error:', response);
+          // Clear invalid user data
+          this.logout();
+          reject(new Error('Session expired. Please sign in again.'));
+          return;
+        }
+
+        try {
+          // Update the token in gapi client
+          (window as any).gapi.client.setToken({ access_token: response.access_token });
+
+          // Update user with new access token
+          const updatedUser: GoogleUser = {
+            ...user,
+            accessToken: response.access_token,
+          };
+
+          this.saveUser(updatedUser);
+          resolve();
+        } catch (error) {
+          console.error('Token update error:', error);
+          this.logout();
+          reject(new Error('Session expired. Please sign in again.'));
+        }
+      };
+
+      // Request new access token silently (without prompting the user)
+      try {
+        this.tokenClient.requestAccessToken({ prompt: '' });
+      } catch (error) {
+        console.error('Failed to request token:', error);
+        this.logout();
+        reject(new Error('Session expired. Please sign in again.'));
+      }
+    });
   }
 }

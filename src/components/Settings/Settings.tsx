@@ -273,7 +273,15 @@ export const Settings: React.FC = () => {
     } catch (error) {
       console.error('Sync failed:', error);
       setSyncStatus(GoogleDriveSync.getSyncStatus());
-      showNotificationPopup('error', 'Sync Failed', 'Failed to sync data. Please check your connection and try again.');
+
+      // Check if it's an authentication error
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      if (errorMessage.includes('Session expired') || errorMessage.includes('Not authenticated')) {
+        setGoogleUser(null);
+        showNotificationPopup('error', 'Session Expired', 'Your session has expired. Please sign in again.');
+      } else {
+        showNotificationPopup('error', 'Sync Failed', 'Failed to sync data. Please check your connection and try again.');
+      }
     }
   };
 
@@ -291,7 +299,15 @@ export const Settings: React.FC = () => {
     } catch (error) {
       console.error('Upload failed:', error);
       setSyncStatus(GoogleDriveSync.getSyncStatus());
-      showNotificationPopup('error', 'Upload Failed', 'Failed to upload data. Please check your connection and try again.');
+
+      // Check if it's an authentication error
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      if (errorMessage.includes('Session expired') || errorMessage.includes('Not authenticated')) {
+        setGoogleUser(null);
+        showNotificationPopup('error', 'Session Expired', 'Your session has expired. Please sign in again.');
+      } else {
+        showNotificationPopup('error', 'Upload Failed', 'Failed to upload data. Please check your connection and try again.');
+      }
     }
   };
 
@@ -314,7 +330,15 @@ export const Settings: React.FC = () => {
     } catch (error) {
       console.error('Download failed:', error);
       setSyncStatus(GoogleDriveSync.getSyncStatus());
-      showNotificationPopup('error', 'Download Failed', 'Failed to download data. Please check your connection and try again.');
+
+      // Check if it's an authentication error
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      if (errorMessage.includes('Session expired') || errorMessage.includes('Not authenticated')) {
+        setGoogleUser(null);
+        showNotificationPopup('error', 'Session Expired', 'Your session has expired. Please sign in again.');
+      } else {
+        showNotificationPopup('error', 'Download Failed', 'Failed to download data. Please check your connection and try again.');
+      }
     }
   };
 
