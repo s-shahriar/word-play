@@ -7,6 +7,8 @@ import { SentenceTest } from './components/Tests/SentenceTest';
 import { SynonymAntonymTest } from './components/Tests/SynonymAntonymTest';
 import { ProgressDashboard } from './components/Progress/ProgressDashboard';
 import { Settings } from './components/Settings/Settings';
+import { AlphabetBrowser } from './components/AlphabetBrowser/AlphabetBrowser';
+import { BrowseFlashcards } from './components/BrowseFlashcards/BrowseFlashcards';
 import { ProgressTracker } from './services/ProgressTracker';
 import { GoogleDriveSync } from './services/GoogleDriveSync';
 import { GoogleAuth } from './services/GoogleAuth';
@@ -35,6 +37,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/flashcards/:sessionType" element={<FlashcardSessionWrapper />} />
+          <Route path="/browse" element={<AlphabetBrowser />} />
+          <Route path="/browse/:letter" element={<BrowseFlashcards />} />
           <Route path="/tests/match" element={<MatchTest />} />
           <Route path="/tests/sentence" element={<SentenceTest />} />
           <Route path="/tests/synonym-antonym" element={<SynonymAntonymTest />} />

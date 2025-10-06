@@ -66,6 +66,15 @@ export const Home: React.FC = () => {
       icon: "★",
     },
     {
+      id: "browse",
+      title: "Browse by Letter",
+      description: "Explore vocabulary alphabetically (A-Z)",
+      count: null,
+      color: "#16a085",
+      disabled: false,
+      icon: "📚",
+    },
+    {
       id: "quick",
       title: "10 Quick Cards",
       description: "Quick 10-card practice session",
@@ -95,7 +104,11 @@ export const Home: React.FC = () => {
   ];
 
   const handleSessionStart = (sessionType: string) => {
-    navigate(`/flashcards/${sessionType}`);
+    if (sessionType === 'browse') {
+      navigate('/browse');
+    } else {
+      navigate(`/flashcards/${sessionType}`);
+    }
   };
 
   if (loading) {
