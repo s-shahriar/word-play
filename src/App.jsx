@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useParams, useNavigate } from 'react-router-dom';
 import { Home } from './components/Home/Home';
 import { FlashcardSession } from './components/FlashcardSession/FlashcardSession';
@@ -7,9 +7,28 @@ import { SentenceTest } from './components/Tests/SentenceTest';
 import { SynonymAntonymTest } from './components/Tests/SynonymAntonymTest';
 import { ProgressDashboard } from './components/Progress/ProgressDashboard';
 import { Settings } from './components/Settings/Settings';
+import { ProgressTracker } from './services/ProgressTracker';
+import { GoogleDriveSync } from './services/GoogleDriveSync';
+import { GoogleAuth } from './services/GoogleAuth';
 import './App.css'
 
 function App() {
+  useEffect(() => {
+    // Set up auto-sync callback
+    if (GoogleDriveSync.isAutoSyncEnabled() && GoogleAuth.getCurrentUser()) {
+      ProgressTracker.setSyncCallback(() => {
+        console.log('🔄 Auto-syncing to Google Drive...');
+        GoogleDriveSync.syncWithGoogleDrive('merge').catch((error) => {
+          console.error('Auto-sync failed:', error);
+        });
+      });
+    }
+
+    return () => {
+      ProgressTracker.setSyncCallback(null);
+    };
+  }, []);
+
   return (
     <Router>
       <div className="app">
@@ -35,7 +54,7 @@ function FlashcardSessionWrapper() {
   const getSessionProps = (type) => {
     switch (type) {
       case 'due':
-        return { sessionType: 'due', maxCards: 20 };
+        return { sessionType: 'due', maxCards: 999 };
       case 'new':
         return { sessionType: 'new', maxCards: 10 };
       case 'quick':

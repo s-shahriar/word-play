@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ProgressTracker } from '../../services/ProgressTracker';
 import { GoogleAuth, GoogleUser } from '../../services/GoogleAuth';
 import { GoogleDriveSync, SyncStatus } from '../../services/GoogleDriveSync';
+import { SyncConflicts } from '../SyncConflicts/SyncConflicts';
 import './Settings.css';
 
 interface UserSettings {
@@ -920,6 +921,9 @@ export const Settings: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Sync Conflicts Modal */}
+      <SyncConflicts />
     </div>
   );
 };

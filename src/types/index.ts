@@ -17,6 +17,8 @@ export interface UserProgress {
   accuracy: number;
   lastReviewed: Date;
   masteryLevel: number;
+  lastModified?: Date; // Track when this record was last modified
+  syncVersion?: number; // Version number for conflict resolution
 }
 
 export interface TestResult {
@@ -75,4 +77,19 @@ export interface SM2Result {
   repetitions: number;
   interval: number;
   nextReview: Date;
+}
+
+export interface SyncMetadata {
+  lastSyncTime: Date | null;
+  dataChecksum: string;
+  recordCount: number;
+  deviceId: string;
+  syncVersion: number;
+}
+
+export interface SyncConflict {
+  wordId: string;
+  localData: UserProgress;
+  remoteData: UserProgress;
+  conflictType: 'both-modified' | 'version-mismatch';
 }

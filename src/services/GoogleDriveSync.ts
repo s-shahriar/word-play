@@ -1,22 +1,78 @@
 import { ProgressTracker } from './ProgressTracker';
 import { GoogleAuth } from './GoogleAuth';
+import { SyncConflict, SyncMetadata } from '../types';
 
 export interface SyncStatus {
   lastSyncTime: Date | null;
   isSyncing: boolean;
   error: string | null;
+  conflicts?: SyncConflict[];
+  recordCount?: number;
+  checksum?: string;
 }
 
 export class GoogleDriveSync {
   private static readonly FILE_NAME = 'wordplay-data.json';
   private static readonly FOLDER_NAME = 'WordPlay';
   private static readonly SYNC_STATUS_KEY = 'wordplay-sync-status';
+  private static readonly DEVICE_ID_KEY = 'wordplay-device-id';
+  private static readonly SYNC_METADATA_KEY = 'wordplay-sync-metadata';
+
+  private static getOrCreateDeviceId(): string {
+    let deviceId = localStorage.getItem(this.DEVICE_ID_KEY);
+    if (!deviceId) {
+      deviceId = `device-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+      localStorage.setItem(this.DEVICE_ID_KEY, deviceId);
+    }
+    return deviceId;
+  }
+
+  private static calculateChecksum(data: string): string {
+    // Simple checksum using hash
+    let hash = 0;
+    for (let i = 0; i < data.length; i++) {
+      const char = data.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash = hash & hash; // Convert to 32-bit integer
+    }
+    return Math.abs(hash).toString(36);
+  }
+
+  private static getSyncMetadata(): SyncMetadata | null {
+    const metadata = localStorage.getItem(this.SYNC_METADATA_KEY);
+    if (!metadata) return null;
+    const parsed = JSON.parse(metadata);
+    return {
+      ...parsed,
+      lastSyncTime: parsed.lastSyncTime ? new Date(parsed.lastSyncTime) : null,
+    };
+  }
+
+  private static saveSyncMetadata(metadata: SyncMetadata): void {
+    localStorage.setItem(this.SYNC_METADATA_KEY, JSON.stringify(metadata));
+  }
 
   static async uploadToGoogleDrive(): Promise<void> {
     try {
       await GoogleAuth.refreshTokenIfNeeded();
 
       const data = ProgressTracker.exportData();
+      const parsedData = JSON.parse(data);
+
+      // Add sync metadata
+      const metadata: SyncMetadata = {
+        lastSyncTime: new Date(),
+        dataChecksum: this.calculateChecksum(data),
+        recordCount: parsedData.userProgress?.length || 0,
+        deviceId: this.getOrCreateDeviceId(),
+        syncVersion: (this.getSyncMetadata()?.syncVersion || 0) + 1,
+      };
+
+      const dataWithMetadata = JSON.stringify({
+        ...parsedData,
+        syncMetadata: metadata,
+      });
+
       const folderId = await this.getOrCreateFolder();
       const fileId = await this.getFileId(folderId);
 
@@ -27,14 +83,14 @@ export class GoogleDriveSync {
 
       if (fileId) {
         // Update existing file - don't include parents
-        const metadata = {
+        const fileMetadata = {
           name: this.FILE_NAME,
           mimeType: 'application/json',
         };
 
         const form = new FormData();
-        form.append('metadata', new Blob([JSON.stringify(metadata)], { type: 'application/json' }));
-        form.append('file', new Blob([data], { type: 'application/json' }));
+        form.append('metadata', new Blob([JSON.stringify(fileMetadata)], { type: 'application/json' }));
+        form.append('file', new Blob([dataWithMetadata], { type: 'application/json' }));
 
         response = await fetch(
           `https://www.googleapis.com/upload/drive/v3/files/${fileId}?uploadType=multipart`,
@@ -48,15 +104,15 @@ export class GoogleDriveSync {
         );
       } else {
         // Create new file - include parents
-        const metadata = {
+        const fileMetadata = {
           name: this.FILE_NAME,
           mimeType: 'application/json',
           parents: [folderId],
         };
 
         const form = new FormData();
-        form.append('metadata', new Blob([JSON.stringify(metadata)], { type: 'application/json' }));
-        form.append('file', new Blob([data], { type: 'application/json' }));
+        form.append('metadata', new Blob([JSON.stringify(fileMetadata)], { type: 'application/json' }));
+        form.append('file', new Blob([dataWithMetadata], { type: 'application/json' }));
 
         response = await fetch(
           'https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart',
@@ -76,7 +132,18 @@ export class GoogleDriveSync {
         throw new Error(errorData.error?.message || `Upload failed: ${response.statusText}`);
       }
 
-      this.updateSyncStatus({ lastSyncTime: new Date(), isSyncing: false, error: null });
+      // Save metadata locally
+      this.saveSyncMetadata(metadata);
+
+      this.updateSyncStatus({
+        lastSyncTime: new Date(),
+        isSyncing: false,
+        error: null,
+        recordCount: metadata.recordCount,
+        checksum: metadata.dataChecksum,
+      });
+
+      console.log(`✅ Synced ${metadata.recordCount} records to Google Drive`);
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Upload failed';
       this.updateSyncStatus({ lastSyncTime: null, isSyncing: false, error: errorMessage });
@@ -217,27 +284,79 @@ export class GoogleDriveSync {
 
   private static mergeUserProgress(local: any[], remote: any[]): any[] {
     const merged = new Map();
+    const conflicts: SyncConflict[] = [];
 
-    // Add all local progress
+    // Add all local progress with lastModified timestamps
     local.forEach(progress => {
-      merged.set(progress.wordId, progress);
+      // Add lastModified if not present
+      if (!progress.lastModified) {
+        progress.lastModified = progress.lastReviewed || new Date();
+        progress.syncVersion = 1;
+      }
+      merged.set(progress.wordId, { ...progress, source: 'local' });
     });
 
-    // Merge with remote, keeping the most advanced progress
+    // Merge with remote
     remote.forEach(progress => {
       const existing = merged.get(progress.wordId);
+
+      // Add lastModified if not present
+      if (!progress.lastModified) {
+        progress.lastModified = progress.lastReviewed || new Date();
+        progress.syncVersion = 1;
+      }
+
       if (!existing) {
-        merged.set(progress.wordId, progress);
+        // Word only exists in remote, add it
+        merged.set(progress.wordId, { ...progress, source: 'remote' });
       } else {
-        // Keep the progress with more repetitions or higher mastery
-        if (progress.repetitions > existing.repetitions ||
-            (progress.repetitions === existing.repetitions && progress.masteryLevel > existing.masteryLevel)) {
-          merged.set(progress.wordId, progress);
+        // Both have this word - need to merge
+        const localTime = new Date(existing.lastModified).getTime();
+        const remoteTime = new Date(progress.lastModified).getTime();
+
+        // Check if both have been modified (conflict scenario)
+        if (existing.syncVersion && progress.syncVersion &&
+            existing.syncVersion !== progress.syncVersion &&
+            Math.abs(localTime - remoteTime) < 60000) { // Within 1 minute
+          conflicts.push({
+            wordId: progress.wordId,
+            localData: existing,
+            remoteData: progress,
+            conflictType: 'both-modified',
+          });
+        }
+
+        // Use timestamp-based resolution
+        if (remoteTime > localTime) {
+          // Remote is newer
+          merged.set(progress.wordId, { ...progress, source: 'remote' });
+        } else if (remoteTime < localTime) {
+          // Local is newer, keep existing
+        } else {
+          // Same timestamp, use more advanced progress
+          if (progress.repetitions > existing.repetitions ||
+              (progress.repetitions === existing.repetitions && progress.masteryLevel > existing.masteryLevel)) {
+            merged.set(progress.wordId, { ...progress, source: 'remote' });
+          }
         }
       }
     });
 
-    return Array.from(merged.values());
+    // Store conflicts for UI display
+    if (conflicts.length > 0) {
+      const status = this.getSyncStatus();
+      this.updateSyncStatus({ ...status, conflicts });
+      console.warn(`⚠️  Found ${conflicts.length} sync conflicts`);
+    }
+
+    // Remove source tag before returning
+    return Array.from(merged.values()).map(p => {
+      const { source, ...progress } = p;
+      // Increment sync version
+      progress.syncVersion = (progress.syncVersion || 0) + 1;
+      progress.lastModified = new Date();
+      return progress;
+    });
   }
 
   private static mergeArraysByTimestamp(local: any[], remote: any[]): any[] {
@@ -322,7 +441,7 @@ export class GoogleDriveSync {
     };
   }
 
-  private static updateSyncStatus(status: SyncStatus): void {
+  static updateSyncStatus(status: SyncStatus): void {
     localStorage.setItem(this.SYNC_STATUS_KEY, JSON.stringify(status));
   }
 
