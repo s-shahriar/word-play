@@ -109,9 +109,6 @@ export const BrowseFlashcards: React.FC = () => {
           <span className="letter-badge">{letter}</span>
           Browse Mode
         </h2>
-        <button className="back-button" onClick={() => navigate('/browse')}>
-          ← Back to Alphabet
-        </button>
       </div>
 
       <div className="progress-info">
@@ -142,24 +139,28 @@ export const BrowseFlashcards: React.FC = () => {
 
             <div className="card-content">
               <div className="card-meaning-text">
-                <strong>Meaning:</strong> {currentWord.meaning}
+                <strong>📖 Meaning</strong>
+                {currentWord.meaning}
               </div>
 
               {currentWord.example && (
                 <div className="card-detail">
-                  <strong>Example:</strong> {currentWord.example}
+                  <strong>💬 Example</strong>
+                  {currentWord.example}
                 </div>
               )}
 
               {currentWord.synonyms && currentWord.synonyms.length > 0 && (
                 <div className="card-detail">
-                  <strong>Synonyms:</strong> {currentWord.synonyms.join(', ')}
+                  <strong>🔄 Synonyms</strong>
+                  {currentWord.synonyms.join(', ')}
                 </div>
               )}
 
               {currentWord.antonyms && currentWord.antonyms.length > 0 && (
                 <div className="card-detail">
-                  <strong>Antonyms:</strong> {currentWord.antonyms.join(', ')}
+                  <strong>⚡ Antonyms</strong>
+                  {currentWord.antonyms.join(', ')}
                 </div>
               )}
             </div>
@@ -171,7 +172,7 @@ export const BrowseFlashcards: React.FC = () => {
 
       <div className="browse-controls">
         <button className="flip-button" onClick={handleFlip}>
-          {isFlipped ? 'Flip Back' : 'Show Meaning'}
+          {isFlipped ? 'Hide Meaning' : 'Show Meaning'}
         </button>
 
         <div className="nav-buttons">
@@ -180,7 +181,14 @@ export const BrowseFlashcards: React.FC = () => {
             onClick={handlePrevious}
             disabled={currentIndex === 0}
           >
-            ← Previous
+            ◀
+          </button>
+
+          <button
+            className="nav-button home-button"
+            onClick={() => navigate('/browse')}
+          >
+            🏠
           </button>
 
           <button
@@ -188,7 +196,7 @@ export const BrowseFlashcards: React.FC = () => {
             onClick={handleNext}
             disabled={currentIndex === words.length - 1}
           >
-            Next →
+            ▶
           </button>
         </div>
       </div>
