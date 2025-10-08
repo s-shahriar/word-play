@@ -4,8 +4,16 @@ export interface GoogleUser {
   name: string;
   picture: string;
   accessToken: string;
+  tokenExpiresAt?: number; // Timestamp when token expires
 }
 
+/**
+ * GoogleAuth - Optional Google Drive Integration
+ *
+ * This service provides Google OAuth authentication for optional Google Drive sync features.
+ * The app works perfectly fine in offline mode without Google authentication.
+ * Users can choose to use Google Drive sync for cross-device data synchronization.
+ */
 export class GoogleAuth {
   private static readonly STORAGE_KEY = 'wordplay-google-user';
   private static readonly SCOPES = [
@@ -117,6 +125,7 @@ export class GoogleAuth {
             name: userInfo.name,
             picture: userInfo.picture,
             accessToken: response.access_token,
+            tokenExpiresAt: Date.now() + (response.expires_in || 3600) * 1000, // Default 1 hour
           };
 
           this.saveUser(googleUser);
@@ -158,7 +167,28 @@ export class GoogleAuth {
   }
 
   static isAuthenticated(): boolean {
-    return this.getCurrentUser() !== null;
+    const user = this.getCurrentUser();
+    if (!user) return false;
+
+    // Check if token has expired
+    if (user.tokenExpiresAt && Date.now() >= user.tokenExpiresAt) {
+      console.log('Token has expired');
+      return false;
+    }
+
+    return true;
+  }
+
+  static isTokenExpired(): boolean {
+    const user = this.getCurrentUser();
+    if (!user) return true;
+
+    // Check if token will expire in next 5 minutes (300000ms)
+    if (user.tokenExpiresAt && Date.now() >= (user.tokenExpiresAt - 300000)) {
+      return true;
+    }
+
+    return false;
   }
 
   private static saveUser(user: GoogleUser): void {
@@ -168,7 +198,7 @@ export class GoogleAuth {
   static async refreshTokenIfNeeded(): Promise<void> {
     const user = this.getCurrentUser();
     if (!user) {
-      throw new Error('Not authenticated');
+      throw new Error('Not authenticated with Google Drive');
     }
 
     // Check if token is still valid by making a test API call
@@ -184,7 +214,8 @@ export class GoogleAuth {
         return;
       }
     } catch (error) {
-      // Continue to token refresh
+      // Continue to token refresh (might be network error, so still try refresh)
+      console.log('Token validation failed, attempting refresh...');
     }
 
     // Token expired or invalid, request a new one silently
@@ -198,7 +229,7 @@ export class GoogleAuth {
           console.error('Token refresh error:', response);
           // Clear invalid user data
           this.logout();
-          reject(new Error('Session expired. Please sign in again.'));
+          reject(new Error('Google Drive session expired. Please sign in again to use sync features.'));
           return;
         }
 
@@ -206,10 +237,11 @@ export class GoogleAuth {
           // Update the token in gapi client
           (window as any).gapi.client.setToken({ access_token: response.access_token });
 
-          // Update user with new access token
+          // Update user with new access token and expiry
           const updatedUser: GoogleUser = {
             ...user,
             accessToken: response.access_token,
+            tokenExpiresAt: Date.now() + (response.expires_in || 3600) * 1000,
           };
 
           this.saveUser(updatedUser);
@@ -217,7 +249,7 @@ export class GoogleAuth {
         } catch (error) {
           console.error('Token update error:', error);
           this.logout();
-          reject(new Error('Session expired. Please sign in again.'));
+          reject(new Error('Google Drive session expired. Please sign in again to use sync features.'));
         }
       };
 
@@ -227,7 +259,7 @@ export class GoogleAuth {
       } catch (error) {
         console.error('Failed to request token:', error);
         this.logout();
-        reject(new Error('Session expired. Please sign in again.'));
+        reject(new Error('Google Drive session expired. Please sign in again to use sync features.'));
       }
     });
   }

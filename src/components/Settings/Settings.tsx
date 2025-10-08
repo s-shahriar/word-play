@@ -105,9 +105,36 @@ export const Settings: React.FC = () => {
     }
   };
 
-  const loadGoogleUser = () => {
+  const loadGoogleUser = async () => {
     const user = GoogleAuth.getCurrentUser();
-    setGoogleUser(user);
+
+    // Only handle token refresh if user was previously logged in and actively using Google Drive
+    if (user && GoogleAuth.isTokenExpired()) {
+      try {
+        console.log('Token expired or expiring soon, attempting silent refresh...');
+        await GoogleAuth.refreshTokenIfNeeded();
+        // Reload user data after refresh
+        const refreshedUser = GoogleAuth.getCurrentUser();
+        setGoogleUser(refreshedUser);
+        // Only show notification if auto-sync was enabled (user was actively using the feature)
+        if (GoogleDriveSync.isAutoSyncEnabled()) {
+          showNotificationPopup('success', 'Session Refreshed', 'Your Google Drive session has been refreshed.');
+        }
+      } catch (error) {
+        console.error('Failed to refresh token:', error);
+        // Token refresh failed - only notify if user was actively using sync
+        setGoogleUser(null);
+        if (GoogleDriveSync.isAutoSyncEnabled()) {
+          // Disable auto-sync since session expired
+          GoogleDriveSync.disableAutoSync();
+          setAutoSync(false);
+          showNotificationPopup('info', 'Session Expired', 'Google Drive auto-sync disabled. Sign in again to re-enable.');
+        }
+      }
+    } else {
+      setGoogleUser(user);
+    }
+
     setAutoSync(GoogleDriveSync.isAutoSyncEnabled());
     setSyncStatus(GoogleDriveSync.getSyncStatus());
   };
@@ -269,8 +296,19 @@ export const Settings: React.FC = () => {
     setSyncStatus({ ...syncStatus, isSyncing: true });
     try {
       await GoogleDriveSync.syncWithGoogleDrive('merge');
-      setSyncStatus(GoogleDriveSync.getSyncStatus());
-      showNotificationPopup('success', 'Sync Complete', 'Your data has been successfully synchronized with Google Drive.');
+      const updatedStatus = GoogleDriveSync.getSyncStatus();
+      setSyncStatus(updatedStatus);
+
+      // Check if conflicts were detected
+      if (updatedStatus.conflicts && updatedStatus.conflicts.length > 0) {
+        showNotificationPopup(
+          'info',
+          'Conflicts Detected',
+          `Found ${updatedStatus.conflicts.length} conflict(s). Please review and resolve them below.`
+        );
+      } else {
+        showNotificationPopup('success', 'Sync Complete', 'Your data has been successfully synchronized with Google Drive.');
+      }
     } catch (error) {
       console.error('Sync failed:', error);
       setSyncStatus(GoogleDriveSync.getSyncStatus());
@@ -923,7 +961,10 @@ export const Settings: React.FC = () => {
       )}
 
       {/* Sync Conflicts Modal */}
-      <SyncConflicts />
+      <SyncConflicts
+        conflicts={syncStatus.conflicts || []}
+        onRefresh={loadGoogleUser}
+      />
     </div>
   );
 };

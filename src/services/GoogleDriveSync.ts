@@ -11,6 +11,13 @@ export interface SyncStatus {
   checksum?: string;
 }
 
+/**
+ * GoogleDriveSync - Optional Cloud Backup Feature
+ *
+ * This service provides optional Google Drive integration for cross-device sync.
+ * The app works completely offline without Google Drive - all data is stored locally.
+ * Users can optionally enable Google Drive sync for backup and multi-device access.
+ */
 export class GoogleDriveSync {
   private static readonly FILE_NAME = 'wordplay-data.json';
   private static readonly FOLDER_NAME = 'WordPlay';
@@ -127,9 +134,12 @@ export class GoogleDriveSync {
       }
 
       if (!response.ok) {
+        if (response.status === 401) {
+          throw new Error('Google Drive session expired. Please sign in again to use sync features.');
+        }
         const errorData = await response.json();
         console.error('Upload error:', errorData);
-        throw new Error(errorData.error?.message || `Upload failed: ${response.statusText}`);
+        throw new Error(errorData.error?.message || `Google Drive upload failed: ${response.statusText}`);
       }
 
       // Save metadata locally
@@ -176,7 +186,10 @@ export class GoogleDriveSync {
       );
 
       if (!response.ok) {
-        throw new Error(`Download failed: ${response.statusText}`);
+        if (response.status === 401) {
+          throw new Error('Google Drive session expired. Please sign in again to use sync features.');
+        }
+        throw new Error(`Google Drive download failed: ${response.statusText}`);
       }
 
       const data = await response.text();
@@ -237,7 +250,10 @@ export class GoogleDriveSync {
       );
 
       if (!response.ok) {
-        throw new Error(`Download failed: ${response.statusText}`);
+        if (response.status === 401) {
+          throw new Error('Google Drive session expired. Please sign in again to use sync features.');
+        }
+        throw new Error(`Google Drive download failed: ${response.statusText}`);
       }
 
       const remoteData = JSON.parse(await response.text());
@@ -315,9 +331,19 @@ export class GoogleDriveSync {
         const remoteTime = new Date(progress.lastModified).getTime();
 
         // Check if both have been modified (conflict scenario)
+        // Detect conflicts when:
+        // 1. Both have different sync versions (modified on different devices)
+        // 2. Time difference is significant (more than 5 minutes = different sessions)
+        // 3. Progress values are different (not just timestamp difference)
+        const hasSignificantDifference =
+          existing.repetitions !== progress.repetitions ||
+          existing.masteryLevel !== progress.masteryLevel ||
+          existing.correctCount !== progress.correctCount;
+
         if (existing.syncVersion && progress.syncVersion &&
             existing.syncVersion !== progress.syncVersion &&
-            Math.abs(localTime - remoteTime) < 60000) { // Within 1 minute
+            Math.abs(localTime - remoteTime) > 300000 && // More than 5 minutes apart
+            hasSignificantDifference) {
           conflicts.push({
             wordId: progress.wordId,
             localData: existing,
@@ -373,7 +399,7 @@ export class GoogleDriveSync {
 
   private static async getOrCreateFolder(): Promise<string> {
     const user = GoogleAuth.getCurrentUser();
-    if (!user) throw new Error('Not authenticated');
+    if (!user) throw new Error('Not authenticated with Google Drive. Please sign in to use sync features.');
 
     // Search for existing folder
     const searchResponse = await fetch(
@@ -384,6 +410,10 @@ export class GoogleDriveSync {
         },
       }
     );
+
+    if (searchResponse.status === 401) {
+      throw new Error('Google Drive session expired. Please sign in again to use sync features.');
+    }
 
     const searchResult = await searchResponse.json();
 

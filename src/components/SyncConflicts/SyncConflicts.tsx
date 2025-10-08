@@ -1,37 +1,88 @@
-import React, { useState, useEffect } from 'react';
-import { GoogleDriveSync, SyncStatus } from '../../services/GoogleDriveSync';
+import React, { useState } from 'react';
+import { GoogleDriveSync } from '../../services/GoogleDriveSync';
+import { ProgressTracker } from '../../services/ProgressTracker';
 import { SyncConflict } from '../../types';
 import './SyncConflicts.css';
 
-export const SyncConflicts: React.FC = () => {
-  const [syncStatus, setSyncStatus] = useState<SyncStatus | null>(null);
-  const [conflicts, setConflicts] = useState<SyncConflict[]>([]);
+interface SyncConflictsProps {
+  conflicts: SyncConflict[];
+  onRefresh?: () => void;
+}
 
-  useEffect(() => {
-    const status = GoogleDriveSync.getSyncStatus();
-    setSyncStatus(status);
-    setConflicts(status.conflicts || []);
-  }, []);
+export const SyncConflicts: React.FC<SyncConflictsProps> = ({ conflicts: initialConflicts, onRefresh }) => {
+  const [conflicts, setConflicts] = useState<SyncConflict[]>(initialConflicts);
+
+  // Update local state when props change
+  React.useEffect(() => {
+    setConflicts(initialConflicts);
+  }, [initialConflicts]);
 
   const handleResolveConflict = (wordId: string, useLocal: boolean) => {
-    // Filter out the resolved conflict
+    const conflict = conflicts.find(c => c.wordId === wordId);
+    if (!conflict) return;
+
+    // Apply the user's choice to the actual data
+    const userProgress = ProgressTracker.getUserProgress();
+    const dataToKeep = useLocal ? conflict.localData : conflict.remoteData;
+
+    const updatedProgress = userProgress.map(p => {
+      if (p.wordId === wordId) {
+        // Apply the chosen version
+        return {
+          ...p,
+          ...dataToKeep,
+          // Update sync metadata
+          lastModified: new Date(),
+          syncVersion: (dataToKeep.syncVersion || 0) + 1,
+        };
+      }
+      return p;
+    });
+
+    ProgressTracker.saveUserProgress(updatedProgress);
+
+    // Remove the resolved conflict
     const updatedConflicts = conflicts.filter(c => c.wordId !== wordId);
     setConflicts(updatedConflicts);
 
     // Update sync status
-    if (syncStatus) {
-      const updatedStatus = { ...syncStatus, conflicts: updatedConflicts };
-      GoogleDriveSync.updateSyncStatus(updatedStatus);
-      setSyncStatus(updatedStatus);
+    const syncStatus = GoogleDriveSync.getSyncStatus();
+    GoogleDriveSync.updateSyncStatus({ ...syncStatus, conflicts: updatedConflicts });
+
+    // Notify parent to refresh if needed
+    if (onRefresh && updatedConflicts.length === 0) {
+      setTimeout(() => onRefresh(), 500);
     }
   };
 
   const handleResolveAll = (useLocal: boolean) => {
+    const userProgress = ProgressTracker.getUserProgress();
+
+    // Apply all conflict resolutions
+    const updatedProgress = userProgress.map(p => {
+      const conflict = conflicts.find(c => c.wordId === p.wordId);
+      if (conflict) {
+        const dataToKeep = useLocal ? conflict.localData : conflict.remoteData;
+        return {
+          ...p,
+          ...dataToKeep,
+          lastModified: new Date(),
+          syncVersion: (dataToKeep.syncVersion || 0) + 1,
+        };
+      }
+      return p;
+    });
+
+    ProgressTracker.saveUserProgress(updatedProgress);
+
+    // Clear all conflicts
     setConflicts([]);
-    if (syncStatus) {
-      const updatedStatus = { ...syncStatus, conflicts: [] };
-      GoogleDriveSync.updateSyncStatus(updatedStatus);
-      setSyncStatus(updatedStatus);
+    const syncStatus = GoogleDriveSync.getSyncStatus();
+    GoogleDriveSync.updateSyncStatus({ ...syncStatus, conflicts: [] });
+
+    // Notify parent to refresh
+    if (onRefresh) {
+      setTimeout(() => onRefresh(), 500);
     }
   };
 
