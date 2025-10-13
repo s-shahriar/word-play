@@ -12,6 +12,8 @@ interface FlashcardProps {
   canGoPrevious: boolean;
   currentIndex: number;
   totalCount: number;
+  showMeaning: boolean;
+  setShowMeaning: (show: boolean) => void;
 }
 
 export const Flashcard: React.FC<FlashcardProps> = ({
@@ -23,15 +25,15 @@ export const Flashcard: React.FC<FlashcardProps> = ({
   canGoPrevious,
   currentIndex,
   totalCount,
+  showMeaning,
+  setShowMeaning,
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const [showMeaning, setShowMeaning] = useState(false);
   const navigate = useNavigate();
 
   // Reset flip state when word changes
   useEffect(() => {
     setIsFlipped(false);
-    setShowMeaning(false);
   }, [word]);
 
   const handleFlip = () => {
@@ -44,7 +46,6 @@ export const Flashcard: React.FC<FlashcardProps> = ({
   const handleQualitySelect = (quality: Quality) => {
     onQualitySelect(quality);
     setIsFlipped(false);
-    setShowMeaning(false);
   };
 
   const qualityButtons = [

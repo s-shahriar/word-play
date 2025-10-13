@@ -33,6 +33,7 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
     totalTime: 0,
     startTime: new Date(),
   });
+  const [showMeaning, setShowMeaning] = useState(false);
 
   useEffect(() => {
     initializeSession();
@@ -302,6 +303,8 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
         canGoPrevious={currentIndex > 0}
         currentIndex={currentIndex}
         totalCount={words.length}
+        showMeaning={showMeaning}
+        setShowMeaning={setShowMeaning}
       />
     </div>
   );
