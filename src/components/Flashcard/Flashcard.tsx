@@ -14,6 +14,10 @@ interface FlashcardProps {
   totalCount: number;
   showMeaning: boolean;
   setShowMeaning: (show: boolean) => void;
+  masteryLevel?: number;
+  accuracy?: number;
+  repetitions?: number;
+  totalSeen?: number;
 }
 
 export const Flashcard: React.FC<FlashcardProps> = ({
@@ -27,6 +31,10 @@ export const Flashcard: React.FC<FlashcardProps> = ({
   totalCount,
   showMeaning,
   setShowMeaning,
+  masteryLevel = 0,
+  accuracy = 0,
+  repetitions = 0,
+  totalSeen = 0,
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const navigate = useNavigate();
@@ -38,9 +46,6 @@ export const Flashcard: React.FC<FlashcardProps> = ({
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
-    if (!isFlipped) {
-      setShowMeaning(true);
-    }
   };
 
   const handleQualitySelect = (quality: Quality) => {
@@ -75,8 +80,46 @@ export const Flashcard: React.FC<FlashcardProps> = ({
     },
   ];
 
+  const getMasteryColor = (level: number) => {
+    if (level >= 80) return "#2ed573"; // Green - Excellent
+    if (level >= 60) return "#1e90ff"; // Blue - Good
+    if (level >= 40) return "#ffa502"; // Orange - Fair
+    return "#ff4757"; // Red - Needs practice
+  };
+
+  const getMasteryLabel = (level: number, seen: number) => {
+    if (level >= 80) return "Mastered";
+    if (level >= 60) return "Good";
+    if (level >= 40) return "Learning";
+    if (seen === 0) return "First Time";
+    return "Needs Practice";
+  };
+
   return (
     <div className="flashcard-container">
+      <div className="mastery-meter">
+        <div className="mastery-info">
+          <span className="mastery-label">{getMasteryLabel(masteryLevel, totalSeen)}</span>
+          <span className="mastery-stats">
+            {totalSeen > 0 ? (
+              <>
+                {Math.round(accuracy * 100)}% · {totalSeen} {totalSeen === 1 ? "review" : "reviews"}
+              </>
+            ) : (
+              "First time reviewing"
+            )}
+          </span>
+        </div>
+        <div className="mastery-bar">
+          <div
+            className="mastery-fill"
+            style={{
+              width: `${masteryLevel}%`,
+              backgroundColor: getMasteryColor(masteryLevel)
+            }}
+          />
+        </div>
+      </div>
       <div className="flashcard-stack">
         <div className={`flashcard ${isFlipped ? "flipped" : ""}`}>
           <div className="flashcard-front">

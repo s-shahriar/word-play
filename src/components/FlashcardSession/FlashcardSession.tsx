@@ -267,6 +267,10 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
     );
   }
 
+  // Get current word progress data
+  const currentWordId = (words[currentIndex] as any).id || words[currentIndex].word.toLowerCase();
+  const currentProgress = ProgressTracker.getProgressForWord(currentWordId);
+
   return (
     <div className="flashcard-session">
       <div className="session-header">
@@ -305,6 +309,10 @@ export const FlashcardSession: React.FC<FlashcardSessionProps> = ({
         totalCount={words.length}
         showMeaning={showMeaning}
         setShowMeaning={setShowMeaning}
+        masteryLevel={currentProgress?.masteryLevel || 0}
+        accuracy={currentProgress?.accuracy || 0}
+        repetitions={currentProgress?.repetitions || 0}
+        totalSeen={currentProgress?.totalSeen || 0}
       />
     </div>
   );

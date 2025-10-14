@@ -60,7 +60,8 @@ export class SM2Algorithm {
     const totalSeen = userProgress.totalSeen + 1;
     const correctCount = quality >= 3 ? userProgress.correctCount + 1 : userProgress.correctCount;
     const accuracy = correctCount / totalSeen;
-    const masteryLevel = Math.min(100, Math.round(accuracy * 100 * (1 + userProgress.repetitions * 0.1)));
+    // Use the updated repetitions from sm2Result, not the old one
+    const masteryLevel = Math.min(100, Math.round(accuracy * 100 * (1 + sm2Result.repetitions * 0.1)));
 
     return {
       ...userProgress,
